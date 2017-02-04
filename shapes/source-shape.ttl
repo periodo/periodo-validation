@@ -1,0 +1,88 @@
+@base <http://n2t.net/ark:/99152/> .
+
+@prefix periodo: <p0v#> .
+
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+periodo:SourceShape
+  rdf:type sh:Shape ;
+  rdfs:label "Source shape" ;
+  sh:targetObjectsOf dcterms:source ;
+  sh:closed "true"^^xsd:boolean ;
+  sh:ignoredProperties (
+      rdf:type
+  ) ;
+  sh:property [
+      sh:predicate dcterms:isPartOf ;
+      sh:name "is part of" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate dcterms:title ;
+      sh:name "title" ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate dcterms:issued ;
+      sh:name "issued" ;
+      sh:datatype xsd:gYear ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate dcterms:date ;
+      sh:name "date" ;
+      sh:datatype xsd:date ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate dcterms:creator ;
+      sh:name "creator" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+  ] ;
+  sh:property [
+      sh:predicate dcterms:contributor ;
+      sh:name "contributor" ;
+      sh:nodeKind sh:BlankNodeOrIRI ;
+  ] ;
+  sh:property [
+      sh:predicate dcterms:abstract ;
+      sh:name "abstract" ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate bibo:locator ;
+      sh:name "locator" ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate skos:editorialNote ;
+      sh:name "editorial note" ;
+      sh:description "Administrative or editorial notes from PeriodO curators" ;
+      sh:datatype xsd:string ;
+      sh:maxCount 1 ;
+  ] ;
+  sh:property [
+      sh:predicate owl:sameAs ;
+      sh:name "same as" ;
+      sh:description "External URI for this source" ;
+      sh:nodeKind sh:IRI ;
+  ] ;
+  sh:property [
+      sh:predicate foaf:page ;
+      sh:name "url" ;
+      sh:description "Web resource with information about this source" ;
+      sh:nodeKind sh:IRI ;
+  ] ;
+.

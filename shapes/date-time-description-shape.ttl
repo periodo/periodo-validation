@@ -1,0 +1,56 @@
+@base <http://n2t.net/ark:/99152/> .
+
+@prefix periodo: <p0v#> .
+
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+periodo:DateTimeDescriptionShape
+  rdf:type sh:Shape ;
+  rdfs:label "Date-time description shape" ;
+  sh:targetObjectsOf time:hasDateTimeDescription ;
+  sh:closed "true"^^xsd:boolean ;
+  sh:ignoredProperties (
+      rdf:type
+  ) ;
+  sh:property [
+      sh:predicate time:year ;
+      sh:name "year" ;
+      sh:description "Gregorian calendar year" ;
+      # Explicitly allow 0000 since Jena does not support XSD 1.1
+      sh:or (
+          [ sh:datatype xsd:gYear ; ]
+          [ sh:hasValue "0000"^^xsd:gYear ; ]
+      ) ;
+      sh:maxCount 1 ;
+      sh:message "Value is not a valid xsd:gYear, or too many values" ;
+  ] ;
+  sh:property [
+      sh:predicate periodo:earliestYear ;
+      sh:name "earliest year" ;
+      sh:description "earliest Gregorian calendar year" ;
+      # Explicitly allow 0000 since Jena does not support XSD 1.1
+      sh:or (
+          [ sh:datatype xsd:gYear ; ]
+          [ sh:hasValue "0000"^^xsd:gYear ; ]
+      ) ;
+      sh:maxCount 1 ;
+      sh:message "Value is not a valid xsd:gYear, or too many values" ;
+  ] ;
+  sh:property [
+      sh:predicate periodo:latestYear ;
+      sh:name "latest year" ;
+      sh:description "latest Gregorian calendar year" ;
+      # Explicitly allow 0000 since Jena does not support XSD 1.1
+      sh:or (
+          [ sh:datatype xsd:gYear ; ]
+          [ sh:hasValue "0000"^^xsd:gYear ; ]
+      ) ;
+      sh:maxCount 1 ;
+      sh:message "Value is not a valid xsd:gYear, or too many values" ;
+  ] ;
+.
