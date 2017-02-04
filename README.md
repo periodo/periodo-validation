@@ -1,4 +1,4 @@
-SHACL data shapes for validating PeriodO data, and a CLI for running the validation against the canonical or local development files.
+[SHACL](https://www.w3.org/TR/shacl/) data shapes for validating PeriodO data, and a CLI for running the validation against the canonical or local development files.
 
 ### Usage
 
