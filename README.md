@@ -9,7 +9,7 @@ Validate the current canonical PeriodO data set ([http://n2t.net/ark:/99152/p0d.
 
 Validate a local data set against the current published data shapes from the PeriodO vocabulary ([http://n2t.net/ark:/99152/p0v](http://n2t.net/ark:/99152/p0v)):
 ```sh
-./validate data.ttl
+./validate data.ttl moredata.jsonld
 ```
 
 Validate the current canonical PeriodO data set ([http://n2t.net/ark:/99152/p0d.json](http://n2t.net/ark:/99152/p0d.json)) against data shape files from a local directory:
@@ -19,5 +19,5 @@ Validate the current canonical PeriodO data set ([http://n2t.net/ark:/99152/p0d.
 
 Validate a local data set against data shape files from a local directory:
 ```sh
-./validate -shapes path/to/shapes_dir data.ttl
+./validate -shapes path/to/shapes_dir data.ttl moredata.jsonld
 ```
