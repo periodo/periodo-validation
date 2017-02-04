@@ -118,7 +118,7 @@ public class Validate {
         Model model = JenaUtil.createMemoryModel();
         paths.forEach(path -> {
             try (InputStream in = Files.newInputStream(path)) {
-                model.read(in, null, FileUtils.langTurtle);
+                model.read(in, null, FileUtils.guessLang(path.toString(), "JSON-LD"));
             } catch (IOException e) {
                 LOG.severe(e.getMessage());
             }
