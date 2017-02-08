@@ -50,6 +50,7 @@ periodo:DefinitionShape
         "nl"
         "ro"
         "sl"
+        "sq"
         "sr-cyrl"
         "sv"
         "uk"
