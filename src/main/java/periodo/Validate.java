@@ -77,7 +77,7 @@ public class Validate {
     }
 
     private void run() {
-        Model results = validate(loadDataModel(), loadShapesModel());
+        Model results = validate(loadShapesModel(), loadDataModel());
 
         selectResults(results).forEachRemaining(result -> {
             result.varNames().forEachRemaining(name -> {
@@ -88,7 +88,7 @@ public class Validate {
         });
     }
 
-    private Model validate(Model data, Model shapes) {
+    private Model validate(Model shapes, Model data) {
         URI shapesGraphURI = URI.create("urn:x-shacl-shapes-graph:" + UUID.randomUUID().toString());
         Dataset dataset = ARQFactory.get().getDataset(data);
         dataset.addNamedModel(shapesGraphURI.toString(), shapes);
