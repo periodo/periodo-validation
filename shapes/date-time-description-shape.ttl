@@ -39,7 +39,8 @@ periodo:DateTimeDescriptionShape
           [ sh:hasValue "0000"^^xsd:gYear ; ]
       ) ;
       sh:maxCount 1 ;
-      sh:message "Value is not a valid xsd:gYear, or too many values" ;
+      sh:lessThan periodo:latestYear ;
+      sh:message "At most 1 valid gYear that is less than latestYear" ;
   ] ;
   sh:property [
       sh:path periodo:latestYear ;
