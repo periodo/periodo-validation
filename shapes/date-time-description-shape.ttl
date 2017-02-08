@@ -53,4 +53,22 @@ periodo:DateTimeDescriptionShape
       sh:maxCount 1 ;
       sh:message "Value is not a valid xsd:gYear, or too many values" ;
   ] ;
+  sh:sparql [
+      sh:message "Must have either a year or an earliestYear" ;
+      sh:select """
+        PREFIX time: <http://www.w3.org/2006/time#>
+        PREFIX periodo: <http://n2t.net/ark:/99152/p0v#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        SELECT $this ($this AS ?path) ?value
+        WHERE {
+          ?interval time:hasDateTimeDescription $this .
+          ?interval skos:prefLabel ?value .
+          FILTER NOT EXISTS {
+            { $this time:year ?year }
+            UNION
+            { $this periodo:earliestYear ?earliestYear }
+          }
+        }
+        """ ;
+  ] ;
 .
