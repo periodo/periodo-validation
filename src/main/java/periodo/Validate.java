@@ -77,11 +77,9 @@ public class Validate {
     }
 
     private void run() {
-        Model dataModel = loadDataModel();
-        Dataset dataset = ARQFactory.get().getDataset(dataModel);
-        URI shapesGraphURI = addShapesGraphToDataset(dataModel, dataset);
-        Model resultsModel = validate(dataset, shapesGraphURI);
-        selectResults(resultsModel).forEachRemaining(result -> {
+        Model results = validate(loadDataModel(), loadShapesModel());
+
+        selectResults(results).forEachRemaining(result -> {
             result.varNames().forEachRemaining(name -> {
                 System.out.print(name + ": ");
                 System.out.println(result.get(name));
@@ -90,28 +88,75 @@ public class Validate {
         });
     }
 
-    private Model loadDataModel() {
-        Model dataModel = JenaUtil.createMemoryModel();
-        
+    private Model validate(Model data, Model shapes) {
+        URI shapesGraphURI = URI.create("urn:x-shacl-shapes-graph:" + UUID.randomUUID().toString());
+        Dataset dataset = ARQFactory.get().getDataset(data);
+        dataset.addNamedModel(shapesGraphURI.toString(), shapes);
+        Model resultsModel = validate(dataset, shapesGraphURI);
+        return resultsModel;
+    }
+
+    private static Model validate(Dataset dataset, URI shapesGraphURI) {
+        Model results = null;
         try {
-            if (this.dataFiles.isEmpty()) {
-                dataModel.add(loadRemoteModel(
-                        PERIODO_DATA_URI, "JSON-LD"));
-            } else {
-                dataModel.add(loadLocalModel(
-                        this.dataFiles.stream().map(file -> file.toPath())));
-            }
-            if (this.shapesDirectory == null) {
-                dataModel.add(loadRemoteModel(
-                        PERIODO_VOCAB_URI, FileUtils.langTurtle));
-            } else {
-                dataModel.add(loadLocalModel(
-                        Files.list(this.shapesDirectory.toPath())));
-            }
-        } catch (IOException e) {
+            ModelConstraintValidator mcv = new ModelConstraintValidator();
+            results = mcv.validateModel(
+                    dataset, shapesGraphURI, null, true, null, null
+            ).getModel();
+        } catch (InterruptedException e) {
             LOG.severe(e.getMessage());
         }
-        return dataModel;
+        return results;
+    }
+
+    private Model loadDataModel() {
+        Model model = JenaUtil.createMemoryModel();
+        if (this.dataFiles.isEmpty()) {
+            model.add(loadRemoteModel(PERIODO_DATA_URI, "JSON-LD"));
+        } else {
+            model.add(loadLocalModel(this.dataFiles.stream().map(file -> file.toPath())));
+        }
+        if (this.shapesDirectory == null) {
+            model.add(loadRemoteModel(PERIODO_VOCAB_URI, FileUtils.langTurtle));
+        } else {
+            try {
+                model.add(loadLocalModel(Files.list(this.shapesDirectory.toPath())));
+            } catch (IOException e) {
+                LOG.severe(e.getMessage());
+            }
+        }
+        return model;
+    }
+
+    private Model loadShapesModel() {
+        Model model = JenaUtil.createMemoryModel();
+        if (this.shapesDirectory == null) {
+            model.add(loadRemoteModel(PERIODO_VOCAB_URI, FileUtils.langTurtle));
+        } else {
+            try {
+                model.add(loadLocalModel(Files.list(this.shapesDirectory.toPath())));
+            } catch (IOException e) {
+                LOG.severe(e.getMessage());
+            }
+        }
+        Model shapesModel = ModelFactory.createModelForGraph(
+                new MultiUnion(new Graph[] {
+			loadSHACLModel().getGraph(),
+			model.getGraph()
+		})
+        );
+        SHACLFunctions.registerFunctions(shapesModel);
+        return shapesModel;
+    }
+
+    private static Model loadSHACLModel() {
+        Model model = JenaUtil.createDefaultModel();
+        model.read(getResourceStream("/etc/shacl.ttl"), SH.BASE_URI, FileUtils.langTurtle);
+        model.read(getResourceStream("/etc/dash.ttl"), SH.BASE_URI, FileUtils.langTurtle);
+        model.read(getResourceStream("/etc/tosh.ttl"), SH.BASE_URI, FileUtils.langTurtle);
+        model.add(SystemTriples.getVocabularyModel());
+        SHACLFunctions.registerFunctions(model);
+        return model;
     }
 
     private static Model loadLocalModel(Stream<Path> paths) {
@@ -140,8 +185,8 @@ public class Validate {
         }
         return model;
     }
-    
-    
+
+
     private static ResultSet selectResults(Model resultsModel) {
         String query = readString(getResourceStream("/default-query.rq"));
         ResultSet results = QueryExecutionFactory.create(
@@ -154,58 +199,13 @@ public class Validate {
 
     private static String readString(InputStream input) {
         Scanner scan = new Scanner(
-                input, 
+                input,
                 StandardCharsets.UTF_8.name()
         ).useDelimiter("\\z");
         return scan.hasNext() ? scan.next() : "";
     }
-    
-    private static Model validate(Dataset dataset, URI shapesGraphURI) {
-        Model results = null;
-        try {
-            ModelConstraintValidator mcv = new ModelConstraintValidator();
-            results = mcv.validateModel(
-                    dataset, shapesGraphURI, null, true, null, null
-            ).getModel();
-        } catch (InterruptedException e) {
-            LOG.severe(e.getMessage());
-        }
-        return results;
-    }
-
-    private static URI addShapesGraphToDataset(Model dataModel, Dataset dataset) {
-        Model shaclModel = loadSHACLModel();
-        Model shapesModel = ModelFactory.createModelForGraph(
-                new MultiUnion(new Graph[]{
-                    shaclModel.getGraph(),
-                    dataModel.getGraph()
-                })
-        );
-        SHACLFunctions.registerFunctions(shapesModel);
-        URI shapesGraphURI = URI.create(
-                "urn:x-shacl-shapes-graph:" + UUID.randomUUID().toString()
-        );
-        dataset.addNamedModel(shapesGraphURI.toString(), shapesModel);
-        return shapesGraphURI;
-    }
 
     private static InputStream getResourceStream(String name) {
         return Validate.class.getResourceAsStream(name);
-    }
-
-    private static Model loadSHACLModel() {
-        Model shaclModel = JenaUtil.createDefaultModel();
-        shaclModel.read(
-                getResourceStream("/etc/shacl.ttl"),
-                SH.BASE_URI, FileUtils.langTurtle);
-        shaclModel.read(
-                getResourceStream("/etc/dash.ttl"),
-                SH.BASE_URI, FileUtils.langTurtle);
-        shaclModel.read(
-                getResourceStream("/etc/tosh.ttl"),
-                SH.BASE_URI, FileUtils.langTurtle);
-        shaclModel.add(SystemTriples.getVocabularyModel());
-        SHACLFunctions.registerFunctions(shaclModel);
-        return shaclModel;
     }
 }
