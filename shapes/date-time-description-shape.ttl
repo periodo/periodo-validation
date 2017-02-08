@@ -27,7 +27,7 @@ periodo:DateTimeDescriptionShape
           [ sh:hasValue "0000"^^xsd:gYear ; ]
       ) ;
       sh:maxCount 1 ;
-      sh:message "Value is not a valid xsd:gYear, or too many values" ;
+      sh:message "At most 1 valid gYear" ;
   ] ;
   sh:property [
       sh:path periodo:earliestYear ;
@@ -52,7 +52,7 @@ periodo:DateTimeDescriptionShape
           [ sh:hasValue "0000"^^xsd:gYear ; ]
       ) ;
       sh:maxCount 1 ;
-      sh:message "Value is not a valid xsd:gYear, or too many values" ;
+      sh:message "At most 1 valid gYear" ;
   ] ;
   sh:sparql [
       sh:message "Must have either a year or an earliestYear" ;
