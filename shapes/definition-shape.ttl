@@ -14,7 +14,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 periodo:DefinitionShape
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:label "Period definition shape" ;
   sh:targetClass skos:Concept ;
   sh:closed "true"^^xsd:boolean ;
@@ -22,7 +22,7 @@ periodo:DefinitionShape
       rdf:type
   ) ;
   sh:property [
-      sh:predicate skos:prefLabel ;
+      sh:path skos:prefLabel ;
       sh:name "preferred label" ;
       sh:description "Name of the period as given in the source" ;
       sh:datatype xsd:string ;
@@ -30,7 +30,7 @@ periodo:DefinitionShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate skos:altLabel ;
+      sh:path skos:altLabel ;
       sh:name "localized label" ;
       sh:description "Language-specific name for the period" ;
       sh:datatype rdf:langString ;
@@ -58,21 +58,21 @@ periodo:DefinitionShape
       sh:minCount 1 ;
   ] ;
   sh:property [
-      sh:predicate skos:note ;
+      sh:path skos:note ;
       sh:name "note" ;
       sh:description "Notes about the definition taken from the source" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate skos:editorialNote ;
+      sh:path skos:editorialNote ;
       sh:name "editorial note" ;
       sh:description "Administrative or editorial notes from PeriodO curators" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate skos:inScheme ;
+      sh:path skos:inScheme ;
       sh:name "collection" ;
       sh:description "Collection to which this period definition belongs" ;
       sh:nodeKind sh:IRI ;
@@ -81,7 +81,7 @@ periodo:DefinitionShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate dcterms:source ;
+      sh:path dcterms:source ;
       sh:name "source" ;
       sh:description "Bibliographic information specific to this definition" ;
       sh:nodeKind sh:BlankNode ;
@@ -100,7 +100,7 @@ periodo:DefinitionShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate time:intervalStartedBy ;
+      sh:path time:intervalStartedBy ;
       sh:name "start" ;
       sh:description "Start interval for the period" ;
       sh:nodeKind sh:BlankNode ;
@@ -108,7 +108,7 @@ periodo:DefinitionShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate time:intervalFinishedBy ;
+      sh:path time:intervalFinishedBy ;
       sh:name "stop" ;
       sh:description "Stop interval for the period" ;
       sh:nodeKind sh:BlankNode ;
@@ -116,33 +116,33 @@ periodo:DefinitionShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate periodo:spatialCoverageDescription ;
+      sh:path periodo:spatialCoverageDescription ;
       sh:name "spatial coverage description" ;
       sh:description "Spatial extent of the period as described in the source" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate dcterms:spatial ;
+      sh:path dcterms:spatial ;
       sh:name "spatial coverage" ;
       sh:description "Place (partially) within spatial extent of the period" ;
       sh:nodeKind sh:IRI ;
       sh:minCount 1 ;
   ] ;
   sh:property [
-      sh:predicate owl:sameAs ;
+      sh:path owl:sameAs ;
       sh:name "same as" ;
       sh:description "Alternative URI for this definition" ;
       sh:nodeKind sh:IRI ;
   ] ;
   sh:property [
-      sh:predicate foaf:page ;
+      sh:path foaf:page ;
       sh:name "url" ;
       sh:description "Web resource with information about this definition" ;
       sh:nodeKind sh:IRI ;
   ] ;
   sh:property [
-      sh:predicate dcterms:language ;
+      sh:path dcterms:language ;
       sh:name "language" ;
       sh:description "Language of the preferred label for this period" ;
       sh:datatype xsd:string ;

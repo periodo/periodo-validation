@@ -13,7 +13,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 periodo:CollectionShape
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:label "Period collection shape" ;
   sh:targetClass skos:ConceptScheme ;
   sh:closed "true"^^xsd:boolean ;
@@ -21,7 +21,7 @@ periodo:CollectionShape
       rdf:type
   ) ;
   sh:property [
-      sh:predicate dcterms:source ;
+      sh:path dcterms:source ;
       sh:name "source" ;
       sh:description "Bibliographic description of the source" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
@@ -29,14 +29,14 @@ periodo:CollectionShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate skos:editorialNote ;
+      sh:path skos:editorialNote ;
       sh:name "editorial note" ;
       sh:description "Administrative or editorial notes from PeriodO curators" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate owl:sameAs ;
+      sh:path owl:sameAs ;
       sh:name "same as" ;
       sh:description "Alternative URI for this collection" ;
       sh:nodeKind sh:IRI ;

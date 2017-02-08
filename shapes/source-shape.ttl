@@ -13,7 +13,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 periodo:SourceShape
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:label "Source shape" ;
   sh:targetObjectsOf dcterms:source ;
   sh:closed "true"^^xsd:boolean ;
@@ -21,66 +21,66 @@ periodo:SourceShape
       rdf:type
   ) ;
   sh:property [
-      sh:predicate dcterms:isPartOf ;
+      sh:path dcterms:isPartOf ;
       sh:name "is part of" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate dcterms:title ;
+      sh:path dcterms:title ;
       sh:name "title" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate dcterms:issued ;
+      sh:path dcterms:issued ;
       sh:name "issued" ;
       sh:datatype xsd:gYear ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate dcterms:date ;
+      sh:path dcterms:date ;
       sh:name "date" ;
       sh:datatype xsd:date ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate dcterms:creator ;
+      sh:path dcterms:creator ;
       sh:name "creator" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
   ] ;
   sh:property [
-      sh:predicate dcterms:contributor ;
+      sh:path dcterms:contributor ;
       sh:name "contributor" ;
       sh:nodeKind sh:BlankNodeOrIRI ;
   ] ;
   sh:property [
-      sh:predicate dcterms:abstract ;
+      sh:path dcterms:abstract ;
       sh:name "abstract" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate bibo:locator ;
+      sh:path bibo:locator ;
       sh:name "locator" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate skos:editorialNote ;
+      sh:path skos:editorialNote ;
       sh:name "editorial note" ;
       sh:description "Administrative or editorial notes from PeriodO curators" ;
       sh:datatype xsd:string ;
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate owl:sameAs ;
+      sh:path owl:sameAs ;
       sh:name "same as" ;
       sh:description "External URI for this source" ;
       sh:nodeKind sh:IRI ;
   ] ;
   sh:property [
-      sh:predicate foaf:page ;
+      sh:path foaf:page ;
       sh:name "url" ;
       sh:description "Web resource with information about this source" ;
       sh:nodeKind sh:IRI ;

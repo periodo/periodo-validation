@@ -10,7 +10,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 periodo:DateTimeDescriptionShape
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:label "Date-time description shape" ;
   sh:targetObjectsOf time:hasDateTimeDescription ;
   sh:closed "true"^^xsd:boolean ;
@@ -18,7 +18,7 @@ periodo:DateTimeDescriptionShape
       rdf:type
   ) ;
   sh:property [
-      sh:predicate time:year ;
+      sh:path time:year ;
       sh:name "year" ;
       sh:description "Gregorian calendar year" ;
       # Explicitly allow 0000 since Jena does not support XSD 1.1
@@ -30,7 +30,7 @@ periodo:DateTimeDescriptionShape
       sh:message "Value is not a valid xsd:gYear, or too many values" ;
   ] ;
   sh:property [
-      sh:predicate periodo:earliestYear ;
+      sh:path periodo:earliestYear ;
       sh:name "earliest year" ;
       sh:description "earliest Gregorian calendar year" ;
       # Explicitly allow 0000 since Jena does not support XSD 1.1
@@ -42,7 +42,7 @@ periodo:DateTimeDescriptionShape
       sh:message "Value is not a valid xsd:gYear, or too many values" ;
   ] ;
   sh:property [
-      sh:predicate periodo:latestYear ;
+      sh:path periodo:latestYear ;
       sh:name "latest year" ;
       sh:description "latest Gregorian calendar year" ;
       # Explicitly allow 0000 since Jena does not support XSD 1.1

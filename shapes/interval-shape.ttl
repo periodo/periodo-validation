@@ -10,7 +10,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 periodo:IntervalShape
-  rdf:type sh:Shape ;
+  rdf:type sh:NodeShape ;
   rdfs:label "Interval shape" ;
   sh:targetObjectsOf time:intervalStartedBy, time:intervalFinishedBy ;
   sh:closed "true"^^xsd:boolean ;
@@ -18,7 +18,7 @@ periodo:IntervalShape
       rdf:type
   ) ;
   sh:property [
-      sh:predicate skos:prefLabel ;
+      sh:path skos:prefLabel ;
       sh:name "preferred label" ;
       sh:description "Description of the interval as given in the source" ;
       sh:datatype xsd:string ;
@@ -26,7 +26,7 @@ periodo:IntervalShape
       sh:maxCount 1 ;
   ] ;
   sh:property [
-      sh:predicate time:hasDateTimeDescription ;
+      sh:path time:hasDateTimeDescription ;
       sh:name "has date-time description" ;
       sh:description "Bibliographic description of the source" ;
       sh:nodeKind sh:BlankNode ;
