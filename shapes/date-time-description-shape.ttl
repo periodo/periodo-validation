@@ -56,10 +56,8 @@ periodo:DateTimeDescriptionShape
   ] ;
   sh:sparql [
       sh:message "Must have either a year or an earliestYear" ;
+      sh:prefixes <> ;
       sh:select """
-        PREFIX time: <http://www.w3.org/2006/time#>
-        PREFIX periodo: <http://n2t.net/ark:/99152/p0v#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         SELECT $this ($this AS ?path) ?value
         WHERE {
           ?interval time:hasDateTimeDescription $this .
@@ -74,10 +72,8 @@ periodo:DateTimeDescriptionShape
   ] ;
   sh:sparql [
       sh:message "Cannot have both a year and an earliestYear" ;
+      sh:prefixes <> ;
       sh:select """
-        PREFIX time: <http://www.w3.org/2006/time#>
-        PREFIX periodo: <http://n2t.net/ark:/99152/p0v#>
-        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
         SELECT $this ($this AS ?path) ?value
         WHERE {
           ?interval time:hasDateTimeDescription $this .
@@ -88,3 +84,17 @@ periodo:DateTimeDescriptionShape
         """ ;
   ] ;
 .
+
+<>
+  sh:declare [
+      sh:prefix "periodo" ;
+      sh:namespace "http://n2t.net/ark:/99152/p0v#"^^xsd:anyURI ;
+  ] ;
+  sh:declare [
+      sh:prefix "time" ;
+      sh:namespace "http://www.w3.org/2006/time#"^^xsd:anyURI ;
+  ] ;
+  sh:declare [
+      sh:prefix "skos" ;
+      sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+  ] ;
