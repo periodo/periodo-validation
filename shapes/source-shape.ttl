@@ -18,71 +18,71 @@ periodo:SourceShape
   sh:targetObjectsOf dcterms:source ;
   sh:closed "true"^^xsd:boolean ;
   sh:ignoredProperties (
-      rdf:type
-  ) ;
+    rdf:type
+    ) ;
   sh:property [
-      sh:path dcterms:isPartOf ;
-      sh:name "is part of" ;
-      sh:nodeKind sh:BlankNodeOrIRI ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path dcterms:isPartOf ;
+    sh:name "is part of" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path dcterms:title ;
-      sh:name "title" ;
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path dcterms:title ;
+    sh:name "title" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path dcterms:issued ;
-      sh:name "issued" ;
-      sh:datatype xsd:gYear ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path dcterms:issued ;
+    sh:name "issued" ;
+    sh:datatype xsd:gYear ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path dcterms:date ;
-      sh:name "date" ;
-      sh:datatype xsd:date ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path dcterms:date ;
+    sh:name "date" ;
+    sh:datatype xsd:date ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path dcterms:creator ;
-      sh:name "creator" ;
-      sh:nodeKind sh:BlankNodeOrIRI ;
-  ] ;
+    sh:path dcterms:creator ;
+    sh:name "creator" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    ] ;
   sh:property [
-      sh:path dcterms:contributor ;
-      sh:name "contributor" ;
-      sh:nodeKind sh:BlankNodeOrIRI ;
-  ] ;
+    sh:path dcterms:contributor ;
+    sh:name "contributor" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    ] ;
   sh:property [
-      sh:path dcterms:abstract ;
-      sh:name "abstract" ;
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path dcterms:abstract ;
+    sh:name "abstract" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path bibo:locator ;
-      sh:name "locator" ;
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path bibo:locator ;
+    sh:name "locator" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path skos:editorialNote ;
-      sh:name "editorial note" ;
-      sh:description "Administrative or editorial notes from PeriodO curators" ;
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path skos:editorialNote ;
+    sh:name "editorial note" ;
+    sh:description "Administrative or editorial notes from PeriodO curators" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path owl:sameAs ;
-      sh:name "same as" ;
-      sh:description "External URI for this source" ;
-      sh:nodeKind sh:IRI ;
-  ] ;
+    sh:path owl:sameAs ;
+    sh:name "same as" ;
+    sh:description "External URI for this source" ;
+    sh:nodeKind sh:IRI ;
+    ] ;
   sh:property [
-      sh:path foaf:page ;
-      sh:name "url" ;
-      sh:description "Web resource with information about this source" ;
-      sh:nodeKind sh:IRI ;
-  ] ;
-.
+    sh:path foaf:page ;
+    sh:name "url" ;
+    sh:description "Web resource with information about this source" ;
+    sh:nodeKind sh:IRI ;
+    ] ;
+  .

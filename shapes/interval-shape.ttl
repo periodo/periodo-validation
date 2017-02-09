@@ -15,22 +15,22 @@ periodo:IntervalShape
   sh:targetObjectsOf time:intervalStartedBy, time:intervalFinishedBy ;
   sh:closed "true"^^xsd:boolean ;
   sh:ignoredProperties (
-      rdf:type
-  ) ;
+    rdf:type
+    ) ;
   sh:property [
-      sh:path skos:prefLabel ;
-      sh:name "preferred label" ;
-      sh:description "Description of the interval as given in the source" ;
-      sh:datatype xsd:string ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path skos:prefLabel ;
+    sh:name "preferred label" ;
+    sh:description "Description of the interval as given in the source" ;
+    sh:datatype xsd:string ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path time:hasDateTimeDescription ;
-      sh:name "has date-time description" ;
-      sh:description "Bibliographic description of the source" ;
-      sh:nodeKind sh:BlankNode ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-  ] ;
-.
+    sh:path time:hasDateTimeDescription ;
+    sh:name "has date-time description" ;
+    sh:description "Bibliographic description of the source" ;
+    sh:nodeKind sh:BlankNode ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    ] ;
+  .

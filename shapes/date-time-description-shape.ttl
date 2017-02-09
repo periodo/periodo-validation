@@ -15,87 +15,87 @@ periodo:DateTimeDescriptionShape
   sh:targetObjectsOf time:hasDateTimeDescription ;
   sh:closed "true"^^xsd:boolean ;
   sh:ignoredProperties (
-      rdf:type
-  ) ;
+    rdf:type
+    ) ;
   sh:property [
-      sh:path time:year ;
-      sh:name "year" ;
-      sh:description "Gregorian calendar year" ;
-      # Explicitly allow 0000 since Jena does not support XSD 1.1
-      sh:or (
-          [ sh:datatype xsd:gYear ; ]
-          [ sh:hasValue "0000"^^xsd:gYear ; ]
+    sh:path time:year ;
+    sh:name "year" ;
+    sh:description "Gregorian calendar year" ;
+# Explicitly allow 0000 since Jena does not support XSD 1.1
+    sh:or (
+      [ sh:datatype xsd:gYear ; ]
+      [ sh:hasValue "0000"^^xsd:gYear ; ]
       ) ;
-      sh:maxCount 1 ;
-      sh:message "At most 1 valid gYear" ;
-  ] ;
+    sh:maxCount 1 ;
+    sh:message "At most 1 valid gYear" ;
+    ] ;
   sh:property [
-      sh:path periodo:earliestYear ;
-      sh:name "earliest year" ;
-      sh:description "earliest Gregorian calendar year" ;
-      # Explicitly allow 0000 since Jena does not support XSD 1.1
-      sh:or (
-          [ sh:datatype xsd:gYear ; ]
-          [ sh:hasValue "0000"^^xsd:gYear ; ]
+    sh:path periodo:earliestYear ;
+    sh:name "earliest year" ;
+    sh:description "earliest Gregorian calendar year" ;
+# Explicitly allow 0000 since Jena does not support XSD 1.1
+    sh:or (
+      [ sh:datatype xsd:gYear ; ]
+      [ sh:hasValue "0000"^^xsd:gYear ; ]
       ) ;
-      sh:maxCount 1 ;
-      sh:lessThan periodo:latestYear ;
-      sh:message "At most 1 valid gYear that is less than latestYear" ;
-  ] ;
+    sh:maxCount 1 ;
+    sh:lessThan periodo:latestYear ;
+    sh:message "At most 1 valid gYear that is less than latestYear" ;
+    ] ;
   sh:property [
-      sh:path periodo:latestYear ;
-      sh:name "latest year" ;
-      sh:description "latest Gregorian calendar year" ;
-      # Explicitly allow 0000 since Jena does not support XSD 1.1
-      sh:or (
-          [ sh:datatype xsd:gYear ; ]
-          [ sh:hasValue "0000"^^xsd:gYear ; ]
+    sh:path periodo:latestYear ;
+    sh:name "latest year" ;
+    sh:description "latest Gregorian calendar year" ;
+# Explicitly allow 0000 since Jena does not support XSD 1.1
+    sh:or (
+      [ sh:datatype xsd:gYear ; ]
+      [ sh:hasValue "0000"^^xsd:gYear ; ]
       ) ;
-      sh:maxCount 1 ;
-      sh:message "At most 1 valid gYear" ;
-  ] ;
+    sh:maxCount 1 ;
+    sh:message "At most 1 valid gYear" ;
+    ] ;
   sh:sparql [
-      sh:message "Must have either a year or an earliestYear" ;
-      sh:prefixes <> ;
-      sh:select """
-        SELECT $this ($this AS ?path) ?value
-        WHERE {
-          ?interval time:hasDateTimeDescription $this .
-          ?interval skos:prefLabel ?value .
-          FILTER NOT EXISTS {
-            { $this time:year ?year }
-            UNION
-            { $this periodo:earliestYear ?earliestYear }
-          }
-        }
-        """ ;
-  ] ;
+    sh:message "Must have either a year or an earliestYear" ;
+    sh:prefixes <> ;
+    sh:select """
+SELECT $this ($this AS ?path) ?value
+WHERE {
+  ?interval time:hasDateTimeDescription $this .
+  ?interval skos:prefLabel ?value .
+  FILTER NOT EXISTS {
+    { $this time:year ?year }
+    UNION
+    { $this periodo:earliestYear ?earliestYear }
+  }
+}
+""" ;
+    ] ;
   sh:sparql [
-      sh:message "Cannot have both a year and an earliestYear" ;
-      sh:prefixes <> ;
-      sh:select """
-        SELECT $this ($this AS ?path) ?value
-        WHERE {
-          ?interval time:hasDateTimeDescription $this .
-          ?interval skos:prefLabel ?value .
-          ?this time:year ?year .
-          ?this periodo:earliestYear ?earliestYear
-        }
-        """ ;
-  ] ;
-.
+    sh:message "Cannot have both a year and an earliestYear" ;
+    sh:prefixes <> ;
+    sh:select """
+SELECT $this ($this AS ?path) ?value
+WHERE {
+  ?interval time:hasDateTimeDescription $this .
+  ?interval skos:prefLabel ?value .
+  ?this time:year ?year .
+  ?this periodo:earliestYear ?earliestYear
+}
+""" ;
+    ] ;
+  .
 
 # prefix declarations for SPARQL constraint queries
 <>
   sh:declare [
-      sh:prefix "periodo" ;
-      sh:namespace "http://n2t.net/ark:/99152/p0v#"^^xsd:anyURI ;
-  ] ;
+    sh:prefix "periodo" ;
+    sh:namespace "http://n2t.net/ark:/99152/p0v#"^^xsd:anyURI ;
+    ] ;
   sh:declare [
-      sh:prefix "time" ;
-      sh:namespace "http://www.w3.org/2006/time#"^^xsd:anyURI ;
-  ] ;
+    sh:prefix "time" ;
+    sh:namespace "http://www.w3.org/2006/time#"^^xsd:anyURI ;
+    ] ;
   sh:declare [
-      sh:prefix "skos" ;
-      sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
-  ] ;
+    sh:prefix "skos" ;
+    sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+    ] ;

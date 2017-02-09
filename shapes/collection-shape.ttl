@@ -18,27 +18,27 @@ periodo:CollectionShape
   sh:targetClass skos:ConceptScheme ;
   sh:closed "true"^^xsd:boolean ;
   sh:ignoredProperties (
-      rdf:type
-  ) ;
+    rdf:type
+    ) ;
   sh:property [
-      sh:path dcterms:source ;
-      sh:name "source" ;
-      sh:description "Bibliographic description of the source" ;
-      sh:nodeKind sh:BlankNodeOrIRI ;
-      sh:minCount 1 ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path dcterms:source ;
+    sh:name "source" ;
+    sh:description "Bibliographic description of the source" ;
+    sh:nodeKind sh:BlankNodeOrIRI ;
+    sh:minCount 1 ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path skos:editorialNote ;
-      sh:name "editorial note" ;
-      sh:description "Administrative or editorial notes from PeriodO curators" ;
-      sh:datatype xsd:string ;
-      sh:maxCount 1 ;
-  ] ;
+    sh:path skos:editorialNote ;
+    sh:name "editorial note" ;
+    sh:description "Administrative or editorial notes from PeriodO curators" ;
+    sh:datatype xsd:string ;
+    sh:maxCount 1 ;
+    ] ;
   sh:property [
-      sh:path owl:sameAs ;
-      sh:name "same as" ;
-      sh:description "Alternative URI for this collection" ;
-      sh:nodeKind sh:IRI ;
-  ] ;
-.
+    sh:path owl:sameAs ;
+    sh:name "same as" ;
+    sh:description "Alternative URI for this collection" ;
+    sh:nodeKind sh:IRI ;
+    ] ;
+  .
