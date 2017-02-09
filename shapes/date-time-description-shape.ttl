@@ -85,6 +85,7 @@ periodo:DateTimeDescriptionShape
   ] ;
 .
 
+# prefix declarations for SPARQL constraint queries
 <>
   sh:declare [
       sh:prefix "periodo" ;
