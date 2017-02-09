@@ -72,4 +72,19 @@ periodo:DateTimeDescriptionShape
         }
         """ ;
   ] ;
+  sh:sparql [
+      sh:message "Cannot have both a year and an earliestYear" ;
+      sh:select """
+        PREFIX time: <http://www.w3.org/2006/time#>
+        PREFIX periodo: <http://n2t.net/ark:/99152/p0v#>
+        PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+        SELECT $this ($this AS ?path) ?value
+        WHERE {
+          ?interval time:hasDateTimeDescription $this .
+          ?interval skos:prefLabel ?value .
+          ?this time:year ?year .
+          ?this periodo:earliestYear ?earliestYear
+        }
+        """ ;
+  ] ;
 .
