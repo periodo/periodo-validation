@@ -15,7 +15,6 @@
 periodo:SourceShape
   rdf:type sh:NodeShape ;
   rdfs:label "Source shape" ;
-  sh:targetObjectsOf dcterms:source ;
   sh:closed "true"^^xsd:boolean ;
   sh:ignoredProperties (
     rdf:type

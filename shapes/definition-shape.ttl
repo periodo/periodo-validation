@@ -28,6 +28,7 @@ periodo:DefinitionShape
     sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:message "Problem with preferred label" ;
     ] ;
   sh:property [
     sh:path skos:altLabel ;
@@ -56,6 +57,7 @@ periodo:DefinitionShape
       "uk"
       ) ;
     sh:minCount 1 ;
+    sh:message "Problem with localized label" ;
     ] ;
   sh:property [
     sh:path skos:note ;
@@ -63,6 +65,7 @@ periodo:DefinitionShape
     sh:description "Notes about the definition taken from the source" ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
+    sh:message "Problem with note" ;
     ] ;
   sh:property [
     sh:path skos:editorialNote ;
@@ -70,6 +73,7 @@ periodo:DefinitionShape
     sh:description "Administrative or editorial notes from PeriodO curators" ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
+    sh:message "Problem with editorial note" ;
     ] ;
   sh:property [
     sh:path skos:inScheme ;
@@ -79,41 +83,50 @@ periodo:DefinitionShape
     sh:class skos:ConceptScheme ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:message "Problem with link to collection" ;
     ] ;
   sh:property [
     sh:path dcterms:source ;
     sh:name "source" ;
     sh:description "Bibliographic information specific to this definition" ;
     sh:nodeKind sh:BlankNode ;
+    sh:node periodo:SourceShape ;
     sh:maxCount 1 ;
+    sh:message "Problem with source" ;
     ] ;
   sh:property [
     sh:path (dcterms:source dcterms:isPartOf) ;
     sh:name "source is part of" ;
     sh:nodeKind sh:IRI ;
     sh:maxCount 1 ;
+    sh:message "Problem with source (is part of)" ;
     ] ;
   sh:property [
     sh:path (dcterms:source bibo:locator) ;
     sh:name "source locator" ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
+    sh:message "Problem with source (locator)" ;
     ] ;
   sh:property [
     sh:path time:intervalStartedBy ;
     sh:name "start" ;
     sh:description "Start interval for the period" ;
     sh:nodeKind sh:BlankNode ;
+    sh:node periodo:IntervalShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:message "Problem with start interval" ;
     ] ;
   sh:property [
     sh:path time:intervalFinishedBy ;
     sh:name "stop" ;
     sh:description "Stop interval for the period" ;
     sh:nodeKind sh:BlankNode ;
+    sh:node periodo:IntervalShape ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:message "Problem with stop interval" ;
     ] ;
   sh:property [
     sh:path periodo:spatialCoverageDescription ;
@@ -121,6 +134,7 @@ periodo:DefinitionShape
     sh:description "Spatial extent of the period as described in the source" ;
     sh:datatype xsd:string ;
     sh:maxCount 1 ;
+    sh:message "Problem with spatial coverage description" ;
     ] ;
   sh:property [
     sh:path dcterms:spatial ;
@@ -128,18 +142,21 @@ periodo:DefinitionShape
     sh:description "Place (partially) within spatial extent of the period" ;
     sh:nodeKind sh:IRI ;
     sh:minCount 1 ;
+    sh:message "Problem with spatial coverage" ;
     ] ;
   sh:property [
     sh:path owl:sameAs ;
     sh:name "same as" ;
     sh:description "Alternative URI for this definition" ;
     sh:nodeKind sh:IRI ;
+    sh:message "Problem with alternative URI (sameAs)" ;
     ] ;
   sh:property [
     sh:path foaf:page ;
     sh:name "url" ;
     sh:description "Web resource with information about this definition" ;
     sh:nodeKind sh:IRI ;
+    sh:message "Problem with URL" ;
     ] ;
   sh:property [
     sh:path dcterms:language ;
@@ -148,5 +165,6 @@ periodo:DefinitionShape
     sh:datatype xsd:string ;
     sh:minCount 1 ;
     sh:maxCount 1 ;
+    sh:message "Problem with language" ;
     ] ;
   .

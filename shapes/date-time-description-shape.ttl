@@ -12,7 +12,6 @@
 periodo:DateTimeDescriptionShape
   rdf:type sh:NodeShape ;
   rdfs:label "Date-time description shape" ;
-  sh:targetObjectsOf time:hasDateTimeDescription ;
   sh:closed "true"^^xsd:boolean ;
   sh:ignoredProperties (
     rdf:type
