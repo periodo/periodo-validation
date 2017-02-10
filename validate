@@ -1,12 +1,12 @@
 #!/bin/bash
 
 if [[ $# -eq 0 ]]; then
-    ./gradlew run
+    ./gradlew --quiet run
 else
     # Join arguments in a string
     printf -v args "'%s'," "$@"
     # Remove trailing ","
     args=${args%?}
 
-    ./gradlew run -PcliArgs="[$args]"
+    ./gradlew --quiet -PcliArgs="[$args]" run
 fi
