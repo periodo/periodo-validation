@@ -1,11 +1,14 @@
 prefix sh: <http://www.w3.org/ns/shacl#>
 
-SELECT ?node ?label ?message ?path ?value ?shape
+SELECT ?uri ?message ?detail ?path ?value ?shape
 WHERE {
   ?vr a sh:ValidationResult .
-  ?vr sh:focusNode ?node .
+  ?vr sh:focusNode ?uri .
   OPTIONAL {
     ?vr sh:resultMessage ?message .
+  }
+  OPTIONAL {
+    ?vr sh:detail ?detail .
   }
   OPTIONAL {
     ?vr sh:resultPath ?path .
