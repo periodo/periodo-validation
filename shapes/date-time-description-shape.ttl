@@ -30,8 +30,7 @@ periodo:DateTimeDescriptionShape
     sh:description "earliest Gregorian calendar year" ;
     sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
     sh:maxCount 1 ;
-    sh:lessThan periodo:latestYear ;
-    sh:message "At most 1 valid gYear that is less than latestYear" ;
+    sh:message "At most 1 valid gYear" ;
     ] ;
   sh:property [
     sh:path periodo:latestYear ;
@@ -70,6 +69,20 @@ WHERE {
 }
 """ ;
     ] ;
+  sh:sparql [
+    sh:message "earliestYear must be less than latestYear" ;
+    sh:prefixes <> ;
+    sh:select """
+SELECT $this ($this AS ?path) ?value
+WHERE {
+  ?interval time:hasDateTimeDescription $this .
+  ?interval skos:prefLabel ?value .
+  $this periodo:earliestYear ?earliestYear .
+  $this periodo:latestYear ?latestYear .
+  FILTER (xsd:long(?earliestYear) >= xsd:long(?latestYear))
+}
+""" ;
+    ] ;
   .
 
 # prefix declarations for SPARQL constraint queries
@@ -85,5 +98,9 @@ WHERE {
   sh:declare [
     sh:prefix "skos" ;
     sh:namespace "http://www.w3.org/2004/02/skos/core#"^^xsd:anyURI ;
+    ] ;
+  sh:declare [
+    sh:prefix "xsd" ;
+    sh:namespace "http://www.w3.org/2001/XMLSchema#"^^xsd:anyURI ;
     ] ;
   .
