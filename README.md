@@ -14,10 +14,15 @@ Validate a local data set against the current published data shapes from the Per
 
 Validate the current canonical PeriodO data set ([http://n2t.net/ark:/99152/p0d.json](http://n2t.net/ark:/99152/p0d.json)) against data shape files from a local directory:
 ```sh
-./validate -shapes path/to/shapes_dir
+./validate --shapes path/to/shapes_dir
 ```
 
 Validate a local data set against data shape files from a local directory:
 ```sh
-./validate -shapes path/to/shapes_dir data.ttl moredata.jsonld
+./validate --shapes path/to/shapes_dir data.ttl moredata.jsonld
+```
+
+You can get JSON output using the `-json` option and group constraint violations using [jq](https://stedolan.github.io/jq/) and the `report.jq` script:
+```sh
+./validate --json | jq -f report.jq > report.json
 ```
