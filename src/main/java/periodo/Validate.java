@@ -1,47 +1,32 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package periodo;
 
 import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
-import java.net.URI;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
-import java.util.UUID;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
+import joptsimple.OptionException;
 import joptsimple.OptionParser;
 import joptsimple.OptionSet;
 import joptsimple.OptionSpec;
-import org.apache.jena.graph.Graph;
-import org.apache.jena.graph.compose.MultiUnion;
-import org.apache.jena.query.Dataset;
 import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.ResultSet;
+import org.apache.jena.query.ResultSetFormatter;
 import org.apache.jena.rdf.model.Model;
-import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileUtils;
-import org.topbraid.shacl.arq.SHACLFunctions;
-import org.topbraid.shacl.constraints.ModelConstraintValidator;
+import org.topbraid.shacl.validation.ValidationUtil;
 import org.topbraid.shacl.vocabulary.SH;
-import org.topbraid.spin.arq.ARQFactory;
 import org.topbraid.spin.util.JenaUtil;
-import org.topbraid.spin.util.SystemTriples;
 
-/**
- *
- * @author ryanshaw
- */
 public class Validate {
 
     private static final String PERIODO_DATA_URI = "http://n2t.net/ark:/99152/p0d.json";
@@ -52,61 +37,75 @@ public class Validate {
     private static final OptionParser PARSER;
     private static final OptionSpec<File> SHAPES_DIRECTORY;
     private static final OptionSpec<File> DATA_FILES;
+    private static final OptionSpec<Void> OUTPUT_JSON;
+    private static final OptionSpec<Void> HELP;
 
     static {
         PARSER = new OptionParser();
-        SHAPES_DIRECTORY = PARSER.accepts("shapes").withRequiredArg().ofType(File.class);
-        DATA_FILES = PARSER.nonOptions("files to be validated").ofType(File.class);
+        SHAPES_DIRECTORY = PARSER.accepts("shapes", "directory containing shape files")
+                .withRequiredArg()
+                .ofType(File.class);
+        DATA_FILES = PARSER.nonOptions("files to be validated")
+                .ofType(File.class);
+        OUTPUT_JSON = PARSER.accepts("json", "format output as JSON");
+        HELP = PARSER.accepts("help", "show help").forHelp();
         HttpURLConnection.setFollowRedirects(true);
     }
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        new Validate(args).run();
+        try {
+            new Validate(args).run();
+        } catch (OptionException e) {
+            System.err.println(e.getMessage());
+            showHelp(1);
+        }
+    }
+
+    private static void showHelp(int exitCode) {
+        try {
+            PARSER.printHelpOn(exitCode == 0 ? System.out: System.err);
+            System.exit(exitCode);
+        } catch (IOException ex) {
+            Logger.getLogger(Validate.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 
     private final File shapesDirectory;
     private final List<File> dataFiles;
+    private final boolean outputJSON;
+    private final boolean help;
 
-    public Validate(String[] args) {
+    public Validate(String[] args) throws OptionException {
         OptionSet options = PARSER.parse(args);
         this.shapesDirectory = options.valueOf(SHAPES_DIRECTORY);
         this.dataFiles = options.valuesOf(DATA_FILES);
+        this.outputJSON = options.has(OUTPUT_JSON);
+        this.help = options.has(HELP);
     }
 
     private void run() {
-        Model results = validate(loadShapesModel(), loadDataModel());
-
-        selectResults(results).forEachRemaining(result -> {
-            result.varNames().forEachRemaining(name -> {
-                System.out.print(name + ": ");
-                System.out.println(result.get(name));
-            });
-            System.out.println();
-        });
-    }
-
-    private Model validate(Model shapes, Model data) {
-        URI shapesGraphURI = URI.create("urn:x-shacl-shapes-graph:" + UUID.randomUUID().toString());
-        Dataset dataset = ARQFactory.get().getDataset(data);
-        dataset.addNamedModel(shapesGraphURI.toString(), shapes);
-        Model resultsModel = validate(dataset, shapesGraphURI);
-        return resultsModel;
-    }
-
-    private static Model validate(Dataset dataset, URI shapesGraphURI) {
-        Model results = null;
-        try {
-            ModelConstraintValidator mcv = new ModelConstraintValidator();
-            results = mcv.validateModel(
-                    dataset, shapesGraphURI, null, true, null, null
-            ).getModel();
-        } catch (InterruptedException e) {
-            LOG.severe(e.getMessage());
+        if (this.help) {
+            showHelp(0);
         }
-        return results;
+
+        ResultSet results = selectResults(
+                validate(loadDataModel(), loadShapesModel()));
+
+        if (this.outputJSON) {
+            ResultSetFormatter.outputAsJSON(System.out, results);
+        } else {
+            results.forEachRemaining(result -> {
+                result.varNames().forEachRemaining(name -> {
+                    System.out.print(name + ": ");
+                    System.out.println(result.get(name));
+                });
+                System.out.println();
+            });
+        }
+    }
+
+    private Model validate(Model data, Model shapes) {
+        return ValidationUtil.validateModel(data, shapes, true).getModel();
     }
 
     private Model loadDataModel() {
@@ -115,15 +114,6 @@ public class Validate {
             model.add(loadRemoteModel(PERIODO_DATA_URI, "JSON-LD"));
         } else {
             model.add(loadLocalModel(this.dataFiles.stream().map(file -> file.toPath())));
-        }
-        if (this.shapesDirectory == null) {
-            model.add(loadRemoteModel(PERIODO_VOCAB_URI, FileUtils.langTurtle));
-        } else {
-            try {
-                model.add(loadLocalModel(Files.list(this.shapesDirectory.toPath())));
-            } catch (IOException e) {
-                LOG.severe(e.getMessage());
-            }
         }
         return model;
     }
@@ -139,23 +129,6 @@ public class Validate {
                 LOG.severe(e.getMessage());
             }
         }
-        Model shapesModel = ModelFactory.createModelForGraph(
-                new MultiUnion(new Graph[] {
-			loadSHACLModel().getGraph(),
-			model.getGraph()
-		})
-        );
-        SHACLFunctions.registerFunctions(shapesModel);
-        return shapesModel;
-    }
-
-    private static Model loadSHACLModel() {
-        Model model = JenaUtil.createDefaultModel();
-        model.read(getResourceStream("/etc/shacl.ttl"), SH.BASE_URI, FileUtils.langTurtle);
-        model.read(getResourceStream("/etc/dash.ttl"), SH.BASE_URI, FileUtils.langTurtle);
-        model.read(getResourceStream("/etc/tosh.ttl"), SH.BASE_URI, FileUtils.langTurtle);
-        model.add(SystemTriples.getVocabularyModel());
-        SHACLFunctions.registerFunctions(model);
         return model;
     }
 
