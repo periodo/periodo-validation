@@ -64,8 +64,8 @@ SELECT $this ($this AS ?path) ?value
 WHERE {
   ?interval time:hasDateTimeDescription $this .
   ?interval skos:prefLabel ?value .
-  ?this time:year ?year .
-  ?this periodo:earliestYear ?earliestYear
+  $this time:year ?year .
+  $this periodo:earliestYear ?earliestYear
 }
 """ ;
     ] ;
