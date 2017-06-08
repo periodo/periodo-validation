@@ -35,27 +35,28 @@ periodo:DefinitionShape
     sh:name "localized label" ;
     sh:description "Language-specific name for the period" ;
     sh:datatype rdf:langString ;
-    sh:languageIn (
-      "bg"
-      "cmn-hans"
-      "cmn-hant"
-      "cmn-latn"
-      "de"
-      "el"
-      "en"
-      "es"
-      "fr"
-      "hu" 
-      "it"
-      "mk"
-      "nl"
-      "ro"
-      "sl"
-      "sq"
-      "sr-cyrl"
-      "sv"
-      "uk"
-      ) ;
+# Temporarily disabled
+    # sh:languageIn (
+    #   "bg"
+    #   "cmn-hans"
+    #   "cmn-hant"
+    #   "cmn-latn"
+    #   "de"
+    #   "el"
+    #   "en"
+    #   "es"
+    #   "fr"
+    #   "hu"
+    #   "it"
+    #   "mk"
+    #   "nl"
+    #   "ro"
+    #   "sl"
+    #   "sq"
+    #   "sr-cyrl"
+    #   "sv"
+    #   "uk"
+    #   ) ;
     sh:minCount 1 ;
     sh:message "Problem with localized label" ;
     ] ;
@@ -141,7 +142,8 @@ periodo:DefinitionShape
     sh:name "spatial coverage" ;
     sh:description "Place (partially) within spatial extent of the period" ;
     sh:nodeKind sh:IRI ;
-    sh:minCount 1 ;
+# Temporarily disabled
+#    sh:minCount 1 ;
     sh:message "Problem with spatial coverage" ;
     ] ;
   sh:property [

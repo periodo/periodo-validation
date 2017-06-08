@@ -20,7 +20,8 @@ periodo:DatasetShape
     sh:name "type" ;
     sh:description "RDF type of this dataset" ;
     sh:nodeKind sh:IRI ;
-    sh:hasValue rdf:Bag ;
+# Temporarily disabled
+#    sh:hasValue rdf:Bag ;
     ] ;
   sh:property [
     sh:path rdfs:member ;
