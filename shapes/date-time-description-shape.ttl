@@ -20,11 +20,7 @@ periodo:DateTimeDescriptionShape
     sh:path time:year ;
     sh:name "year" ;
     sh:description "Gregorian calendar year" ;
-# Explicitly allow 0000 since Jena does not support XSD 1.1
-    sh:or (
-      [ sh:datatype xsd:gYear ; ]
-      [ sh:hasValue "0000"^^xsd:gYear ; ]
-      ) ;
+    sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
     sh:maxCount 1 ;
     sh:message "At most 1 valid gYear" ;
     ] ;
@@ -32,11 +28,7 @@ periodo:DateTimeDescriptionShape
     sh:path periodo:earliestYear ;
     sh:name "earliest year" ;
     sh:description "earliest Gregorian calendar year" ;
-# Explicitly allow 0000 since Jena does not support XSD 1.1
-    sh:or (
-      [ sh:datatype xsd:gYear ; ]
-      [ sh:hasValue "0000"^^xsd:gYear ; ]
-      ) ;
+    sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
     sh:maxCount 1 ;
     sh:lessThan periodo:latestYear ;
     sh:message "At most 1 valid gYear that is less than latestYear" ;
@@ -45,11 +37,7 @@ periodo:DateTimeDescriptionShape
     sh:path periodo:latestYear ;
     sh:name "latest year" ;
     sh:description "latest Gregorian calendar year" ;
-# Explicitly allow 0000 since Jena does not support XSD 1.1
-    sh:or (
-      [ sh:datatype xsd:gYear ; ]
-      [ sh:hasValue "0000"^^xsd:gYear ; ]
-      ) ;
+    sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
     sh:maxCount 1 ;
     sh:message "At most 1 valid gYear" ;
     ] ;
