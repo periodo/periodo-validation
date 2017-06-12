@@ -21,6 +21,7 @@ dependencies {
 }
 
 run {
+  standardInput = System.in
   if (project.hasProperty("cliArgs")) {
     args Eval.me(cliArgs)
   }

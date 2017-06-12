@@ -35,28 +35,6 @@ periodo:DefinitionShape
     sh:name "localized label" ;
     sh:description "Language-specific name for the period" ;
     sh:datatype rdf:langString ;
-# Temporarily disabled
-    # sh:languageIn (
-    #   "bg"
-    #   "cmn-hans"
-    #   "cmn-hant"
-    #   "cmn-latn"
-    #   "de"
-    #   "el"
-    #   "en"
-    #   "es"
-    #   "fr"
-    #   "hu"
-    #   "it"
-    #   "mk"
-    #   "nl"
-    #   "ro"
-    #   "sl"
-    #   "sq"
-    #   "sr-cyrl"
-    #   "sv"
-    #   "uk"
-    #   ) ;
     sh:minCount 1 ;
     sh:message "Problem with localized label" ;
     ] ;

@@ -10,7 +10,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.List;
 import java.util.Scanner;
-import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Stream;
 import joptsimple.OptionException;
@@ -65,19 +64,19 @@ public class Validate {
         try {
             PARSER.printHelpOn(exitCode == 0 ? System.out: System.err);
             System.exit(exitCode);
-        } catch (IOException ex) {
-            Logger.getLogger(Validate.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException e) {
+            LOG.severe(e.getMessage());
         }
     }
 
-    private final File shapesDirectory;
+    private final List<File> shapesDirectories;
     private final List<File> dataFiles;
     private final boolean outputJSON;
     private final boolean help;
 
     public Validate(String[] args) throws OptionException {
         OptionSet options = PARSER.parse(args);
-        this.shapesDirectory = options.valueOf(SHAPES_DIRECTORY);
+        this.shapesDirectories = options.valuesOf(SHAPES_DIRECTORY);
         this.dataFiles = options.valuesOf(DATA_FILES);
         this.outputJSON = options.has(OUTPUT_JSON);
         this.help = options.has(HELP);
@@ -117,17 +116,26 @@ public class Validate {
         }
         return model;
     }
+    
+    private Stream<Path> pathsOf(File directory) {
+        try {
+            return Files.list(directory.toPath());
+        } catch (IOException e) {
+            LOG.severe(e.getMessage());
+            return Stream.empty();
+        }
+    }
 
     private Model loadShapesModel() {
         Model model = JenaUtil.createMemoryModel();
-        if (this.shapesDirectory == null) {
+        if (this.shapesDirectories.isEmpty()) {
             model.add(loadRemoteModel(PERIODO_VOCAB_URI, FileUtils.langTurtle));
         } else {
-            try {
-                model.add(loadLocalModel(Files.list(this.shapesDirectory.toPath())));
-            } catch (IOException e) {
-                LOG.severe(e.getMessage());
-            }
+            model.add(loadLocalModel(this.shapesDirectories
+                    .stream()
+                    .flatMap(directory -> this.pathsOf(directory))
+                    .filter(path -> path.toString().endsWith(".ttl"))
+            ));
         }
         return model;
     }
@@ -135,7 +143,7 @@ public class Validate {
     private static Model loadLocalModel(Stream<Path> paths) {
         Model model = JenaUtil.createMemoryModel();
         paths.forEach(path -> {
-            try (InputStream in = Files.newInputStream(path)) {
+            try (InputStream in = "-".equals(path.toString()) ? System.in : Files.newInputStream(path)) {
                 model.read(in, null, FileUtils.guessLang(path.toString(), "JSON-LD"));
             } catch (IOException e) {
                 LOG.severe(e.getMessage());
