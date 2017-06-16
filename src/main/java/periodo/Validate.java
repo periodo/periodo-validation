@@ -34,14 +34,18 @@ public class Validate {
     private static final Logger LOG = Logger.getLogger(Validate.class.getName());
 
     private static final OptionParser PARSER;
-    private static final OptionSpec<File> SHAPES_DIRECTORY;
+    private static final OptionSpec<File> SHAPE_FILES;
+    private static final OptionSpec<File> REMOVE_FILES;
     private static final OptionSpec<File> DATA_FILES;
     private static final OptionSpec<Void> OUTPUT_JSON;
     private static final OptionSpec<Void> HELP;
 
     static {
         PARSER = new OptionParser();
-        SHAPES_DIRECTORY = PARSER.accepts("shapes", "directory containing shape files")
+        SHAPE_FILES = PARSER.accepts("shapes", "file or directory containing shapes")
+                .withRequiredArg()
+                .ofType(File.class);
+        REMOVE_FILES = PARSER.accepts("remove", "file or directory containing triples to be removed")
                 .withRequiredArg()
                 .ofType(File.class);
         DATA_FILES = PARSER.nonOptions("files to be validated")
@@ -69,14 +73,16 @@ public class Validate {
         }
     }
 
-    private final List<File> shapesDirectories;
+    private final List<File> shapeFiles;
+    private final List<File> removeFiles;
     private final List<File> dataFiles;
     private final boolean outputJSON;
     private final boolean help;
 
     public Validate(String[] args) throws OptionException {
         OptionSet options = PARSER.parse(args);
-        this.shapesDirectories = options.valuesOf(SHAPES_DIRECTORY);
+        this.shapeFiles = options.valuesOf(SHAPE_FILES);
+        this.removeFiles = options.valuesOf(REMOVE_FILES);
         this.dataFiles = options.valuesOf(DATA_FILES);
         this.outputJSON = options.has(OUTPUT_JSON);
         this.help = options.has(HELP);
@@ -116,28 +122,33 @@ public class Validate {
         }
         return model;
     }
-    
-    private Stream<Path> pathsOf(File directory) {
-        try {
-            return Files.list(directory.toPath());
-        } catch (IOException e) {
-            LOG.severe(e.getMessage());
-            return Stream.empty();
-        }
-    }
 
     private Model loadShapesModel() {
         Model model = JenaUtil.createMemoryModel();
-        if (this.shapesDirectories.isEmpty()) {
+        if (this.shapeFiles.isEmpty()) {
             model.add(loadRemoteModel(PERIODO_VOCAB_URI, FileUtils.langTurtle));
         } else {
-            model.add(loadLocalModel(this.shapesDirectories
-                    .stream()
-                    .flatMap(directory -> this.pathsOf(directory))
-                    .filter(path -> path.toString().endsWith(".ttl"))
-            ));
+            model.add(loadLocalModel(this.shapeFiles));
         }
-        return model;
+        if (this.removeFiles.isEmpty()) {
+            return model;
+        } else {
+            return model.difference(loadLocalModel(this.removeFiles));
+        }
+    }
+
+    private static Model loadLocalModel(List<File> files) {
+        return loadLocalModel(
+            Stream.concat(
+                files.stream()
+                    .filter(file -> file.isDirectory())
+                    .flatMap(directory -> pathsOf(directory))
+                    .filter(path -> path.toString().endsWith(".ttl")),
+                files.stream()
+                    .filter(file -> file.isFile())
+                    .map(file -> file.toPath())
+            )
+        );
     }
 
     private static Model loadLocalModel(Stream<Path> paths) {
@@ -167,6 +178,14 @@ public class Validate {
         return model;
     }
 
+    private static Stream<Path> pathsOf(File directory) {
+        try {
+            return Files.list(directory.toPath());
+        } catch (IOException e) {
+            LOG.severe(e.getMessage());
+            return Stream.empty();
+        }
+    }
 
     private static ResultSet selectResults(Model resultsModel) {
         String query = readString(getResourceStream("/default-query.rq"));
