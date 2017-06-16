@@ -1,5 +1,5 @@
 {
-  "name": "fix-language-tags",
+  "name": "whitelist-language-tags-fix",
   "version": "1.0.0",
   "description": "checks PeriodO data for invalid language tags and fixes them",
   "main": "index.js",
