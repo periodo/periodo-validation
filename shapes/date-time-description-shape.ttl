@@ -16,34 +16,53 @@ periodo:DateTimeDescriptionShape
   sh:ignoredProperties (
     rdf:type
     ) ;
-  sh:property [
-    sh:path time:year ;
-    sh:name "year" ;
-    sh:description "Gregorian calendar year" ;
-    sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
-    sh:maxCount 1 ;
-    sh:message "At most 1 valid gYear" ;
-    ] ;
-  sh:property [
-    sh:path periodo:earliestYear ;
-    sh:name "earliest year" ;
-    sh:description "earliest Gregorian calendar year" ;
-    sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
-    sh:maxCount 1 ;
-    sh:message "At most 1 valid gYear" ;
-    ] ;
-  sh:property [
-    sh:path periodo:latestYear ;
-    sh:name "latest year" ;
-    sh:description "latest Gregorian calendar year" ;
-    sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
-    sh:maxCount 1 ;
-    sh:message "At most 1 valid gYear" ;
-    ] ;
-  sh:sparql [
-    sh:message "Must have either a year or an earliestYear" ;
-    sh:prefixes <> ;
-    sh:select """
+  sh:property
+    periodo:DateTimeDescriptionYearShape ,
+    periodo:DateTimeDescriptionEarliestYearShape ,
+    periodo:DateTimeDescriptionLatestYearShape
+  ;
+  sh:sparql
+    periodo:DateTimeDescriptionMustHaveYearOrEarliestYear ,
+    periodo:DateTimeDescriptionCannotHaveBothYearAandEarliestYear ,
+    periodo:DateTimeDescriptionEarliestYearMustBeLessThanLatestYear
+  .
+
+
+periodo:DateTimeDescriptionYearShape
+  rdf:type sh:PropertyShape ;
+  sh:path time:year ;
+  sh:name "year" ;
+  sh:description "Gregorian calendar year" ;
+  sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
+  sh:maxCount 1 ;
+  sh:message "At most 1 valid gYear" ;
+  .
+
+periodo:DateTimeDescriptionEarliestYearShape
+  rdf:type sh:PropertyShape ;
+  sh:path periodo:earliestYear ;
+  sh:name "earliest year" ;
+  sh:description "earliest Gregorian calendar year" ;
+  sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
+  sh:maxCount 1 ;
+  sh:message "At most 1 valid gYear" ;
+  .
+
+periodo:DateTimeDescriptionLatestYearShape
+  rdf:type sh:PropertyShape ;
+  sh:path periodo:latestYear ;
+  sh:name "latest year" ;
+  sh:description "latest Gregorian calendar year" ;
+  sh:pattern "^-?([1-9][0-9]{3,}|0[0-9]{3})$" ;
+  sh:maxCount 1 ;
+  sh:message "At most 1 valid gYear" ;
+  .
+
+periodo:DateTimeDescriptionMustHaveYearOrEarliestYear
+  rdf:type sh:SPARQLConstraint ;
+  sh:message "Must have either a year or an earliestYear" ;
+  sh:prefixes <> ;
+  sh:select """
 SELECT $this ($this AS ?path) ?value
 WHERE {
   ?interval time:hasDateTimeDescription $this .
@@ -54,12 +73,14 @@ WHERE {
     { $this periodo:earliestYear ?earliestYear }
   }
 }
-""" ;
-    ] ;
-  sh:sparql [
-    sh:message "Cannot have both a year and an earliestYear" ;
-    sh:prefixes <> ;
-    sh:select """
+"""
+  .
+
+periodo:DateTimeDescriptionCannotHaveBothYearAandEarliestYear
+  rdf:type sh:SPARQLConstraint ;
+  sh:message "Cannot have both a year and an earliestYear" ;
+  sh:prefixes <> ;
+  sh:select """
 SELECT $this ($this AS ?path) ?value
 WHERE {
   ?interval time:hasDateTimeDescription $this .
@@ -67,12 +88,14 @@ WHERE {
   $this time:year ?year .
   $this periodo:earliestYear ?earliestYear
 }
-""" ;
-    ] ;
-  sh:sparql [
-    sh:message "earliestYear must be less than latestYear" ;
-    sh:prefixes <> ;
-    sh:select """
+"""
+  .
+
+periodo:DateTimeDescriptionEarliestYearMustBeLessThanLatestYear
+  rdf:type sh:SPARQLConstraint ;
+  sh:message "earliestYear must be less than latestYear" ;
+  sh:prefixes <> ;
+  sh:select """
 SELECT $this ($this AS ?path) ?value
 WHERE {
   ?interval time:hasDateTimeDescription $this .
@@ -81,8 +104,7 @@ WHERE {
   $this periodo:latestYear ?latestYear .
   FILTER (xsd:long(?earliestYear) >= xsd:long(?latestYear))
 }
-""" ;
-    ] ;
+"""
   .
 
 # prefix declarations for SPARQL constraint queries

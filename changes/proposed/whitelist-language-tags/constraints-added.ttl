@@ -2,65 +2,56 @@
 
 @prefix periodo: <p0v#> .
 
-@prefix dcterms: <http://purl.org/dc/terms/> .
-@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-periodo:DefinitionShape
-  rdfs:label "White-list language tags" ;
-  sh:property [
-    sh:path skos:altLabel ;
-    sh:name "localized label" ;
-    sh:languageIn (
-      "bg"
-      "cmn-Hans"
-      "cmn-Hant"
-      "cmn-Latn"
-      "de"
-      "el"
-      "en"
-      "es"
-      "fr"
-      "hu"
-      "it"
-      "mi-Latn"
-      "mk"
-      "nl"
-      "ro"
-      "scn"
-      "sl"
-      "sq"
-      "sr-Cyrl"
-      "sv"
-      "uk"
-      ) ;
-    ] ;
-  sh:property [
-    sh:path dcterms:language ;
-    sh:name "language" ;
-    sh:in (
-      "bg"
-      "cmn-Hans"
-      "cmn-Hant"
-      "cmn-Latn"
-      "de"
-      "el"
-      "en"
-      "es"
-      "fr"
-      "hu"
-      "it"
-      "mi-Latn"
-      "mk"
-      "nl"
-      "ro"
-      "scn"
-      "sl"
-      "sq"
-      "sr-Cyrl"
-      "sv"
-      "uk"
-      ) ;
-    ] ;
+periodo:DefinitionLocalizedLabelShape
+  sh:languageIn (
+    "bg"
+    "cmn-Hans"
+    "cmn-Hant"
+    "cmn-Latn"
+    "de"
+    "el"
+    "en"
+    "es"
+    "fr"
+    "hu"
+    "it"
+    "mi-Latn"
+    "mk"
+    "nl"
+    "ro"
+    "scn"
+    "sl"
+    "sq"
+    "sr-Cyrl"
+    "sv"
+    "uk"
+    )
+  .
+
+periodo:DefinitionLanguageShape
+  sh:in (
+    "bg"
+    "cmn-Hans"
+    "cmn-Hant"
+    "cmn-Latn"
+    "de"
+    "el"
+    "en"
+    "es"
+    "fr"
+    "hu"
+    "it"
+    "mi-Latn"
+    "mk"
+    "nl"
+    "ro"
+    "scn"
+    "sl"
+    "sq"
+    "sr-Cyrl"
+    "sv"
+    "uk"
+    )
   .

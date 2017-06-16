@@ -20,26 +20,39 @@ periodo:CollectionShape
   sh:ignoredProperties (
     rdf:type
     ) ;
-  sh:property [
-    sh:path dcterms:source ;
-    sh:name "source" ;
-    sh:description "Bibliographic description of the source" ;
-    sh:nodeKind sh:BlankNodeOrIRI ;
-    sh:node periodo:SourceShape ;
-    sh:minCount 1 ;
-    sh:maxCount 1 ;
-    ] ;
-  sh:property [
-    sh:path skos:editorialNote ;
-    sh:name "editorial note" ;
-    sh:description "Administrative or editorial notes from PeriodO curators" ;
-    sh:datatype xsd:string ;
-    sh:maxCount 1 ;
-    ] ;
-  sh:property [
-    sh:path owl:sameAs ;
-    sh:name "same as" ;
-    sh:description "Alternative URI for this collection" ;
-    sh:nodeKind sh:IRI ;
-    ] ;
+  sh:property
+    periodo:CollectionSourceShape ,
+    periodo:CollectionEditorialNoteShape ,
+    periodo:CollectionSameAsShape
+  .
+
+periodo:CollectionSourceShape
+  rdf:type sh:PropertyShape ;
+  sh:path dcterms:source ;
+  sh:name "source" ;
+  sh:description "Bibliographic description of the source" ;
+  sh:nodeKind sh:BlankNodeOrIRI ;
+  sh:node periodo:SourceShape ;
+  sh:minCount 1 ;
+  sh:maxCount 1 ;
+  sh:message "Problem with collection source" ;
+  .
+
+periodo:CollectionEditorialNoteShape
+  rdf:type sh:PropertyShape ;
+  sh:path skos:editorialNote ;
+  sh:name "editorial note" ;
+  sh:description "Administrative or editorial notes from PeriodO curators" ;
+  sh:datatype xsd:string ;
+  sh:maxCount 1 ;
+  sh:message "Problem with collection editorial note" ;
+  .
+
+periodo:CollectionSameAsShape
+  rdf:type sh:PropertyShape ;
+  sh:path owl:sameAs ;
+  sh:name "same as" ;
+  sh:description "Alternative URI for this collection" ;
+  sh:nodeKind sh:IRI ;
+  sh:message "Problem with collection alternative URI (sameAs" ;
   .
