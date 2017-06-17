@@ -1,39 +1,9 @@
 "use strict";
 
 const R = require('ramda')
-    , parseArgs = require('minimist')
-    , concat = require('concat-stream')
-    , jsonpatch = require('fast-json-patch')
     , jsonpath = require('jsonpath')
     , langs = require('langs')
-    , request = require('request')
     , tags = require('language-tags')
-
-// Buffer => String
-const toString = buf => buf.toString('utf8')
-
-// Buffer => Object
-const parseJSON = R.pipe(toString, JSON.parse)
-
-// Object => String
-const prettify = doc => JSON.stringify(doc, null, 2)
-
-// JSON Patch ------------------------------------------------------------------
-
-// JSONPatch => JSONPatch
-const validatePatch = patch => {
-  const error = jsonpatch.validate(patch)
-  if (error) {
-    console.error(error)
-    throw error
-  }
-  return patch
-}
-
-// Object => JSONPatch => Object
-const applyPatch = doc => patch => jsonpatch.applyPatch(doc, patch).newDocument
-
-// -----------------------------------------------------------------------------
 
 // Error => ErrorInfo
 const errorInfo = e => (
@@ -140,7 +110,9 @@ const lastPathElementIs = element => R.pipe(
 
 // String => String => throws
 const throwUnexpected = name => value => {
-  throw `unexpected ${name}: ${value}`
+  const err = `unexpected ${name}: ${value}`
+  console.error(err)
+  throw err
 }
 
 // {path: Array<JSONPathElement>, tag: String} => Operation or throws
@@ -171,27 +143,8 @@ const extractTagPaths = R.reduce(
 )
 
 // Object => Array<Operation>
-const createPatch = R.pipe(
+module.exports = R.pipe(
   find('$.periodCollections[*].definitions[*]["language","localizedLabels"]'),
   extractTagPaths,
-  R.map(operation)
+  R.map(operation),
 )
-
-const flags = parseArgs(process.argv.slice(2), {boolean: ['a', 'apply']})
-
-const processDocument = doc => R.pipe(
-  createPatch,
-  validatePatch,
-  R.ifElse(
-    () => flags.a || flags.apply,
-    applyPatch(doc),
-    R.identity
-  ),
-  prettify,
-  console.log,
-)(doc)
-
-const processBuffer = R.pipe(parseJSON, processDocument)
-
-request('http://n2t.net/ark:/99152/p0d.json')
-  .pipe(concat(processBuffer))
