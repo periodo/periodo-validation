@@ -35,22 +35,22 @@ You can get JSON output using the `-json` option and group constraint violations
 
 ## Typical workflow
 
-0. Verify that the current dataset is valid with respect to the
+1. Verify that the current dataset is valid with respect to the
    current shapes (in the `shapes` directory). The following should
    produce no output:
-   ```
+   ```sh
    ./validate --shapes shapes
    ```
-0. Add and/or remove some constraints to the current set. The
+1. Add and/or remove some constraints to the current set. The
    following should produce a list of violations of the new
    constraints, if there are any:
-   ```
+   ```sh
    ./validate --shapes shapes --shapes added.ttl --remove removed.ttl
    ```
-0. Modify the dataset so that it no longer violates the new
+1. Modify the dataset so that it no longer violates the new
    constraints. The following will produce no output, if the
    violations have all been resolved in `fixed-dataset.json`:
-   ```
+   ```sh
    cat fixed-dataset.json \
        | ./validate - --shapes shapes --shapes added.ttl --remove removed.ttl
    ```
@@ -61,6 +61,5 @@ You can get JSON output using the `-json` option and group constraint violations
 using the workflow described above:
 ```
 Usage: ./try {new|without-patch|with-patch|accept} <proposed change>
-
-<proposed change> should be one of the [proposed changes](changes/proposed)
 ```
+`<proposed change>` should be one of the [proposed changes](changes/proposed)
