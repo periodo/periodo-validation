@@ -1,0 +1,98 @@
+#! /bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+
+usage () {
+    echo "Usage: $0 {new|without-patch|with-patch|accept} <proposed change>"
+    echo
+    echo "<proposed change> should be one of:"
+    ls -1 changes/proposed
+    echo
+    exit 1
+}
+
+resolve () {
+    curl -s -L -I -o /dev/null -w '%{url_effective}' "$1"
+}
+
+new () {
+    mkdir "changes/proposed/$1"
+    local add="changes/proposed/$1/constraints-added.ttl"
+    local rem="changes/proposed/$1/constraints-removed.ttl"
+    touch "$add"
+    touch "$rem"
+    (cat <<EOF
+// Object => Array<Operation>
+module.exports = function createPatch(o) {
+  throw 'implement me'
+}
+EOF
+    ) > "fix/$1.js"
+    printf "Put new SHACL constraints in:\n  %s\n\n" "$add"
+    printf "Put SHACL constraints to be removed in:\n  %s\n\n" "$rem"
+    printf "Implement your fix in:\n  %s\n" "fix/$1.js"
+}
+
+validate_with_change () {
+    local results
+    results=$(
+        ./validate - \
+                   --shapes shapes \
+                   --remove "changes/proposed/$1/constraints-removed.ttl" \
+                   --shapes "changes/proposed/$1/constraints-added.ttl" \
+                   --json
+           )
+    local problems
+    problems=$(echo "$results" | jq -f report.jq)
+    if [ "$problems" == "[]" ]
+    then
+        echo "No problems found."
+    else
+        echo "$results" | jq -f report.jq -C | less -R
+    fi
+}
+
+without_patch () {
+    curl -s -L "http://n2t.net/ark:/99152/p0d.json" | validate_with_change "$1"
+}
+
+with_patch () {
+    node fix "$1" -a | validate_with_change "$1"
+}
+
+accept () {
+    local dir
+    dir="changes/accepted/$(date +%Y-%m-%d)-$1"
+    mkdir -p "$dir"
+    echo -n "Writing patch to $dir... "
+    node fix "$1" > "$dir/patch.json"
+    node fix "$1" -a > "$dir/data-after.json"
+    curl -s -L "http://n2t.net/ark:/99152/p0d.json" > "$dir/data-before.json"
+    echo "OK"
+}
+
+if [ "${1:-}" == "" ]; then
+    usage
+fi
+
+if [ "${2:-}" == "" ]; then
+    usage
+fi
+
+case "$1" in
+    new)
+        new "$2"
+        ;;
+    without-patch)
+        without_patch "$2"
+        ;;
+    with-patch)
+        with_patch "$2"
+        ;;
+    accept)
+        accept "$2"
+        ;;
+    *)
+       usage
+       ;;
+esac
