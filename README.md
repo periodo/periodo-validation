@@ -62,4 +62,4 @@ using the workflow described above:
 ```
 Usage: ./try {new|without-patch|with-patch|accept} <proposed change>
 ```
-`<proposed change>` should be one of the [proposed changes](changes/proposed)
+`<proposed change>` should be one of the [proposed changes](changes/proposed).
