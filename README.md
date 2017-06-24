@@ -24,8 +24,7 @@ Validate a local data set against data shape files from a local directory:
 
 Validate a remote data set against the current published data shapes from the PeriodO vocabulary ([http://n2t.net/ark:/99152/p0v](http://n2t.net/ark:/99152/p0v)), but ignoring the constraints listed in `removed.ttl`:
 ```sh
-curl -s -L 'http://example.org/periodo-data.json' \
-    | ./validate - --shapes path/to/shapes_dir --remove removed.ttl
+curl -s -L 'http://example.org/periodo-data.json' | ./validate - --remove removed.ttl
 ```
 
 You can get JSON output using the `-json` option and group constraint violations using [jq](https://stedolan.github.io/jq/) and the `report.jq` script:
