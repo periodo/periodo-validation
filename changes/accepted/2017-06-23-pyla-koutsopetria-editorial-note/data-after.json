@@ -1,0 +1,1411 @@
+{
+  "@context": {
+    "@base": "http://n2t.net/ark:/99152/",
+    "PeriodCollection": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+    "PeriodDefinition": "http://www.w3.org/2004/02/skos/core#Concept",
+    "abstract": "http://purl.org/dc/terms/abstract",
+    "collection": {
+      "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type": "@id"
+    },
+    "contributors": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/contributor"
+    },
+    "creators": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/creator"
+    },
+    "dateAccessed": {
+      "@id": "http://purl.org/dc/terms/date",
+      "@type": "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "definitions": {
+      "@container": "@index",
+      "@reverse": "http://www.w3.org/2004/02/skos/core#inScheme"
+    },
+    "earliestYear": {
+      "@id": "periodo:earliestYear",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "editorialNote": "http://www.w3.org/2004/02/skos/core#editorialNote",
+    "id": "@id",
+    "in": "http://www.w3.org/2006/time#hasDateTimeDescription",
+    "inDataset": {
+      "@id": "http://rdfs.org/ns/void#inDataset",
+      "@type": "@id"
+    },
+    "label": "http://www.w3.org/2004/02/skos/core#prefLabel",
+    "language": "http://purl.org/dc/terms/language",
+    "latestYear": {
+      "@id": "periodo:latestYear",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "localizedLabels": {
+      "@container": "@language",
+      "@id": "http://www.w3.org/2004/02/skos/core#altLabel"
+    },
+    "locator": "http://purl.org/ontology/bibo/locator",
+    "name": "http://xmlns.com/foaf/0.1/name",
+    "note": "http://www.w3.org/2004/02/skos/core#note",
+    "partOf": {
+      "@id": "http://purl.org/dc/terms/isPartOf",
+      "@type": "@id"
+    },
+    "periodCollections": {
+      "@container": "@index",
+      "@id": "http://www.w3.org/2000/01/rdf-schema#member"
+    },
+    "periodo": "http://n2t.net/ark:/99152/p0v#",
+    "primaryTopicOf": {
+      "@id": "http://xmlns.com/foaf/0.1/isPrimaryTopicOf",
+      "@type": "@id"
+    },
+    "sameAs": {
+      "@id": "http://www.w3.org/2002/07/owl#sameAs",
+      "@type": "@id"
+    },
+    "source": "http://purl.org/dc/terms/source",
+    "spatialCoverage": {
+      "@container": "@set",
+      "@id": "http://purl.org/dc/terms/spatial"
+    },
+    "spatialCoverageDescription": "periodo:spatialCoverageDescription",
+    "start": "http://www.w3.org/2006/time#intervalStartedBy",
+    "stop": "http://www.w3.org/2006/time#intervalFinishedBy",
+    "title": "http://purl.org/dc/terms/title",
+    "type": "@type",
+    "url": {
+      "@id": "http://xmlns.com/foaf/0.1/page",
+      "@type": "@id"
+    },
+    "year": {
+      "@id": "http://www.w3.org/2006/time#year",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "yearPublished": {
+      "@id": "http://purl.org/dc/terms/issued",
+      "@type": "http://www.w3.org/2001/XMLSchema#gYear"
+    }
+  },
+  "periodCollections": {
+    "p0dg76f": {
+      "definitions": {
+        "p0dg76f2kc2": {
+          "id": "p0dg76f2kc2",
+          "label": "Late Medieval-Ottoman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Medieval-Ottoman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1191"
+            },
+            "label": "AD 1191"
+          },
+          "stop": {
+            "in": {
+              "year": "1877"
+            },
+            "label": "AD 1877"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/9A5EFB24-3AB0-4E78-E8D9-86C341C765F3"
+        },
+        "p0dg76f2smn": {
+          "id": "p0dg76f2smn",
+          "label": "Unknown",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Unknown"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-8999"
+            },
+            "label": "9000 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/088A5368-CB32-4E2A-7C66-C90569F1065D"
+        },
+        "p0dg76f3dgt": {
+          "id": "p0dg76f3dgt",
+          "label": "Late Medieval",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Medieval"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1191"
+            },
+            "label": "AD 1191"
+          },
+          "stop": {
+            "in": {
+              "year": "1570"
+            },
+            "label": "AD 1570"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/0F804AF6-BFE7-4C09-CE7E-798ACB9EB1B4"
+        },
+        "p0dg76f4hkq": {
+          "id": "p0dg76f4hkq",
+          "label": "Hellenistic-Roman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Hellenistic-Roman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0310"
+            },
+            "label": "311 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/3E200C8A-6771-4C1A-D1E2-14AD612C3AFD"
+        },
+        "p0dg76f4rhx": {
+          "id": "p0dg76f4rhx",
+          "label": "Archaic-Hellenistic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Archaic-Hellenistic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0749"
+            },
+            "label": "750 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "100 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/78B1A928-0B2D-4F2D-49F3-360AA24C759A"
+        },
+        "p0dg76f5cnh": {
+          "id": "p0dg76f5cnh",
+          "label": "Protogeometric-Hellenistic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Protogeometric-Hellenistic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1049"
+            },
+            "label": "1050 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "100 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/76DF8C27-BB6F-4D6D-0AC7-17FF1FEDCB23"
+        },
+        "p0dg76f5jjw": {
+          "id": "p0dg76f5jjw",
+          "label": "Hellenistic-Modern Present",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Hellenistic-Modern Present"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0310"
+            },
+            "label": "311 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition"
+        },
+        "p0dg76f5ndh": {
+          "id": "p0dg76f5ndh",
+          "label": "Medieval",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Medieval"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "0750"
+            },
+            "label": "AD 750"
+          },
+          "stop": {
+            "in": {
+              "year": "1570"
+            },
+            "label": "AD 1570"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/4229DE24-A50D-4F0C-0A09-5DBF50A9823C"
+        },
+        "p0dg76f664z": {
+          "id": "p0dg76f664z",
+          "label": "Late Cypriot II-Late Cypriot III",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot II-Late Cypriot III"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1449"
+            },
+            "label": "1450 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-1049"
+            },
+            "label": "1050 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/7A4BF6AA-8485-4E7B-3423-59E908DC9B97"
+        },
+        "p0dg76f6gfq": {
+          "id": "p0dg76f6gfq",
+          "label": "Bronze Age-Modern Present",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Bronze Age-Modern Present"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-2499"
+            },
+            "label": "2500 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition"
+        },
+        "p0dg76f6jkf": {
+          "id": "p0dg76f6jkf",
+          "label": "Late Cypriot-Roman\t",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot-Roman\t"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1649"
+            },
+            "label": "1650 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/AFF48665-101A-4C94-5F36-939F880318A3"
+        },
+        "p0dg76f6zd3": {
+          "id": "p0dg76f6zd3",
+          "label": "Iron Age",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Iron Age"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1049"
+            },
+            "label": "1050 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0311"
+            },
+            "label": "312 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/56858868-9303-4F50-CC0F-9DFFB6DA53F1"
+        },
+        "p0dg76f83qp": {
+          "id": "p0dg76f83qp",
+          "label": "Ancient Historic-Medieval",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Ancient Historic-Medieval"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0749"
+            },
+            "label": "750 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "1570"
+            },
+            "label": "AD 1570"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/4C2692AA-9CED-4B17-6CC9-81919749AB1E"
+        },
+        "p0dg76f98q7": {
+          "id": "p0dg76f98q7",
+          "label": "Post-Prehistoric",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Post-Prehistoric"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0998"
+            },
+            "label": "999 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/0AF9EF56-FB0E-45F2-D2AD-7112D75E0E50"
+        },
+        "p0dg76fbqff": {
+          "id": "p0dg76fbqff",
+          "label": "Late Roman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Roman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "0300"
+            },
+            "label": "AD 300"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/B7B0F27F-EE67-4AA3-ADDC-6C0B06A9C11F "
+        },
+        "p0dg76fc4dx": {
+          "id": "p0dg76fc4dx",
+          "label": "Medieval-Modern",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Medieval-Modern"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1191"
+            },
+            "label": "AD 1191"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/3EA33F4E-671A-4B81-8A21-DCEA111F88DE"
+        },
+        "p0dg76fcnx9": {
+          "id": "p0dg76fcnx9",
+          "label": "Early Modern",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Early Modern"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1878"
+            },
+            "label": "AD 1878"
+          },
+          "stop": {
+            "in": {
+              "year": "1949"
+            },
+            "label": "AD 1949"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/36714472-FC5D-4B19-5047-1BB3F6545280"
+        },
+        "p0dg76fd4wb": {
+          "id": "p0dg76fd4wb",
+          "label": "Roman-Modern",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Roman-Modern"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0098"
+            },
+            "label": "99 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/9590DFA7-AAD3-4A3E-503E-6EE20BCE9966"
+        },
+        "p0dg76fgb4s": {
+          "id": "p0dg76fgb4s",
+          "label": "Late Cypriot II",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot II"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1449"
+            },
+            "label": "1450 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-1199"
+            },
+            "label": "1200 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/9128F6B6-E747-4347-289A-7B1AC7FA0C98"
+        },
+        "p0dg76fgh5d": {
+          "id": "p0dg76fgh5d",
+          "label": "Present Modern",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Present Modern"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1950"
+            },
+            "label": "AD 1950"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/BE03B0D6-EAA0-4D67-A766-EF84CAD8DCF5"
+        },
+        "p0dg76fgnjp": {
+          "id": "p0dg76fgnjp",
+          "label": "Bronze Age",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Bronze Age"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-2499"
+            },
+            "label": "2500 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0999"
+            },
+            "label": "1000 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/F0CD0E1A-1A55-4CB4-4AA5-56BDE7B35AB1"
+        },
+        "p0dg76fj7j2": {
+          "id": "p0dg76fj7j2",
+          "label": "Late Cypriot-Hellenistic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot-Hellenistic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1649"
+            },
+            "label": "1650 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "100 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/0E12FB05-C6C1-4733-7353-3D5E07361697"
+        },
+        "p0dg76fj92d": {
+          "id": "p0dg76fj92d",
+          "label": "Ancient",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Ancient"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-8999"
+            },
+            "label": "9000 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/5DFB09EB-63CF-481E-7F37-8612778A872A "
+        },
+        "p0dg76fjh5t": {
+          "id": "p0dg76fjh5t",
+          "label": "Ancient-Medieval",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Ancient-Medieval"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-3499"
+            },
+            "label": "3500 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "1570"
+            },
+            "label": "AD 1570"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/D5DFF1A4-DA35-44D3-5553-BA62F8ADC100"
+        },
+        "p0dg76fk4nc": {
+          "id": "p0dg76fk4nc",
+          "label": "Archaic-Classical",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Archaic-Classical"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0749"
+            },
+            "label": "750 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0311"
+            },
+            "label": "312 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/B1B14651-28D8-401A-8E75-F4DFD7787721"
+        },
+        "p0dg76fk4pn": {
+          "id": "p0dg76fk4pn",
+          "label": "Late Cypriot",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1649"
+            },
+            "label": "1650 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-1049"
+            },
+            "label": "1050 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/233BAA0C-4FDE-4C0A-5480-F7F990186E97"
+        },
+        "p0dg76fk9wq": {
+          "id": "p0dg76fk9wq",
+          "label": "Hellenistic-Early Roman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Hellenistic-Early Roman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0310"
+            },
+            "label": "311 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0299"
+            },
+            "label": "AD 299"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/85A6585B-C356-4768-5EA9-2D5DF7CD445C"
+        },
+        "p0dg76fkv78": {
+          "id": "p0dg76fkv78",
+          "label": "Classical-Hellenistic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Classical-Hellenistic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0473"
+            },
+            "label": "474 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "100 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/CCC5026A-8A0A-42EC-0241-EE21F102EEB2"
+        },
+        "p0dg76fmp49": {
+          "id": "p0dg76fmp49",
+          "label": "Cypro-Classical",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Cypro-Classical"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0473"
+            },
+            "label": "474 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0311"
+            },
+            "label": "312 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/79B899FA-6D89-4311-F651-3DD130695B7E"
+        },
+        "p0dg76fpqkt": {
+          "id": "p0dg76fpqkt",
+          "label": "Early Roman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Early Roman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0098"
+            },
+            "label": "99 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0299"
+            },
+            "label": "AD 299"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/88309C94-D7CB-4F87-A538-3FEC5CF0B349"
+        },
+        "p0dg76fq5c5": {
+          "id": "p0dg76fq5c5",
+          "label": "Early Medieval",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Early Medieval"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "0750"
+            },
+            "label": "AD 750"
+          },
+          "stop": {
+            "in": {
+              "year": "1190"
+            },
+            "label": "AD 1190"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/3AD93D41-07F0-4813-3805-AD6A869F3417"
+        },
+        "p0dg76fqd7r": {
+          "id": "p0dg76fqd7r",
+          "label": "Modern",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Modern"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1870"
+            },
+            "label": "AD 1870"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/159FD841-CBF6-4D37-164A-D863E0277BCE"
+        },
+        "p0dg76fqj57": {
+          "id": "p0dg76fqj57",
+          "label": "Hellenistic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Hellenistic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0310"
+            },
+            "label": "311 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "100 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/EF96B3D3-6F90-47A0-21C7-8E9DF04AAD2E"
+        },
+        "p0dg76frgs8": {
+          "id": "p0dg76frgs8",
+          "label": "Classical-Roman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Classical-Roman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0473"
+            },
+            "label": "474 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/C4D35A2A-AB37-4DC0-CB34-97E70D635C1F"
+        },
+        "p0dg76fv3nv": {
+          "id": "p0dg76fv3nv",
+          "label": "Ottoman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Ottoman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "1571"
+            },
+            "label": "AD 1571"
+          },
+          "stop": {
+            "in": {
+              "year": "1877"
+            },
+            "label": "AD 1877"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/18B636F7-4908-4126-213E-4853B416944C"
+        },
+        "p0dg76fvqdg": {
+          "id": "p0dg76fvqdg",
+          "label": "Late Cypriot-Archaic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot-Archaic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1649"
+            },
+            "label": "1650 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0474"
+            },
+            "label": "475 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/81FB7AD6-6625-4218-A2B4-0FC4B2550930"
+        },
+        "p0dg76fwddc": {
+          "id": "p0dg76fwddc",
+          "label": "Cypro-Geometric",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Cypro-Geometric"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1049"
+            },
+            "label": "1050 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0750"
+            },
+            "label": "751 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/165B0490-5F48-46F5-ED84-26FE8308C4CF"
+        },
+        "p0dg76fwn27": {
+          "id": "p0dg76fwn27",
+          "label": "Archaic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Archaic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0749"
+            },
+            "label": "750 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0474"
+            },
+            "label": "475 BC"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/93F2D5E4-F2F8-4516-5081-B5FB7C5C0C31"
+        },
+        "p0dg76fx784": {
+          "id": "p0dg76fx784",
+          "label": "Roman",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Roman"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0098"
+            },
+            "label": "99 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/19C27B63-3D32-4594-C377-A901D20B966E "
+        },
+        "p0dg76fxkgg": {
+          "id": "p0dg76fxkgg",
+          "label": "Ancient Historic",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Ancient Historic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-0749"
+            },
+            "label": "750 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0749"
+            },
+            "label": "AD 749"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/43195844-ECFF-4695-9E3D-DFE15A4B35BF"
+        },
+        "p0dg76fzg6j": {
+          "id": "p0dg76fzg6j",
+          "label": "Ceramic Age",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Ceramic Age"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-3499"
+            },
+            "label": "3500 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/6232E042-6D3C-4222-52AD-194BB024279C"
+        },
+        "p0dg76fzw7x": {
+          "id": "p0dg76fzw7x",
+          "label": "Late Cypriot-Modern Present",
+          "language": "eng-latn",
+          "localizedLabels": {
+            "eng-latn": [
+              "Late Cypriot-Modern Present"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://dbpedia.org/resource/Cyprus",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Cyprus",
+          "start": {
+            "in": {
+              "year": "-1649"
+            },
+            "label": "1650 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "2008"
+            },
+            "label": "AD 2008"
+          },
+          "type": "PeriodDefinition",
+          "url": "https://opencontext.org/types/239BBBAA-8F8A-4051-E07C-E82B608C7F0C"
+        }
+      },
+      "editorialNote": "The links of these sources are entered as they appear in Open Context, but with minor changes to correct inconsistencies with the data in the original publication.",
+      "id": "p0dg76f",
+      "source": {
+        "locator": "Table 5.3, pp. 176-177",
+        "partOf": {
+          "contributors": [],
+          "creators": [],
+          "id": "http://www.worldcat.org/oclc/892462417",
+          "title": "Pyla-Koutsopetria I : archaeological survey of an ancient coastal town",
+          "yearPublished": "2014"
+        }
+      },
+      "type": "PeriodCollection"
+    }
+  },
+  "type": "rdf:Bag"
+}
