@@ -22,8 +22,8 @@ periodo:SourceShape
   sh:property
     periodo:SourceIsPartOfShape ,
     periodo:SourceTitleShape ,
-    periodo:SourceIssuedShape ,
-    periodo:SourceDateShape ,
+    periodo:SourceYearPublishedShape ,
+    periodo:SourceDateAccessedShape ,
     periodo:SourceCreatorShape ,
     periodo:SourceContributorShape ,
     periodo:SourceAbstractShape ,
@@ -49,18 +49,18 @@ periodo:SourceTitleShape
   sh:maxCount 1 ;
   .
 
-periodo:SourceIssuedShape
+periodo:SourceYearPublishedShape
   rdf:type sh:PropertyShape ;
   sh:path dcterms:issued ;
-  sh:name "issued" ;
+  sh:name "year published" ;
   sh:datatype xsd:gYear ;
   sh:maxCount 1 ;
   .
 
-periodo:SourceDateShape
+periodo:SourceDateAccessedShape
   rdf:type sh:PropertyShape ;
   sh:path dcterms:date ;
-  sh:name "date" ;
+  sh:name "date accessed" ;
   sh:datatype xsd:date ;
   sh:maxCount 1 ;
   .
