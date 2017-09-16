@@ -10,7 +10,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 periodo:DefinitionShape
-  sh:property 
+  sh:property
     periodo:DefinitionLanguageTagShape ,
     periodo:DefinitionLanguageShape ,
     periodo:DefinitionScriptShape

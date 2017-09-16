@@ -1,13 +1,7 @@
 "use strict";
 
 const R = require('ramda')
-    , jsonpath = require('jsonpath')
-
-// Array<JSONPathElement> => JSONPointer
-const JSONPointer = R.pipe(
-  R.map(element => element === '$' ? '' : element),
-  R.join('/')
-)
+    , { find, operation } = require('./utils')
 
 const languageURI = languageSubtag => (
   languageSubtag.length === 2
@@ -25,20 +19,10 @@ const scriptURI = scriptSubtag => (
     : `http://lexvo.org/id/script/${capitalize(scriptSubtag)}`
 )
 
-// String => Array<JSONPathElement> => String => Anything => Operation
-const operation = op => path => k => v => R.assoc(k, v,
-  { op
-  , path: JSONPointer(path)
-  }
-)
-
 const tagToURIs = languageTag => {
   const [languageSubtag, scriptSubtag] = R.split('-', languageTag)
   return [languageURI(languageSubtag), scriptURI(scriptSubtag)]
 }
-
-// String => Object => Array<JsonPathNode>
-const find = query => doc => jsonpath.nodes(doc, query)
 
 const fixPeriodDefinition = ({path, value}) => {
   const languageTag = R.prop('language', value)
