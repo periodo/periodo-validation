@@ -35,23 +35,25 @@ You can get JSON output using the `-json` option and group constraint violations
 ## Typical workflow
 
 1. Verify that the current dataset is valid with respect to the
-   current shapes (in the `shapes` directory). The following should
+   current shapes (in the [`periodo-server/shapes`](https://github.com/periodo/periodo-server/tree/master/shapes) directory). The following should
    produce no output:
    ```sh
-   ./validate --shapes shapes
+   ./validate --shapes ../periodo-server/shapes
    ```
 1. Add and/or remove some constraints to the current set. The
    following should produce a list of violations of the new
    constraints, if there are any:
    ```sh
-   ./validate --shapes shapes --shapes added.ttl --remove removed.ttl
+   ./validate --shapes ../periodo-server/shapes --shapes added.ttl \
+       --remove removed.ttl
    ```
 1. Modify the dataset so that it no longer violates the new
    constraints. The following will produce no output, if the
    violations have all been resolved in `fixed-dataset.json`:
    ```sh
    cat fixed-dataset.json \
-       | ./validate - --shapes shapes --shapes added.ttl --remove removed.ttl
+       | ./validate - --shapes ../periodo-server/shapes --shapes added.ttl \
+       --remove removed.ttl
    ```
 
 ## Bash CLI

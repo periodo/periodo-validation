@@ -79,6 +79,13 @@ if [ "${2:-}" == "" ]; then
     usage
 fi
 
+if [ ! -L shapes ] || [ ! -e shapes ];
+then
+    echo "Create a symlink 'shapes' pointing to the shapes directory, e.g.:"
+    echo "ln -s ../periodo-server/shapes"
+    exit 1
+fi
+
 case "$1" in
     new)
         new "$2"
