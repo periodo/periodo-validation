@@ -1,0 +1,34 @@
+@base <http://n2t.net/ark:/99152/> .
+
+@prefix periodo: <p0v#> .
+
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+periodo:DefinitionShape
+  sh:property
+    periodo:DefinitionBroaderShape ,
+    periodo:DefinitionNarrowerShape
+  .
+
+periodo:DefinitionBroaderShape
+  rdf:type sh:PropertyShape ;
+  sh:path skos:broader ;
+  sh:name "see broader definition" ;
+  sh:description "Another period definition that encompasses this one" ;
+  sh:nodeKind sh:IRI ;
+  sh:pattern "^http://n2t.net/ark:/99152/p0[a-z0-9]{9}" ;
+  sh:message "Problem with broader" ;
+  .
+
+periodo:DefinitionNarrowerShape
+  rdf:type sh:PropertyShape ;
+  sh:path skos:narrower ;
+  sh:name "see narrower definition" ;
+  sh:description "Another period definition encompassed by this one" ;
+  sh:nodeKind sh:IRI ;
+  sh:pattern "^http://n2t.net/ark:/99152/p0[a-z0-9]{9}" ;
+  sh:message "Problem with narrower" ;
+  .
