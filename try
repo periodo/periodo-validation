@@ -1,6 +1,8 @@
 #! /bin/bash
 set -euo pipefail
 IFS=$'\n\t'
+CANONICAL="http://n2t.net/ark:/99152/p0d.json"
+DATASET_URL=${DATASET:-"$CANONICAL"}
 
 usage () {
     echo "Usage: $0 {new|without-patch|with-patch|accept} <proposed change>"
@@ -53,7 +55,7 @@ validate_with_change () {
 }
 
 without_patch () {
-    curl -s -L "http://n2t.net/ark:/99152/p0d.json" | validate_with_change "$1"
+    curl -s -L "$DATASET_URL" | validate_with_change "$1"
 }
 
 with_patch () {
@@ -62,12 +64,18 @@ with_patch () {
 
 accept () {
     local dir
-    dir="changes/accepted/$(date +%Y-%m-%d)-$1"
+    if [ "$DATASET_URL" == "$CANONICAL" ]
+    then
+        dir="changes/accepted/$(date +%Y-%m-%d)-$1"
+    else
+        domain=$(echo "$DATASET_URL" | awk -F/ '{print $3}')
+        dir="changes/accepted/$domain/$(date +%Y-%m-%d)-$1"
+    fi
     mkdir -p "$dir"
     echo -n "Writing patch to $dir... "
     node fix "$1" > "$dir/patch.json"
     node fix "$1" -a > "$dir/data-after.json"
-    curl -s -L "http://n2t.net/ark:/99152/p0d.json" > "$dir/data-before.json"
+    curl -s -L "$DATASET_URL" > "$dir/data-before.json"
     echo "OK"
 }
 
