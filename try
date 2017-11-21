@@ -59,7 +59,7 @@ without_patch () {
 }
 
 with_patch () {
-    node fix "$1" -a | validate_with_change "$1"
+    node fix "$1" -d "$DATASET_URL" -a | validate_with_change "$1"
 }
 
 accept () {
@@ -73,8 +73,8 @@ accept () {
     fi
     mkdir -p "$dir"
     echo -n "Writing patch to $dir... "
-    node fix "$1" > "$dir/patch.json"
-    node fix "$1" -a > "$dir/data-after.json"
+    node fix "$1" -d "$DATASET_URL" > "$dir/patch.json"
+    node fix "$1" -d "$DATASET_URL" -a > "$dir/data-after.json"
     curl -s -L "$DATASET_URL" > "$dir/data-before.json"
     echo "OK"
 }
