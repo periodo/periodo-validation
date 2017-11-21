@@ -87,7 +87,11 @@ if [ "${2:-}" == "" ]; then
     usage
 fi
 
-if [ ! -L shapes ] || [ ! -e shapes ];
+if [ "$1" != "new" ] && [ ! -d "changes/proposed/$2" ]; then
+    usage
+fi
+
+if [ ! -L shapes ] || [ ! -e shapes ]
 then
     echo "Create a symlink 'shapes' pointing to the shapes directory, e.g.:"
     echo "ln -s ../periodo-server/shapes"
