@@ -14,7 +14,8 @@ const addDerivedFrom = ({path, value}) => {
   }
 
   const editorialNote = R.propOr('', 'editorialNote', value)
-      , match = editorialNote.match(/^Derived from (http.*)$/)
+      , match = editorialNote.match(
+          /^Derived from http:\/\/n2t.net\/ark:\/99152\/(p0[a-z0-9]{9})/)
   return match
     ? [ operation('add')(R.append('derivedFrom', path))('value')(match[1])
       , remove(R.append('editorialNote', path))
