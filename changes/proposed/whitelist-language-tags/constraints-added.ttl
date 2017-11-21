@@ -6,6 +6,7 @@
 
 periodo:DefinitionLocalizedLabelShape
   sh:languageIn (
+    "ar"
     "bg"
     "cmn-Hans"
     "cmn-Hant"
@@ -17,21 +18,27 @@ periodo:DefinitionLocalizedLabelShape
     "fr"
     "hu"
     "it"
+    "ja-Latn"
+    "ko-Latn"
     "mi-Latn"
     "mk"
     "nl"
+    "ota-Arab"
+    "pt"
     "ro"
     "scn"
     "sl"
     "sq"
     "sr-Cyrl"
     "sv"
+    "tr"
     "uk"
     )
   .
 
 periodo:DefinitionLanguageShape
   sh:in (
+    "ar"
     "bg"
     "cmn-Hans"
     "cmn-Hant"
@@ -43,15 +50,20 @@ periodo:DefinitionLanguageShape
     "fr"
     "hu"
     "it"
+    "ja-Latn"
+    "ko-Latn"
     "mi-Latn"
     "mk"
     "nl"
+    "ota-Arab"
+    "pt"
     "ro"
     "scn"
     "sl"
     "sq"
     "sr-Cyrl"
     "sv"
+    "tr"
     "uk"
     )
   .
