@@ -1,0 +1,14 @@
+[
+  {
+    "op": "remove",
+    "path": "/periodCollections/p06c6g3/definitions/p06c6g3b9wx"
+  },
+  {
+    "op": "remove",
+    "path": "/periodCollections/p06c6g3/definitions/p06c6g38p82"
+  },
+  {
+    "op": "remove",
+    "path": "/periodCollections/p06c6g3/definitions/p06c6g39pxv"
+  }
+]
