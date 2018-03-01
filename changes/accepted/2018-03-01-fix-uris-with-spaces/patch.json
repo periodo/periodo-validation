@@ -1,0 +1,17 @@
+[
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0dg76f/definitions/p0dg76fbqff/url",
+    "value": "https://opencontext.org/types/B7B0F27F-EE67-4AA3-ADDC-6C0B06A9C11F"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0dg76f/definitions/p0dg76fj92d/url",
+    "value": "https://opencontext.org/types/5DFB09EB-63CF-481E-7F37-8612778A872A"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0dg76f/definitions/p0dg76fx784/url",
+    "value": "https://opencontext.org/types/19C27B63-3D32-4594-C377-A901D20B966E"
+  }
+]
