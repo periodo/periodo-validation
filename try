@@ -13,10 +13,6 @@ usage () {
     exit 1
 }
 
-resolve () {
-    curl -s -L -I -o /dev/null -w '%{url_effective}' "$1"
-}
-
 new () {
     mkdir "changes/proposed/$1"
     local add="changes/proposed/$1/constraints-added.ttl"
