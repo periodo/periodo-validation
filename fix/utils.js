@@ -13,7 +13,9 @@ const JSONPointer = R.pipe(
 )
 
 // String => Array<JSONPathElement> => String => Anything => Operation
-const operation = op => path => k => v => R.assoc(k, v,
+const operation = op => path => k => v => R.assoc(
+  k,
+  R.equals('from', k) ? JSONPointer(v) : v,
   { op
   , path: JSONPointer(path)
   }
