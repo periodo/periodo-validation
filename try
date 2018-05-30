@@ -30,9 +30,9 @@ module.exports = function createPatch(o) {
 }
 EOF
     ) > "fix/$1.js"
-    printf "Put new SHACL constraints in:\n  %s\n\n" "$add"
-    printf "Put SHACL constraints to be removed in:\n  %s\n\n" "$rem"
-    printf "Implement your fix in:\n  %s\n" "fix/$1.js"
+    printf "Put new SHACL constraints in:\\n  %s\\n\\n" "$add"
+    printf "Put SHACL constraints to be removed in:\\n  %s\\n\\n" "$rem"
+    printf "Implement your fix in:\\n  %s\\n" "fix/$1.js"
 }
 
 validate_with_change () {
