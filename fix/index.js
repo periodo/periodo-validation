@@ -61,7 +61,7 @@ Outputs a patch implementing the proposed change.
 
 const createPatch = require(`./${argv._[0]}`)
 
-fetchData(argv.dataset)
+fetchData(argv.dataset + '?inline-context')
   .then(doc => {
     R.pipe(
       createPatch,

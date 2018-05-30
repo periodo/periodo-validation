@@ -55,7 +55,7 @@ validate_with_change () {
 }
 
 without_patch () {
-    curl -s -L "$DATASET_URL" | validate_with_change "$1"
+    curl -s -L "${DATASET_URL}?inline-context" | validate_with_change "$1"
 }
 
 with_patch () {
@@ -75,7 +75,7 @@ accept () {
     echo -n "Writing patch to $dir... "
     node fix "$1" -d "$DATASET_URL" > "$dir/patch.json"
     node fix "$1" -d "$DATASET_URL" -a > "$dir/data-after.json"
-    curl -s -L "$DATASET_URL" > "$dir/data-before.json"
+    curl -s -L "${DATASET_URL}?inline-context" > "$dir/data-before.json"
     echo "OK"
 }
 
