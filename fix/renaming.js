@@ -11,8 +11,6 @@ const updateAuthority = ({path}) => [
 const updatePeriod = ({path}) => [
   operation('replace')(
     R.append('type', path))('value')('Period'),
-  operation('move')(
-    R.append('authority', path))('from')(R.append('collection', path)),
 ]
 
 // Object => Array<Operation>
