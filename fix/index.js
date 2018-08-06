@@ -1,23 +1,10 @@
 "use strict";
 
 const R = require('ramda')
-    , concat = require('concat-stream')
     , fs = require('fs')
     , jsonpatch = require('fast-json-patch')
     , parseArgs = require('minimist')
-    , request = require('request')
-
-// Buffer => String
-const toString = buf => buf.toString('utf8')
-
-// () => Promise
-const fetchData = url => new Promise(
-  (resolve, reject) => {
-    request(url)
-      .on('error', reject)
-      .pipe(concat(R.pipe(toString, JSON.parse, resolve)))
-  }
-)
+    , { fetchData } = require('./utils')
 
 // JSONPatch => JSONPatch
 const validatePatch = patch => {
@@ -62,7 +49,8 @@ Outputs a patch implementing the proposed change.
 const createPatch = require(`./${argv._[0]}`)
 
 fetchData(argv.dataset + '?inline-context')
-  .then(doc => {
+  .then(data => {
+    const doc = JSON.parse(data)
     R.pipe(
       createPatch,
       validatePatch,
