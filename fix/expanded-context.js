@@ -69,6 +69,7 @@ module.exports = () => [ operation('add')(['$', '@context'])('value')(
   "role": {"@id": "prov:hadRole", "@type": "@id"},
   "roles": {"@id": "prov:qualifiedAssociation", "@type": "@id"},
   "sameAs": {"@id": "owl:sameAs", "@type": "@id"},
+  "seeAlso": {"@id": "rdfs:seeAlso", "@type": "@id"},
   "script": {"@id": "lexvo:inScript", "@type": "@id"},
   "source": "dcterms:source",
   "spatialCoverage": {"@id": "dcterms:spatial", "@container": "@set"},
