@@ -1,0 +1,57 @@
+[
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfg9zxd/stop/in/year",
+    "value": "0104"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgv457/start/in/latestYear",
+    "value": "-0619"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgv457/start/in/earliestYear",
+    "value": "-0630"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgv457/stop/in/year",
+    "value": "-0538"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgnsmn/stop/in/year",
+    "value": "-0149"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfg6qg3/start/in/latestYear",
+    "value": "-0322"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfg6qg3/start/in/earliestYear",
+    "value": "-0335"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfg6qg3/stop/in/year",
+    "value": "-0134"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgfc7x/start/in/year",
+    "value": "-0124"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgfc7x/stop/in/latestYear",
+    "value": "-0096"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfgfc7x/stop/in/earliestYear",
+    "value": "-0097"
+  }
+]
