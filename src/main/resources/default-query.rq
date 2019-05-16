@@ -1,6 +1,6 @@
 prefix sh: <http://www.w3.org/ns/shacl#>
 
-SELECT ?uri ?message ?detail ?path ?value ?shape
+SELECT ?uri ?message ?detail ?path ?value ?shape ?constraint
 WHERE {
   ?vr a sh:ValidationResult .
   ?vr sh:focusNode ?uri .
@@ -20,7 +20,10 @@ WHERE {
     ?vr sh:sourceShape ?shape .
   }
   OPTIONAL {
-    ?vr sh:resultSeverity ?resultSeverity .
+    ?vr sh:sourceConstraintComponent ?constraint .
+  }
+  OPTIONAL {
+    ?vr sh:resultSeverity ?severity .
   }
 }
-ORDER BY ?resultSeverity ?message
+ORDER BY ?severity ?message

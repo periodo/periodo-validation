@@ -24,7 +24,7 @@ import org.apache.jena.rdf.model.Model;
 import org.apache.jena.util.FileUtils;
 import org.topbraid.shacl.validation.ValidationUtil;
 import org.topbraid.shacl.vocabulary.SH;
-import org.topbraid.spin.util.JenaUtil;
+import org.topbraid.jenax.util.JenaUtil;
 
 public class Validate {
 
