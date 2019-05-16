@@ -1,0 +1,67 @@
+[
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0xkgmr/definitions/p0xkgmrm3m2/start/in/latestYear",
+    "value": "0680"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0xkgmr/definitions/p0xkgmrm3m2/start/in/earliestYear",
+    "value": "0658"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0bd664/definitions/p0bd664gkrp/stop/in/latestYear",
+    "value": "0649"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0bd664/definitions/p0bd664gkrp/stop/in/earliestYear",
+    "value": "0640"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0bd664/definitions/p0bd664gkrp/start/in/year",
+    "value": "0565"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0zj6g8/definitions/p0zj6g8ztv9/start/in/latestYear",
+    "value": "0874"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0zj6g8/definitions/p0zj6g8ztv9/start/in/earliestYear",
+    "value": "0750"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0rc4w7/definitions/p0rc4w75rs7/start/in/latestYear",
+    "value": "-0099"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0rc4w7/definitions/p0rc4w7nnbp/start/in/latestYear",
+    "value": "0866"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0rc4w7/definitions/p0rc4w7nnbp/start/in/earliestYear",
+    "value": "0833"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfg9zxd/start/in/latestYear",
+    "value": "-0173"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0b3hfg/definitions/p0b3hfg9zxd/start/in/earliestYear",
+    "value": "-0174"
+  },
+  {
+    "op": "replace",
+    "path": "/periodCollections/p0zpgf9/definitions/p0zpgf9w94b/start/in/year",
+    "value": "0700"
+  }
+]
