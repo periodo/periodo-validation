@@ -73,7 +73,7 @@ const executeSequentially = tasks => tasks.reduce(
 
 // Object => Promise { Array<Operation> }
 module.exports = R.pipe(
-  find('$.authorities[*].periods[*].spatialCoverage[*].id'),
+  find('$.periodCollections[*].definitions[*].spatialCoverage[*].id'),
   R.map(({path, value}) => replaceIDTask(path, value)),
   executeSequentially
 )
