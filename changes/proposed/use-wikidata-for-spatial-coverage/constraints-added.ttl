@@ -1,0 +1,9 @@
+@base <http://n2t.net/ark:/99152/> .
+
+@prefix periodo: <p0v#> .
+
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+periodo:PeriodSpatialCoverageShape
+  sh:pattern "^http://www.wikidata.org/entity/Q[0-9]+"
+  .
