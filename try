@@ -20,8 +20,8 @@ new () {
     touch "$add"
     touch "$rem"
     (cat <<EOF
-// Object => Array<Operation>
-module.exports = function createPatch(o) {
+// Object => Promise { Array<Operation> }
+module.exports = async function createPatch(o) {
   throw 'implement me'
 }
 EOF

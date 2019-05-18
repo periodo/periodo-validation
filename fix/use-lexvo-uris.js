@@ -48,9 +48,11 @@ const fixContext = R.concat(
   ]
 )
 
-// Object => Array<Operation>
-module.exports = R.pipe(
-  find('$.periodCollections[*].definitions[*]'),
-  R.chain(fixPeriodDefinition),
-  fixContext
+// Object => Promise { Array<Operation> }
+module.exports = Promise.resolve(
+  R.pipe(
+    find('$.periodCollections[*].definitions[*]'),
+    R.chain(fixPeriodDefinition),
+    fixContext
+  )
 )

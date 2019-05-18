@@ -13,8 +13,8 @@ const updatePeriod = ({path}) => [
     R.append('type', path))('value')('Period'),
 ]
 
-// Object => Array<Operation>
-module.exports = o => [
+// Object => Promise { Array<Operation> }
+module.exports = o => Promise.resolve([
 
   // Update @context entries
   operation('move')(
@@ -46,4 +46,4 @@ module.exports = o => [
   // Move /periodCollections -> /authorities
   operation('move')(
     ['$', 'authorities'])('from')(['$', 'periodCollections']),
-]
+])

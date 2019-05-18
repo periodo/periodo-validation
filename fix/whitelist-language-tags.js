@@ -142,9 +142,11 @@ const extractTagPaths = R.reduce(
   ), []
 )
 
-// Object => Array<Operation>
-module.exports = R.pipe(
-  find('$.periodCollections[*].definitions[*]["language","localizedLabels"]'),
-  extractTagPaths,
-  R.map(operation),
+// Object => Promise { Array<Operation> }
+module.exports = Promise.resolve(
+  R.pipe(
+    find('$.periodCollections[*].definitions[*]["language","localizedLabels"]'),
+    extractTagPaths,
+    R.map(operation),
+  )
 )

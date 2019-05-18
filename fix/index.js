@@ -4,7 +4,7 @@ const R = require('ramda')
     , fs = require('fs')
     , jsonpatch = require('fast-json-patch')
     , parseArgs = require('minimist')
-    , { fetchData } = require('./utils')
+    , request = require('request-promise-native')
 
 // JSONPatch => JSONPatch
 const validatePatch = patch => {
@@ -48,19 +48,24 @@ Outputs a patch implementing the proposed change.
 
 const createPatch = require(`./${argv._[0]}`)
 
-fetchData(argv.dataset + '?inline-context')
-  .then(data => {
-    const doc = JSON.parse(data)
-    R.pipe(
-      createPatch,
-      validatePatch,
-      R.ifElse(
-        () => argv.apply,
-        applyPatch(doc),
-        R.identity
-      ),
-      prettify,
-      console.log,
-    )(doc)
-  })
+request(argv.dataset + '?inline-context')
+  .then(
+    data => {
+      const doc = JSON.parse(data)
+      createPatch(doc)
+        .then(
+          R.pipe(
+            validatePatch,
+            R.ifElse(
+              () => argv.apply,
+              applyPatch(doc),
+              R.identity
+            ),
+            prettify,
+            console.log,
+          )
+        )
+        .catch(console.error)
+    }
+  )
   .catch(console.error)

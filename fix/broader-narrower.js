@@ -47,9 +47,11 @@ module.exports = periodoData => {
 
   const periodLabels = indexPeriodLabels(periodoData)
 
-  return R.pipe(
-    find('$.periodCollections[*].definitions[*]'),
-    R.chain(addBroaderNarrower(periodLabels)),
-    fixContext
-  )(periodoData)
+  return Promise.resolve(
+    R.pipe(
+      find('$.periodCollections[*].definitions[*]'),
+      R.chain(addBroaderNarrower(periodLabels)),
+      fixContext
+    )(periodoData)
+  )
 }

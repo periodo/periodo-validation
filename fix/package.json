@@ -9,13 +9,13 @@
   "author": "",
   "license": "CC0-1.0",
   "dependencies": {
-    "concat-stream": "^1.6.0",
-    "fast-json-patch": "^2.0.2",
-    "jsonpath": "^0.2.11",
+    "fast-json-patch": "^2.1.0",
+    "jsonpath": "^1.0.1",
     "langs": "^2.0.0",
     "language-tags": "^1.0.5",
     "minimist": "^1.2.0",
-    "ramda": "^0.24.1",
-    "request": "^2.81.0"
+    "ramda": "^0.26.1",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.7"
   }
 }
