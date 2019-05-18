@@ -48,24 +48,6 @@ Outputs a patch implementing the proposed change.
 
 const createPatch = require(`./${argv._[0]}`)
 
-let finished = false
-
-function finish(output) {
-  console.log(output)
-  finished = true
-}
-
-function error(e) {
-  console.error(e)
-  finished = true
-}
-
-function waitUntilFinished() {
-  if (! finished) {
-    setTimeout(waitUntilFinished, 1000)
-  }
-}
-
 request(argv.dataset + '?inline-context')
   .then(
     data => {
@@ -80,12 +62,10 @@ request(argv.dataset + '?inline-context')
               R.identity
             ),
             prettify,
-            finish
+            console.log
           )
         )
-        .catch(error)
+        .catch(console.error)
     }
   )
-  .catch(error)
-
-waitUntilFinished()
+  .catch(console.error)
