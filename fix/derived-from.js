@@ -29,10 +29,9 @@ const fixContext = R.concat(
   ]
 )
 
-module.exports = Promise.resolve(
-  R.pipe(
-    find('$.periodCollections[*].definitions[*]'),
-    R.chain(addDerivedFrom),
-    fixContext
-  )
+module.exports = R.pipe(
+  find('$.periodCollections[*].definitions[*]'),
+  R.chain(addDerivedFrom),
+  fixContext,
+  patch => Promise.resolve(patch)
 )

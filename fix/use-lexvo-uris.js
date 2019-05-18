@@ -49,10 +49,9 @@ const fixContext = R.concat(
 )
 
 // Object => Promise { Array<Operation> }
-module.exports = Promise.resolve(
-  R.pipe(
-    find('$.periodCollections[*].definitions[*]'),
-    R.chain(fixPeriodDefinition),
-    fixContext
-  )
+module.exports = R.pipe(
+  find('$.periodCollections[*].definitions[*]'),
+  R.chain(fixPeriodDefinition),
+  fixContext,
+  patch => Promise.resolve(patch)
 )
