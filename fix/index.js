@@ -33,12 +33,12 @@ const argv = parseArgs(
 
 if (argv._.length === 0) {
   console.error(
-    `Usage: node fix <proposed change> [ --apply ] [ --dataset <url> ]
+    `Usage: node fix <proposed change> [ --dataset <url> ] [ --apply ]
 
 Outputs a patch implementing the proposed change.
 
---apply   or -a applies the patch to the current canonical data.
 --dataset or -d specifies the URL of a dataset other than the canonical one.
+--apply   or -a applies the patch to the dataset and outputs the result.
 
 <proposed change> should be one of:`
   )
