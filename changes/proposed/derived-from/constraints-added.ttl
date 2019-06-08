@@ -19,6 +19,5 @@ periodo:DefinitionDerivedFromShape
   sh:description "Another period definition from which this one was derived" ;
   sh:nodeKind sh:IRI ;
   sh:pattern "^http://n2t.net/ark:/99152/p0[a-z0-9]{9}" ;
-  sh:maxCount 1 ;
   sh:message "Problem with derived from" ;
   .
