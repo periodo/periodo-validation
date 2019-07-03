@@ -2,6 +2,10 @@ const R = require('ramda')
     , { find, operation } = require('./utils')
     , request = require('request-promise-native')
 
+const userAgent = (
+  'PeriodO/1.0 (http://perio.do/; ryanshaw@unc.edu) request/2.88'
+)
+
 const queryDBpedia = legacyID => request({
   uri: 'http://dbpedia.org/sparql',
   qs: {query: `
@@ -13,7 +17,7 @@ WHERE {
   FILTER (STRSTARTS(STR(?id), "http://www.wikidata.org/entity/"))
 }
 `},
-  headers: {accept: 'application/json'},
+  headers: {accept: 'application/json', 'user-agent': userAgent},
   json: true
 })
 
@@ -27,7 +31,7 @@ WHERE {
   ?id wdt:P1566 "${legacyID.split('/')[3]}" .
 }
 `},
-  headers: {accept: 'application/json'},
+  headers: {accept: 'application/json', 'user-agent': userAgent},
   json: true
 })
 
