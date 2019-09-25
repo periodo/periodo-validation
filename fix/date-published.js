@@ -1,26 +1,9 @@
 "use strict";
 
-const R = require('ramda')
-    , { operation, find, remove } = require('./utils')
-
-const updateAuthority = ({path}) => [
-  operation('move')(
-    R.concat(path, ['source', 'datePublished']))('from')(
-    R.concat(path, ['source', 'yearPublished'])),
-]
+const { operation } = require('./utils')
 
 // Object => Promise { Array<Operation> }
-module.exports = o => Promise.resolve([
-
-  remove(['$', '@context', 'yearPublished']),
-
-  operation('add')(
-    ['$', '@context', 'datePublished'])('value')(
-    {
-      "@id": "dcterms:issued",
-      "@type": "xsd:string"
-    }),
-
-  // Update authorities
-  ...R.chain(updateAuthority)(find('$.authorities[*]')(o)),
+module.exports = () => Promise.resolve([
+  operation('replace')(
+    ['$', '@context', 'yearPublished', '@type'])('value')('xsd:string'),
 ])
