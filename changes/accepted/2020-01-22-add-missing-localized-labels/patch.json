@@ -1,0 +1,209 @@
+[
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnt7w4/localizedLabels",
+    "value": {
+      "en": [
+        "Gumelnița Culture"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnmbrc/localizedLabels",
+    "value": {
+      "en": [
+        "Hamangia Culture"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn9m89/localizedLabels",
+    "value": {
+      "en": [
+        "Boian Culture"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn665m/localizedLabels",
+    "value": {
+      "en": [
+        "Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn578j/localizedLabels",
+    "value": {
+      "en": [
+        "Early Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnbsw5/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn3x44/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfndbhx/localizedLabels",
+    "value": {
+      "en": [
+        "Classical"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn2ntq/localizedLabels",
+    "value": {
+      "en": [
+        "Early Classical"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnz6hg/localizedLabels",
+    "value": {
+      "en": [
+        "High Classical"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnfj9x/localizedLabels",
+    "value": {
+      "en": [
+        "Late Classical"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnbrx6/localizedLabels",
+    "value": {
+      "en": [
+        "Hellenistic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnj6p9/localizedLabels",
+    "value": {
+      "en": [
+        "Early Hellenistic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnssp8/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Hellenistic I"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnzcw2/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Hellenistic II"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn9cmf/localizedLabels",
+    "value": {
+      "en": [
+        "Late Hellenistic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfntrkb/localizedLabels",
+    "value": {
+      "en": [
+        "Roman"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnjzvg/localizedLabels",
+    "value": {
+      "en": [
+        "Ottoman"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfn2pg2/localizedLabels",
+    "value": {
+      "en": [
+        "World War I"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnhr7c/localizedLabels",
+    "value": {
+      "en": [
+        "Interwar"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnm62d/localizedLabels",
+    "value": {
+      "en": [
+        "World War II"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnnr2r/localizedLabels",
+    "value": {
+      "en": [
+        "Communist"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p02kbfn/periods/p02kbfnczjp/localizedLabels",
+    "value": {
+      "en": [
+        "Post-Communist"
+      ]
+    }
+  }
+]
