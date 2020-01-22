@@ -1,0 +1,4903 @@
+[
+  {
+    "op": "remove",
+    "path": "/authorities/authority-7019236022"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/authority-7848612312"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/authority-2462575817"
+  },
+  {
+    "op": "add",
+    "path": "/authorities/http:~1~1perio.do~1.well-known~1genid~1authority-7848612312",
+    "value": {
+      "id": "http://perio.do/.well-known/genid/authority-7848612312",
+      "type": "Authority",
+      "periods": {
+        "http://perio.do/.well-known/genid/period-4729364553": {
+          "id": "http://perio.do/.well-known/genid/period-4729364553",
+          "type": "Period",
+          "label": "Geometrische Zeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Geometric"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-5991401771"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "900 v.Chr.",
+            "in": {
+              "year": "-0899"
+            }
+          },
+          "stop": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3612284594": {
+          "id": "http://perio.do/.well-known/genid/period-3612284594",
+          "type": "Period",
+          "label": "frühgeometrisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Geometric"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-4086310916"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4729364553",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "900 v.Chr.",
+            "in": {
+              "year": "-0899"
+            }
+          },
+          "stop": {
+            "label": "850 v.Chr.",
+            "in": {
+              "year": "-0849"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4866655796": {
+          "id": "http://perio.do/.well-known/genid/period-4866655796",
+          "type": "Period",
+          "label": "mittelgeometrisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Geometric"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-8359617258"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4729364553",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "850 v.Chr.",
+            "in": {
+              "year": "-0849"
+            }
+          },
+          "stop": {
+            "label": "760 v.Chr.",
+            "in": {
+              "year": "-0759"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-5232089381": {
+          "id": "http://perio.do/.well-known/genid/period-5232089381",
+          "type": "Period",
+          "label": "spätgeometrisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Geometric"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6165459597"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4729364553",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "760 v.Chr.",
+            "in": {
+              "year": "-0759"
+            }
+          },
+          "stop": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-0074420771": {
+          "id": "http://perio.do/.well-known/genid/period-0074420771",
+          "type": "Period",
+          "label": "Archaische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Archaic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-8306929201"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          },
+          "stop": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3356641850": {
+          "id": "http://perio.do/.well-known/genid/period-3356641850",
+          "type": "Period",
+          "label": "früharchaisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Archaic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6145793810"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0074420771",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          },
+          "stop": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-7644244404": {
+          "id": "http://perio.do/.well-known/genid/period-7644244404",
+          "type": "Period",
+          "label": "mittelarchaisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Archaic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-1616993483"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0074420771",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          },
+          "stop": {
+            "label": "560 v.Chr.",
+            "in": {
+              "year": "-0559"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-1380466647": {
+          "id": "http://perio.do/.well-known/genid/period-1380466647",
+          "type": "Period",
+          "label": "spätarchaisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Archaic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-0298794759"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0074420771",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "560 v.Chr.",
+            "in": {
+              "year": "-0559"
+            }
+          },
+          "stop": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-5186970983": {
+          "id": "http://perio.do/.well-known/genid/period-5186970983",
+          "type": "Period",
+          "label": "Klassische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Classical"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6350059189"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          },
+          "stop": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-5353706807": {
+          "id": "http://perio.do/.well-known/genid/period-5353706807",
+          "type": "Period",
+          "label": "Strenger Stil",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Severe Style"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-1049167389"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-5186970983",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          },
+          "stop": {
+            "label": "450 v.Chr.",
+            "in": {
+              "year": "-0449"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3288197922": {
+          "id": "http://perio.do/.well-known/genid/period-3288197922",
+          "type": "Period",
+          "label": "Hochklassik",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "High Classical"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-3820781794"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-5186970983",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "450 v.Chr.",
+            "in": {
+              "year": "-0449"
+            }
+          },
+          "stop": {
+            "label": "430 v.Chr.",
+            "in": {
+              "year": "-0429"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-0480307456": {
+          "id": "http://perio.do/.well-known/genid/period-0480307456",
+          "type": "Period",
+          "label": "Reicher Stil",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Rich Style"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-8457111893"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-5186970983",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "430 v.Chr.",
+            "in": {
+              "year": "-0429"
+            }
+          },
+          "stop": {
+            "label": "400 v.Chr.",
+            "in": {
+              "year": "-0399"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-6734117002": {
+          "id": "http://perio.do/.well-known/genid/period-6734117002",
+          "type": "Period",
+          "label": "Spätklassik",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Classical"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-5509381931"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-5186970983",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "400 v.Chr.",
+            "in": {
+              "year": "-0399"
+            }
+          },
+          "stop": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-0233772625": {
+          "id": "http://perio.do/.well-known/genid/period-0233772625",
+          "type": "Period",
+          "label": "Hellenistische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Hellenistic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-7628186102"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          },
+          "stop": {
+            "label": "30 v.Chr.",
+            "in": {
+              "year": "-0029"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-6827299911": {
+          "id": "http://perio.do/.well-known/genid/period-6827299911",
+          "type": "Period",
+          "label": "frühhellenistisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Hellenistic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-7621249975"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0233772625",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          },
+          "stop": {
+            "label": "230 v.Chr.",
+            "in": {
+              "year": "-0229"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3226920648": {
+          "id": "http://perio.do/.well-known/genid/period-3226920648",
+          "type": "Period",
+          "label": "hochhellenistisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "High Hellenistic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-9911355974"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0233772625",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "230 v.Chr.",
+            "in": {
+              "year": "-0229"
+            }
+          },
+          "stop": {
+            "label": "150 v.Chr.",
+            "in": {
+              "year": "-0149"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-5735639625": {
+          "id": "http://perio.do/.well-known/genid/period-5735639625",
+          "type": "Period",
+          "label": "späthellenistisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Hellenistic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-2724881435"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0233772625",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            }
+          ],
+          "spatialCoverageDescription": "Griechenland",
+          "start": {
+            "label": "150 v.Chr.",
+            "in": {
+              "year": "-0149"
+            }
+          },
+          "stop": {
+            "label": "30 v.Chr.",
+            "in": {
+              "year": "-0029"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-9309564047": {
+          "id": "http://perio.do/.well-known/genid/period-9309564047",
+          "type": "Period",
+          "label": "Früheisenzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Iron Age"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6278375432"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "1000 v.Chr.",
+            "in": {
+              "year": "-0999"
+            }
+          },
+          "stop": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3583484490": {
+          "id": "http://perio.do/.well-known/genid/period-3583484490",
+          "type": "Period",
+          "label": "Archaische Zeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Archaic"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-5547390308"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          },
+          "stop": {
+            "label": "509 v.Chr.",
+            "in": {
+              "year": "-0508"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4284471139": {
+          "id": "http://perio.do/.well-known/genid/period-4284471139",
+          "type": "Period",
+          "label": "Republikanische Zeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Republican"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-2808033614"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "509 v.Chr.",
+            "in": {
+              "year": "-0508"
+            }
+          },
+          "stop": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-9873398959": {
+          "id": "http://perio.do/.well-known/genid/period-9873398959",
+          "type": "Period",
+          "label": "frührepublikanisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Republican"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6013728362"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4284471139",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "509 v.Chr.",
+            "in": {
+              "year": "-0508"
+            }
+          },
+          "stop": {
+            "label": "367 v.Chr.",
+            "in": {
+              "year": "-0366"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-2484262160": {
+          "id": "http://perio.do/.well-known/genid/period-2484262160",
+          "type": "Period",
+          "label": "mittelrepublikanisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Republican"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-8794406639"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4284471139",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "367 v.Chr.",
+            "in": {
+              "year": "-0366"
+            }
+          },
+          "stop": {
+            "label": "202 v.Chr.",
+            "in": {
+              "year": "-0201"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3672076019": {
+          "id": "http://perio.do/.well-known/genid/period-3672076019",
+          "type": "Period",
+          "label": "spätrepublikanisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Republican"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-1661014867"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4284471139",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "202 v.Chr.",
+            "in": {
+              "year": "-0201"
+            }
+          },
+          "stop": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-1389416929": {
+          "id": "http://perio.do/.well-known/genid/period-1389416929",
+          "type": "Period",
+          "label": "Frühe Kaiserzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Imperial"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-8950335803"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          },
+          "stop": {
+            "label": "68 n.Chr.",
+            "in": {
+              "year": "0068"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-1241591592": {
+          "id": "http://perio.do/.well-known/genid/period-1241591592",
+          "type": "Period",
+          "label": "Mittlere Kaiserzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Imperial"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-7699543958"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "69 n.Chr.",
+            "in": {
+              "year": "0069"
+            }
+          },
+          "stop": {
+            "label": "192 n.Chr.",
+            "in": {
+              "year": "0192"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-1006268090": {
+          "id": "http://perio.do/.well-known/genid/period-1006268090",
+          "type": "Period",
+          "label": "Späte Kaiserzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Imperial"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-1069390930"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "193 n.Chr.",
+            "in": {
+              "year": "0193"
+            }
+          },
+          "stop": {
+            "label": "306 n.Chr.",
+            "in": {
+              "year": "0306"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-7288705312": {
+          "id": "http://perio.do/.well-known/genid/period-7288705312",
+          "type": "Period",
+          "label": "Spätantike",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Antique"
+            ]
+          },
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-9514425109"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q220",
+              "label": "Rome"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1747689",
+              "label": "ancient Rome"
+            }
+          ],
+          "spatialCoverageDescription": "Rom",
+          "start": {
+            "label": "ab 306 n.Chr.",
+            "in": {
+              "year": "0306"
+            }
+          },
+          "stop": {
+            "label": "none",
+            "in": {
+              "year": "--None--"
+            }
+          },
+          "editorialNote": "No end date for this period provided in the chronological chart, probably because Hölscher does not provide an explicit end date in his chronological chart."
+        }
+      },
+      "source": {
+        "id": "http://www.worldcat.org/oclc/57170430",
+        "title": "Archäologie und Chronologie : eine Einführung",
+        "yearPublished": "2004",
+        "creators": [
+          {
+            "id": "http://viaf.org/viaf/46980683",
+            "name": "Balbina Bäbler"
+          }
+        ],
+        "locator": "p. 42"
+      },
+      "editorialNote": "Definitions drawn from chart at beginning of section 8 in \"Relative Chronologie\", entitled \"Die Einteilung der Stilentwicklung in Epochen\" (p. 42). A citation at the bottom of the chart notes \"Nach T. Hölscher, Klassische Archäologie. Grundwissen, Darmstadt 2002, 34f. 40f.\""
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/http:~1~1perio.do~1.well-known~1genid~1authority-2462575817",
+    "value": {
+      "id": "http://perio.do/.well-known/genid/authority-2462575817",
+      "type": "Authority",
+      "periods": {
+        "http://perio.do/.well-known/genid/period-2913365584": {
+          "id": "http://perio.do/.well-known/genid/period-2913365584",
+          "type": "Period",
+          "label": "Gumelnița Culture",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-4199"
+            },
+            "label": "4200 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-3699"
+            },
+            "label": "3700 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-0805862241": {
+          "id": "http://perio.do/.well-known/genid/period-0805862241",
+          "type": "Period",
+          "label": "Hamangia Culture",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-5199"
+            },
+            "label": "5200 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-4599"
+            },
+            "label": "4600 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-2054156239": {
+          "id": "http://perio.do/.well-known/genid/period-2054156239",
+          "type": "Period",
+          "label": "Boian Culture",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-4499"
+            },
+            "label": "4500 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-3999"
+            },
+            "label": "4000 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-0955010820": {
+          "id": "http://perio.do/.well-known/genid/period-0955010820",
+          "type": "Period",
+          "label": "Archaic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-0074420771"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "label": "650/640 BC",
+            "in": {
+              "earliestYear": "-0649",
+              "latestYear": "-0639"
+            }
+          },
+          "stop": {
+            "label": "494/480 BC",
+            "in": {
+              "earliestYear": "-0493",
+              "latestYear": "-0479"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4292903067": {
+          "id": "http://perio.do/.well-known/genid/period-4292903067",
+          "type": "Period",
+          "label": "Early Archaic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-3356641850"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0955010820",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "label": "650/640 BC",
+            "in": {
+              "earliestYear": "-0649",
+              "latestYear": "-0639"
+            }
+          },
+          "stop": {
+            "label": "620 BC",
+            "in": {
+              "year": "-0619"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-7096549144": {
+          "id": "http://perio.do/.well-known/genid/period-7096549144",
+          "type": "Period",
+          "label": "Middle Archaic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-7644244404"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0955010820",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0619"
+            },
+            "label": "620 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0559"
+            },
+            "label": "560 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-8237949215": {
+          "id": "http://perio.do/.well-known/genid/period-8237949215",
+          "type": "Period",
+          "label": "Late Archaic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-1380466647"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-0955010820",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0559"
+            },
+            "label": "560 BC"
+          },
+          "stop": {
+            "label": "494/480 BC",
+            "in": {
+              "earliestYear": "-0493",
+              "latestYear": "-0479"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4447838832": {
+          "id": "http://perio.do/.well-known/genid/period-4447838832",
+          "type": "Period",
+          "label": "Classical",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-5186970983"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "label": "494/480 BC",
+            "in": {
+              "earliestYear": "-0493",
+              "latestYear": "-0479"
+            }
+          },
+          "stop": {
+            "label": "323 BC",
+            "in": {
+              "year": "-0322"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3731067456": {
+          "id": "http://perio.do/.well-known/genid/period-3731067456",
+          "type": "Period",
+          "label": "Early Classical",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-5353706807"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4447838832",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "earliestYear": "-0493",
+              "latestYear": "-0479"
+            },
+            "label": "494/480 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0449"
+            },
+            "label": "450 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-7240229690": {
+          "id": "http://perio.do/.well-known/genid/period-7240229690",
+          "type": "Period",
+          "label": "High Classical",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-3288197922"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4447838832",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0449"
+            },
+            "label": "450 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0399"
+            },
+            "label": "400 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4201205779": {
+          "id": "http://perio.do/.well-known/genid/period-4201205779",
+          "type": "Period",
+          "label": "Late Classical",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6734117002"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-4447838832",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0399"
+            },
+            "label": "400 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0322"
+            },
+            "label": "323 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3073770586": {
+          "id": "http://perio.do/.well-known/genid/period-3073770586",
+          "type": "Period",
+          "label": "Hellenistic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-0233772625"
+          ],
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0322"
+            },
+            "label": "323 BC"
+          },
+          "stop": {
+            "in": {
+              "earliestYear": "-0028",
+              "latestYear": "-0027"
+            },
+            "label": "29/28 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-9047063974": {
+          "id": "http://perio.do/.well-known/genid/period-9047063974",
+          "type": "Period",
+          "label": "Early Hellenistic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-6827299911"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-3073770586",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0322"
+            },
+            "label": "323 BC"
+          },
+          "stop": {
+            "in": {
+              "earliestYear": "-0269",
+              "latestYear": "-0259"
+            },
+            "label": "270/260 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4972493020": {
+          "id": "http://perio.do/.well-known/genid/period-4972493020",
+          "type": "Period",
+          "label": "Middle Hellenistic I",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-3226920648"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-3073770586",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "earliestYear": "-0269",
+              "latestYear": "-0259"
+            },
+            "label": "270/260 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0199"
+            },
+            "label": "200 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-4917777490": {
+          "id": "http://perio.do/.well-known/genid/period-4917777490",
+          "type": "Period",
+          "label": "Middle Hellenistic II",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-3226920648"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-3073770586",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0199"
+            },
+            "label": "200 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "100 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-9190271295": {
+          "id": "http://perio.do/.well-known/genid/period-9190271295",
+          "type": "Period",
+          "label": "Late Hellenistic",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "derivedFrom": [
+            "http://perio.do/.well-known/genid/period-5735639625"
+          ],
+          "broader": "http://perio.do/.well-known/genid/period-3073770586",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "-0099"
+            },
+            "label": "ca. 100 BC"
+          },
+          "stop": {
+            "in": {
+              "earliestYear": "-0028",
+              "latestYear": "-0027"
+            },
+            "label": "29/28 BC"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-1331101974": {
+          "id": "http://perio.do/.well-known/genid/period-1331101974",
+          "type": "Period",
+          "label": "Roman",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "earliestYear": "-0028",
+              "latestYear": "-0027"
+            },
+            "label": "29/28 BC"
+          },
+          "stop": {
+            "in": {
+              "year": "0330"
+            },
+            "label": "330 AD"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-0265316814": {
+          "id": "http://perio.do/.well-known/genid/period-0265316814",
+          "type": "Period",
+          "label": "Late Roman",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "localizedLabels": {
+            "en": [
+              "Roman-Byzantine"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "0330"
+            },
+            "label": "330 AD"
+          },
+          "stop": {
+            "in": {
+              "year": "0641"
+            },
+            "label": "641 AD"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-1504194854": {
+          "id": "http://perio.do/.well-known/genid/period-1504194854",
+          "type": "Period",
+          "label": "Ottoman",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "1420"
+            },
+            "label": "1420"
+          },
+          "stop": {
+            "in": {
+              "year": "1878"
+            },
+            "label": "1878"
+          },
+          "note": "closeMatch with http://n2t.net/ark:/99152/p06v8w46tp2."
+        },
+        "http://perio.do/.well-known/genid/period-0856363415": {
+          "id": "http://perio.do/.well-known/genid/period-0856363415",
+          "type": "Period",
+          "label": "World War I",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "1916"
+            },
+            "label": "1916"
+          },
+          "stop": {
+            "in": {
+              "year": "1918"
+            },
+            "label": "1918"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-3452102667": {
+          "id": "http://perio.do/.well-known/genid/period-3452102667",
+          "type": "Period",
+          "label": "Interwar",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "1918"
+            },
+            "label": "1918"
+          },
+          "stop": {
+            "in": {
+              "year": "1941"
+            },
+            "label": "1941"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-7180564210": {
+          "id": "http://perio.do/.well-known/genid/period-7180564210",
+          "type": "Period",
+          "label": "World War II",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "1941"
+            },
+            "label": "1941"
+          },
+          "stop": {
+            "in": {
+              "year": "1945"
+            },
+            "label": "1945"
+          }
+        },
+        "http://perio.do/.well-known/genid/period-2896119040": {
+          "id": "http://perio.do/.well-known/genid/period-2896119040",
+          "type": "Period",
+          "label": "Communist",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "label": "1945/1949",
+            "in": {
+              "earliestYear": "1945",
+              "latestYear": "1949"
+            }
+          },
+          "stop": {
+            "label": "1989",
+            "in": {
+              "year": "1989"
+            }
+          }
+        },
+        "http://perio.do/.well-known/genid/period-6123253217": {
+          "id": "http://perio.do/.well-known/genid/period-6123253217",
+          "type": "Period",
+          "label": "Post-Communist",
+          "language": "http://lexvo.org/id/iso639-1/en",
+          "languageTag": "en",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            }
+          ],
+          "spatialCoverageDescription": "Dobruja",
+          "start": {
+            "in": {
+              "year": "1989"
+            },
+            "label": "1989"
+          },
+          "stop": {
+            "label": "present",
+            "in": {
+              "year": "--None--"
+            }
+          }
+        }
+      },
+      "source": {
+        "citation": "Institute of Archaeology \"Vasile Pârvan\". Romanian Dobruja periodization for ARIADNEplus. 2020.",
+        "title": "Romanian Dobruja Periodization for ARIADNEplus",
+        "yearPublished": "2020",
+        "creators": [
+          {
+            "name": "Institute of Archaeology \"Vasile Pârvan\""
+          }
+        ],
+        "contributors": [
+          {
+            "name": "Iulian Bîrzescu"
+          },
+          {
+            "name": "Cătălin Nicolae"
+          },
+          {
+            "name": "Tiberiu Vasilescu"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/http:~1~1perio.do~1.well-known~1genid~1authority-7019236022",
+    "value": {
+      "id": "http://perio.do/.well-known/genid/authority-7019236022",
+      "type": "Authority",
+      "periods": {
+        "http://perio.do/.well-known/genid/period-5798245846": {
+          "id": "http://perio.do/.well-known/genid/period-5798245846",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Frühe Ägäische Bronzezeit I-III",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Aegean Bronze Age I-III"
+            ],
+            "de": [
+              "frühminoisch",
+              "frühhelladisch",
+              "frühkykladisch"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "3200 v.Chr.",
+            "in": {
+              "year": "-3199"
+            }
+          },
+          "stop": {
+            "label": "2100 v.Chr.",
+            "in": {
+              "year": "-2099"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from the title of the chronological table on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-3921858084": {
+          "id": "http://perio.do/.well-known/genid/period-3921858084",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Mittlere Ägäische Bronzezeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Aegean Bronze Age"
+            ],
+            "de": [
+              "mittelminoisch",
+              "mittelhelladisch",
+              "mittelkykladisch"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "2100 v.Chr.",
+            "in": {
+              "year": "-2099"
+            }
+          },
+          "stop": {
+            "label": "1700 v.Chr.",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-7105411348": {
+          "id": "http://perio.do/.well-known/genid/period-7105411348",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "MM / MH I-II",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Minoan/Middle Helladic I-II"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-3921858084",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "2100 v.Chr.",
+            "in": {
+              "year": "-2099"
+            }
+          },
+          "stop": {
+            "label": "1800 v.Chr.",
+            "in": {
+              "year": "-1799"
+            }
+          },
+          "note": "Alte Paläste, Kreta.",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-4130887694": {
+          "id": "http://perio.do/.well-known/genid/period-4130887694",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "MM / MH III",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Minoan/Middle Helladic III"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-3921858084",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1800 v.Chr.",
+            "in": {
+              "year": "-1799"
+            }
+          },
+          "stop": {
+            "label": "1700 v.Chr.",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "note": "Neue Paläste, Kreta.",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-8375461222": {
+          "id": "http://perio.do/.well-known/genid/period-8375461222",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Späte Ägäische Bronzezeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Aegean Bronze Age"
+            ],
+            "de": [
+              "spätminoisch",
+              "späthelladisch",
+              "spätkykladisch"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1700 v.Chr.",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "stop": {
+            "label": "1050 v.Chr.",
+            "in": {
+              "year": "-1049"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6996286327": {
+          "id": "http://perio.do/.well-known/genid/period-6996286327",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM I A / SH I",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan IA/Late Helladic I"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1700 v.Chr.",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "stop": {
+            "label": "1600 v.Chr.",
+            "in": {
+              "year": "-1599"
+            }
+          },
+          "note": "Schachtgräber Mykene, Eruption Thera",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-0470366147": {
+          "id": "http://perio.do/.well-known/genid/period-0470366147",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM I B / SH II A",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan IB/Late Helladic IIA"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1600 v.Chr.",
+            "in": {
+              "year": "-1599"
+            }
+          },
+          "stop": {
+            "label": "1500 v.Chr.",
+            "in": {
+              "year": "-1499"
+            }
+          },
+          "note": "\"Zerstörung der Neuen Paläste\". Date range noted as \"außer Knossos\".",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-1009944314": {
+          "id": "http://perio.do/.well-known/genid/period-1009944314",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM II / SH II B",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan II/Late Helladic IIB"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1500 v.Chr.",
+            "in": {
+              "year": "-1499"
+            }
+          },
+          "stop": {
+            "label": "1450 v.Chr.",
+            "in": {
+              "year": "-1449"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6368794424": {
+          "id": "http://perio.do/.well-known/genid/period-6368794424",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM III A1 / SH III A1",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan III A1/Late Helladic III A1"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1450 v.Chr.",
+            "in": {
+              "year": "-1449"
+            }
+          },
+          "stop": {
+            "label": "1400 v.Chr.",
+            "in": {
+              "year": "-1399"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-3539516368": {
+          "id": "http://perio.do/.well-known/genid/period-3539516368",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM III A2 / SH III A2",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan III A2/Late Helladic III A2"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1400 v.Chr.",
+            "in": {
+              "year": "-1399"
+            }
+          },
+          "stop": {
+            "label": "1350 v.Chr.",
+            "in": {
+              "year": "-1349"
+            }
+          },
+          "note": "Zerstörung u. Wiederaufbau von Knossos.",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-2519908599": {
+          "id": "http://perio.do/.well-known/genid/period-2519908599",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM III B / SH III B",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan III B/Late Helladic III B"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1350 v.Chr.",
+            "in": {
+              "year": "-1349"
+            }
+          },
+          "stop": {
+            "label": "1200 v.Chr.",
+            "in": {
+              "year": "-1199"
+            }
+          },
+          "note": "\"myken. Burgen um 1200 zerstört\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-4327788160": {
+          "id": "http://perio.do/.well-known/genid/period-4327788160",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "SM III C / SH III C",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Minoan IIIC/Late Helladic IIIC"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8375461222",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1200 v.Chr.",
+            "in": {
+              "year": "-1199"
+            }
+          },
+          "stop": {
+            "label": "1050 v.Chr.",
+            "in": {
+              "year": "-1049"
+            }
+          },
+          "note": "\"Ende der myken. Kultur\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-1641230209": {
+          "id": "http://perio.do/.well-known/genid/period-1641230209",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Subminoische/-mykenische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Subminoan/Submycenaean",
+              "Dark Ages"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1050 v.Chr.",
+            "in": {
+              "year": "-1049"
+            }
+          },
+          "stop": {
+            "label": "1000 v.Chr.",
+            "in": {
+              "year": "-0999"
+            }
+          },
+          "note": "\"Dark Ages\" provided as gloss in English for this period in chart.",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-7397574281": {
+          "id": "http://perio.do/.well-known/genid/period-7397574281",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Protogeometrische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Protogeometric"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "1000 v.Chr.",
+            "in": {
+              "year": "-0999"
+            }
+          },
+          "stop": {
+            "label": "900 v.Chr.",
+            "in": {
+              "year": "-0899"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-5991401771": {
+          "id": "http://perio.do/.well-known/genid/period-5991401771",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Geometrische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Geometric"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "900 v.Chr.",
+            "in": {
+              "year": "-0899"
+            }
+          },
+          "stop": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-4086310916": {
+          "id": "http://perio.do/.well-known/genid/period-4086310916",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "frühgeometrisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Geometric"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-5991401771",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "900 v.Chr.",
+            "in": {
+              "year": "-0899"
+            }
+          },
+          "stop": {
+            "label": "850 v.Chr.",
+            "in": {
+              "year": "-0849"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-8359617258": {
+          "id": "http://perio.do/.well-known/genid/period-8359617258",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "mittelgeometrisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Geometric"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-5991401771",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "850 v.Chr.",
+            "in": {
+              "year": "-0849"
+            }
+          },
+          "stop": {
+            "label": "760 v.Chr.",
+            "in": {
+              "year": "-0759"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6165459597": {
+          "id": "http://perio.do/.well-known/genid/period-6165459597",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "spätgeometrisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "de": [
+              "protoarchaisch"
+            ],
+            "en": [
+              "Late Geometric",
+              "Protoarchaic"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-5991401771",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "760 v.Chr.",
+            "in": {
+              "year": "-0759"
+            }
+          },
+          "stop": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          },
+          "note": "\"Entstehung der Polis-Kultur, Erste Gründungen von 'Kolonie'-Städten\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-8306929201": {
+          "id": "http://perio.do/.well-known/genid/period-8306929201",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "Archaische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Archaic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          },
+          "stop": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6145793810": {
+          "id": "http://perio.do/.well-known/genid/period-6145793810",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "früharchaisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "de": [
+              "orientalisierend"
+            ],
+            "en": [
+              "Early Archaic",
+              "Orientalizing"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8306929201",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "700 v.Chr.",
+            "in": {
+              "year": "-0699"
+            }
+          },
+          "stop": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-1616993483": {
+          "id": "http://perio.do/.well-known/genid/period-1616993483",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "mittelarchaisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Archaic"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8306929201",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          },
+          "stop": {
+            "label": "560 v.Chr.",
+            "in": {
+              "year": "-0559"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-0298794759": {
+          "id": "http://perio.do/.well-known/genid/period-0298794759",
+          "type": "Period",
+          "source": {
+            "locator": "p. 34"
+          },
+          "label": "spätarchaisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Archaic"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8306929201",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "560 v.Chr.",
+            "in": {
+              "year": "-0559"
+            }
+          },
+          "stop": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          },
+          "note": "\"561-510 Tyrannis der Peisistratiden in Athen\"; \"508/7 Reformen des Kleisthenes\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6350059189": {
+          "id": "http://perio.do/.well-known/genid/period-6350059189",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "Klassische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Classical"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          },
+          "stop": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-1049167389": {
+          "id": "http://perio.do/.well-known/genid/period-1049167389",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "Strenger Stil",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Severe Style"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-6350059189",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "490/80 v.Chr.",
+            "in": {
+              "earliestYear": "-0489",
+              "latestYear": "-0479"
+            }
+          },
+          "stop": {
+            "label": "450 v.Chr.",
+            "in": {
+              "year": "-0449"
+            }
+          },
+          "note": "\"490/80 Perserkriege\"; \"478/77 Delisch-Attischer Seebund\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-3820781794": {
+          "id": "http://perio.do/.well-known/genid/period-3820781794",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "Hochklassik",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "High Classical"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-6350059189",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "450 v.Chr.",
+            "in": {
+              "year": "-0449"
+            }
+          },
+          "stop": {
+            "label": "430 v.Chr.",
+            "in": {
+              "year": "-0429"
+            }
+          },
+          "note": "\"Kimon, Perikles\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-8457111893": {
+          "id": "http://perio.do/.well-known/genid/period-8457111893",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "Reicher Stil",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Rich Style"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-6350059189",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "430 v.Chr.",
+            "in": {
+              "year": "-0429"
+            }
+          },
+          "stop": {
+            "label": "400 v.Chr.",
+            "in": {
+              "year": "-0399"
+            }
+          },
+          "note": "\"431-404 Peloponnes. Krieg\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-5509381931": {
+          "id": "http://perio.do/.well-known/genid/period-5509381931",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "Spätklassik",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Classical"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-6350059189",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "400 v.Chr.",
+            "in": {
+              "year": "-0399"
+            }
+          },
+          "stop": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          },
+          "note": "\"Lykurg von Athen\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-7628186102": {
+          "id": "http://perio.do/.well-known/genid/period-7628186102",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "Hellenistische Epoche",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Hellenistic"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          },
+          "stop": {
+            "label": "30 v.Chr.",
+            "in": {
+              "year": "-0029"
+            }
+          },
+          "note": "\"336-323 Alexander d.Gr.; Reiche/Monarchien: -- Makedonian/Pella Antigoniden <br> -- Asien/Antiochia Seleukiden <br> -- Ägypten/Alexandria Ptolemäer <br> -- Kleinasien/Pergamon Attaliden\"",
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\", together with the areas defined by the note on kingdoms."
+        },
+        "http://perio.do/.well-known/genid/period-7621249975": {
+          "id": "http://perio.do/.well-known/genid/period-7621249975",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "frühhellenistisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Hellenistic"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-7628186102",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "330/20 v.Chr.",
+            "in": {
+              "earliestYear": "-0329",
+              "latestYear": "-0319"
+            }
+          },
+          "stop": {
+            "label": "230 v.Chr.",
+            "in": {
+              "year": "-0229"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\", together with the areas defined by the note on kingdoms."
+        },
+        "http://perio.do/.well-known/genid/period-9911355974": {
+          "id": "http://perio.do/.well-known/genid/period-9911355974",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "hochhellenistisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "High Hellenistic"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-7628186102",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "230 v.Chr.",
+            "in": {
+              "year": "-0229"
+            }
+          },
+          "stop": {
+            "label": "150 v.Chr.",
+            "in": {
+              "year": "-0149"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\", together with the areas defined by the note on kingdoms."
+        },
+        "http://perio.do/.well-known/genid/period-2724881435": {
+          "id": "http://perio.do/.well-known/genid/period-2724881435",
+          "type": "Period",
+          "source": {
+            "locator": "p. 35"
+          },
+          "label": "späthellenistisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Hellenistic"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-7628186102",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            }
+          ],
+          "spatialCoverageDescription": "Griechische Kultur",
+          "start": {
+            "label": "150 v.Chr.",
+            "in": {
+              "year": "-0149"
+            }
+          },
+          "stop": {
+            "label": "30 v.Chr.",
+            "in": {
+              "year": "-0029"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from title of chronological chart on p. 34-35: \"Griechische Kultur\", together with the areas defined by the note on kingdoms."
+        },
+        "http://perio.do/.well-known/genid/period-6278375432": {
+          "id": "http://perio.do/.well-known/genid/period-6278375432",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Früheisenzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Iron Age"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "1000 v.Chr.",
+            "in": {
+              "year": "-0999"
+            }
+          },
+          "stop": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-5547390308": {
+          "id": "http://perio.do/.well-known/genid/period-5547390308",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Archaische Zeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "de": [
+              "Königszeit"
+            ],
+            "en": [
+              "Archaic",
+              "Regal"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "620 v.Chr.",
+            "in": {
+              "year": "-0619"
+            }
+          },
+          "stop": {
+            "label": "509 v.Chr.",
+            "in": {
+              "year": "-0508"
+            }
+          },
+          "note": "\"Etruskische Könige in Rom\"",
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-2808033614": {
+          "id": "http://perio.do/.well-known/genid/period-2808033614",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Republikanische Zeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Republican"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "509 v.Chr.",
+            "in": {
+              "year": "-0508"
+            }
+          },
+          "stop": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6013728362": {
+          "id": "http://perio.do/.well-known/genid/period-6013728362",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "frührepublikanisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Republican"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-2808033614",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "509 v.Chr.",
+            "in": {
+              "year": "-0508"
+            }
+          },
+          "stop": {
+            "label": "367 v.Chr.",
+            "in": {
+              "year": "-0366"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-8794406639": {
+          "id": "http://perio.do/.well-known/genid/period-8794406639",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "mittelrepublikanisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Republican"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-2808033614",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "367 v.Chr.",
+            "in": {
+              "year": "-0366"
+            }
+          },
+          "stop": {
+            "label": "202 v.Chr.",
+            "in": {
+              "year": "-0201"
+            }
+          },
+          "note": "\"264-241 1. punischer Krieg\"; \"218-201 2. punischer Krieg\"",
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-1661014867": {
+          "id": "http://perio.do/.well-known/genid/period-1661014867",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "spätrepublikanisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Republican"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-2808033614",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q17167",
+              "label": "Roman Republic"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "202 v.Chr.",
+            "in": {
+              "year": "-0201"
+            }
+          },
+          "stop": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          },
+          "note": "\"149-146 3. punischer Krieg\"; \"146 Eroberung Korinths\"; \"133 'Schenkung' von Pergamon an Rom\"; \"Marius, Sulla; Pompeius, Caesar\"",
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-8950335803": {
+          "id": "http://perio.do/.well-known/genid/period-8950335803",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Frühe Kaiserzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Early Imperial"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          },
+          "stop": {
+            "label": "68 n.Chr.",
+            "in": {
+              "year": "0068"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-2592864519": {
+          "id": "http://perio.do/.well-known/genid/period-2592864519",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Iulisch-claudisch",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Julio-Claudian"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8950335803",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "31 v.Chr.",
+            "in": {
+              "year": "-0030"
+            }
+          },
+          "stop": {
+            "label": "68 n.Chr.",
+            "in": {
+              "year": "0068"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-5059241792": {
+          "id": "http://perio.do/.well-known/genid/period-5059241792",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Vierkaiserjahr",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Year of the Four Emperors"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-8950335803",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "68 n.Chr.",
+            "in": {
+              "year": "0068"
+            }
+          },
+          "stop": {
+            "label": "69 n.Chr.",
+            "in": {
+              "year": "0069"
+            }
+          },
+          "note": "This is included as a subperiod under \"Frühe Kaiserzeit\" even though the parent period is described as ending in 68 CE.",
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-7699543958": {
+          "id": "http://perio.do/.well-known/genid/period-7699543958",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Mittlere Kaiserzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Middle Imperial"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q183",
+              "label": "Germany"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q40",
+              "label": "Austria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q55",
+              "label": "Netherlands"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q31",
+              "label": "Belgium"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q810",
+              "label": "Jordan"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q796",
+              "label": "Iraq"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q851",
+              "label": "Saudi Arabia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "69 n.Chr.",
+            "in": {
+              "year": "0069"
+            }
+          },
+          "stop": {
+            "label": "192 n.Chr.",
+            "in": {
+              "year": "0192"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-6637268504": {
+          "id": "http://perio.do/.well-known/genid/period-6637268504",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "Flavische Dynastie",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Flavian Dynasty"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-7699543958",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q183",
+              "label": "Germany"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q31",
+              "label": "Belgium"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q55",
+              "label": "Netherlands"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q40",
+              "label": "Austria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q810",
+              "label": "Jordan"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q796",
+              "label": "Iraq"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q851",
+              "label": "Saudi Arabia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "69 n.Chr.",
+            "in": {
+              "year": "0069"
+            }
+          },
+          "stop": {
+            "label": "96 n.Chr.",
+            "in": {
+              "year": "0096"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-7465517450": {
+          "id": "http://perio.do/.well-known/genid/period-7465517450",
+          "type": "Period",
+          "source": {
+            "locator": "p. 40"
+          },
+          "label": "'Adoptivkaiser'",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Adopted Emperors"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-7699543958",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q31",
+              "label": "Belgium"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q55",
+              "label": "Netherlands"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q183",
+              "label": "Germany"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q40",
+              "label": "Austria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q796",
+              "label": "Iraq"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q810",
+              "label": "Jordan"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q229",
+              "label": "Cyprus"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q851",
+              "label": "Saudi Arabia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "96 n.Chr.",
+            "in": {
+              "year": "0096"
+            }
+          },
+          "stop": {
+            "label": "192 n.Chr.",
+            "in": {
+              "year": "0192"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-1069390930": {
+          "id": "http://perio.do/.well-known/genid/period-1069390930",
+          "type": "Period",
+          "source": {
+            "locator": "p. 41"
+          },
+          "label": "Späte Kaiserzeit",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Imperial"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q810",
+              "label": "Jordan"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q40",
+              "label": "Austria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q31",
+              "label": "Belgium"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q55",
+              "label": "Netherlands"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "193 n.Chr.",
+            "in": {
+              "year": "0193"
+            }
+          },
+          "stop": {
+            "label": "312/324 n.Chr.",
+            "in": {
+              "earliestYear": "0312",
+              "latestYear": "0324"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-7261064763": {
+          "id": "http://perio.do/.well-known/genid/period-7261064763",
+          "type": "Period",
+          "source": {
+            "locator": "p. 41"
+          },
+          "label": "Severer",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Severans"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-1069390930",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q40",
+              "label": "Austria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q31",
+              "label": "Belgium"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q55",
+              "label": "Netherlands"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q810",
+              "label": "Jordan"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "193 n.Chr.",
+            "in": {
+              "year": "0193"
+            }
+          },
+          "stop": {
+            "label": "235 n.Chr.",
+            "in": {
+              "year": "0235"
+            }
+          },
+          "note": "Pertinax is listed separately in 193 CE in the chronological chart.",
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\". No separate entry has been made for Pertinax, although he is not included among the Severans in the chronological chart."
+        },
+        "http://perio.do/.well-known/genid/period-9844630462": {
+          "id": "http://perio.do/.well-known/genid/period-9844630462",
+          "type": "Period",
+          "source": {
+            "locator": "p. 41"
+          },
+          "label": "Soldatenkaiser",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Soldier-Emperors"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-1069390930",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q218",
+              "label": "Romania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q40",
+              "label": "Austria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q229",
+              "label": "Cyprus"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "235 n.Chr.",
+            "in": {
+              "year": "0235"
+            }
+          },
+          "stop": {
+            "label": "284 n.Chr.",
+            "in": {
+              "year": "0284"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-0676975278": {
+          "id": "http://perio.do/.well-known/genid/period-0676975278",
+          "type": "Period",
+          "source": {
+            "locator": "p. 41"
+          },
+          "label": "Tetrarchen",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Tetrarchs"
+            ]
+          },
+          "broader": "http://perio.do/.well-known/genid/period-1069390930",
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q145",
+              "label": "United Kingdom"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "284 n.Chr.",
+            "in": {
+              "year": "0284"
+            }
+          },
+          "stop": {
+            "label": "312/324 n.Chr.",
+            "in": {
+              "earliestYear": "0312",
+              "latestYear": "0324"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\"."
+        },
+        "http://perio.do/.well-known/genid/period-9514425109": {
+          "id": "http://perio.do/.well-known/genid/period-9514425109",
+          "type": "Period",
+          "source": {
+            "locator": "p. 41"
+          },
+          "label": "Spätantike",
+          "language": "http://lexvo.org/id/iso639-1/de",
+          "languageTag": "de",
+          "localizedLabels": {
+            "en": [
+              "Late Antique"
+            ]
+          },
+          "spatialCoverage": [
+            {
+              "id": "http://www.wikidata.org/entity/Q38",
+              "label": "Italy"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q41",
+              "label": "Greece"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q43",
+              "label": "Turkey"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q858",
+              "label": "Syria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q822",
+              "label": "Lebanon"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q801",
+              "label": "Israel"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219060",
+              "label": "State of Palestine"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q79",
+              "label": "Egypt"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1016",
+              "label": "Libya"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q948",
+              "label": "Tunisia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q262",
+              "label": "Algeria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1028",
+              "label": "Morocco"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q29",
+              "label": "Spain"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q142",
+              "label": "France"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q403",
+              "label": "Serbia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q28",
+              "label": "Hungary"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q219",
+              "label": "Bulgaria"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q224",
+              "label": "Croatia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q215",
+              "label": "Slovenia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q222",
+              "label": "Albania"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q236",
+              "label": "Montenegro"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q1246",
+              "label": "Kosovo"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q225",
+              "label": "Bosnia and Herzegovina"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q221",
+              "label": "North Macedonia"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q2277",
+              "label": "Roman Empire"
+            },
+            {
+              "id": "http://www.wikidata.org/entity/Q229",
+              "label": "Cyprus"
+            }
+          ],
+          "spatialCoverageDescription": "Römische Kultur",
+          "start": {
+            "label": "ab 306 n.Chr.",
+            "in": {
+              "year": "0306"
+            }
+          },
+          "stop": {
+            "label": "395 n.Chr.",
+            "in": {
+              "year": "0395"
+            }
+          },
+          "editorialNote": "Spatial coverage inferred from historical developments and title of chronological chart on p. 40-41: \"Epochengliederung der römischen Kultur\". Latest date in the chronological chart is the end of the reign of Theodosius in 395 CE, so this has been taken as the end date of this period according to this authority."
+        }
+      },
+      "source": {
+        "id": "http://www.worldcat.org/oclc/936795593",
+        "title": "Klassische Archäologie : Grundwissen",
+        "yearPublished": "2002",
+        "creators": [
+          {
+            "id": "http://experiment.worldcat.org/entity/work/data/423581023#Person/holscher_tonio",
+            "name": "Tonio Hölscher"
+          }
+        ],
+        "contributors": [
+          {
+            "id": "http://experiment.worldcat.org/entity/work/data/423581023#Person/borg_barbara",
+            "name": "Barbara Borg"
+          }
+        ]
+      }
+    }
+  }
+]
