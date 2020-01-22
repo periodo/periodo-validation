@@ -3,6 +3,6 @@
     "problems": (group_by(.message.value) | map({
         "message": .[0].message.value,
         "count": length,
-        "uris": (map(.uri.value + ".json"))
+        "uris": (map(.uri.value + ".json.html"))
     }))
 })
