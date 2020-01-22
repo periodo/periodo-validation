@@ -29,7 +29,7 @@ import org.topbraid.jenax.util.JenaUtil;
 public class Validate {
 
     private static final String PERIODO_DATA_URI = "http://n2t.net/ark:/99152/p0d.json";
-    private static final String PERIODO_VOCAB_URI = "http://n2t.net/ark:/99152/p0v";
+    private static final String PERIODO_VOCAB_URI = "http://n2t.net/ark:/99152/p0v.ttl";
 
     private static final Logger LOG = Logger.getLogger(Validate.class.getName());
 
