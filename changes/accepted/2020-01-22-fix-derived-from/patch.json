@@ -1,0 +1,202 @@
+[
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3tw3n/derivedFrom/0",
+    "value": "p0wz8jkzd2q"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3d83b/derivedFrom/0",
+    "value": "p0wz8jkvm9p"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3sk4d/derivedFrom/0",
+    "value": "p0wz8jk25n6"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3vgtz/derivedFrom/0",
+    "value": "p0wz8jkqg76"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht358kw/derivedFrom/0",
+    "value": "p0wz8jkpzj8"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3gjq6/derivedFrom/0",
+    "value": "p0wz8jk6r9h"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht39wmr/derivedFrom/0",
+    "value": "p0wz8jkt6ts"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht38rwv/derivedFrom/0",
+    "value": "p0wz8jktrdd"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3d5fh/derivedFrom/0",
+    "value": "p0wz8jk8vx3"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3wg2p/derivedFrom/0",
+    "value": "p0wz8jksgfd"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3gknt/derivedFrom/0",
+    "value": "p0wz8jk56j7"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht369w3/derivedFrom/0",
+    "value": "p0wz8jk889b"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht37svm/derivedFrom/0",
+    "value": "p0wz8jkj3rn"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht35w6b/derivedFrom/0",
+    "value": "p0wz8jk2fqt"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3krgb/derivedFrom/0",
+    "value": "p0wz8jkj5r6"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3z7nc/derivedFrom/0",
+    "value": "p0wz8jkhnwr"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht339v4/derivedFrom/0",
+    "value": "p0wz8jk7j96"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3pf3d/derivedFrom/0",
+    "value": "p0wz8jkpxx8"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3vthw/derivedFrom/0",
+    "value": "p0wz8jkxvwz"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3fhms/derivedFrom/0",
+    "value": "p0wz8jk3mrn"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht362pg/derivedFrom/0",
+    "value": "p0wz8jkgsxv"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht33kbq/derivedFrom/0",
+    "value": "p0wz8jk87w4"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht37vwf/derivedFrom/0",
+    "value": "p0wz8jkpts9"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht32pb9/derivedFrom/0",
+    "value": "p0wz8jk5z6x"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3w362/derivedFrom/0",
+    "value": "p0wz8jk8ckg"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3ctp9/derivedFrom/0",
+    "value": "p0wz8jkwg9v"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p093ht3/periods/p093ht3vw2k/derivedFrom/0",
+    "value": "p0wz8jkwvk4"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnz6hg/derivedFrom/0",
+    "value": "p093ht3d83b"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnzcw2/derivedFrom/0",
+    "value": "p093ht3krgb"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfn9cmf/derivedFrom/0",
+    "value": "p093ht3tw3n"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnj6p9/derivedFrom/0",
+    "value": "p093ht39wmr"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfn3x44/derivedFrom/0",
+    "value": "p093ht3vw2k"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnssp8/derivedFrom/0",
+    "value": "p093ht3krgb"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfn2ntq/derivedFrom/0",
+    "value": "p093ht3vthw"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfndbhx/derivedFrom/0",
+    "value": "p093ht3d5fh"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfn665m/derivedFrom/0",
+    "value": "p093ht32pb9"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnfj9x/derivedFrom/0",
+    "value": "p093ht3w362"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnbrx6/derivedFrom/0",
+    "value": "p093ht369w3"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfn578j/derivedFrom/0",
+    "value": "p093ht3gjq6"
+  },
+  {
+    "op": "replace",
+    "path": "/authorities/p02kbfn/periods/p02kbfnbsw5/derivedFrom/0",
+    "value": "p093ht339v4"
+  }
+]
