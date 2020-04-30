@@ -4,7 +4,7 @@ const R = require('ramda')
     , { find, operation } = require('./utils')
 
 const fixPeriod = ({path, value}) => {
-  if (R.has('localizedLabels', value)) {
+  if (R.has('localizedLabels', value) && R.has('en', value.localizedLabels)) {
     return []
   }
   if (! R.propEq('languageTag', 'en', value)) {
