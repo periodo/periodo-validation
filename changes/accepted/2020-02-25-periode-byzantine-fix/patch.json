@@ -1,0 +1,22 @@
+[
+  {
+    "op": "add",
+    "path": "/authorities/p0gtzvd/periods/p0gtzvd9d59/localizedLabels",
+    "value": {
+      "en": [
+        "Byzantine period"
+      ],
+      "el": [
+        "Βυζαντινή περίοδος"
+      ],
+      "fr": [
+        "Byzantin"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0gtzvd/periods/p0gtzvd9d59/label",
+    "value": "Période byzantine"
+  }
+]

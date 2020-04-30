@@ -1,0 +1,840 @@
+[
+  {
+    "op": "add",
+    "path": "/authorities/https:~1~1test.perio.do~1.well-known~1genid~1b082f4df6fd33b6c3810298be9b4d41f",
+    "value": {
+      "type": "Authority",
+      "source": {
+        "id": "http://www.worldcat.org/oclc/1028432426",
+        "title": "Norsk arkeologisk leksikon",
+        "yearPublished": "2005",
+        "creators": [],
+        "contributors": [
+          {
+            "id": "http://experiment.worldcat.org/entity/work/data/354637703#Person/hedeager_lotte_1948",
+            "name": "Lotte Hedeager"
+          },
+          {
+            "id": "http://experiment.worldcat.org/entity/work/data/354637703#Person/ostmo_einar_1946",
+            "name": "Einar Østmo"
+          }
+        ]
+      },
+      "periods": {
+        "https://test.perio.do/.well-known/genid/44a54f37d166c1ae960ca75448ff1bc3": {
+          "stop": {
+            "label": "4000 BC",
+            "in": {
+              "year": "-3999"
+            }
+          },
+          "start": {
+            "label": "9500 BC",
+            "in": {
+              "year": "-9499"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "eldre steinalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "eldre steinalder"
+            ],
+            "en": [
+              "Mesolithic"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/44a54f37d166c1ae960ca75448ff1bc3"
+        },
+        "https://test.perio.do/.well-known/genid/8e23c83877141362caaf80673135e5ec": {
+          "stop": {
+            "label": "1700 BC",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "start": {
+            "label": "4000 BC",
+            "in": {
+              "year": "-3999"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "yngre steinalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "yngre steinalder"
+            ],
+            "en": [
+              "Neolithic"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/8e23c83877141362caaf80673135e5ec"
+        },
+        "https://test.perio.do/.well-known/genid/92b9416601070ff859aada036d942616": {
+          "stop": {
+            "label": "6000 BC",
+            "in": {
+              "year": "-5999"
+            }
+          },
+          "start": {
+            "label": "8000 BC",
+            "in": {
+              "year": "-7999"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "mellommesolitikum",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "mellommesolitikum"
+            ],
+            "en": [
+              "Middle Mesolithic Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/92b9416601070ff859aada036d942616"
+        },
+        "https://test.perio.do/.well-known/genid/db4b2728bdc81dea864edc1dafe18c71": {
+          "stop": {
+            "label": "300 BC",
+            "in": {
+              "year": "-0299"
+            }
+          },
+          "start": {
+            "label": "2000 BC",
+            "in": {
+              "year": "-1999"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "tidlig metalltid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "tidlig metalltid"
+            ],
+            "en": [
+              "Early Metal Ages"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/db4b2728bdc81dea864edc1dafe18c71"
+        },
+        "https://test.perio.do/.well-known/genid/f2a4aafa60fa82395b8f080ac95d98f3": {
+          "stop": {
+            "label": "2400 BC",
+            "in": {
+              "year": "-2399"
+            }
+          },
+          "start": {
+            "label": "2800 BC",
+            "in": {
+              "year": "-2799"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "mellomneolitikum",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "mellomneolitikum"
+            ],
+            "en": [
+              "Middle Neolithic"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/f2a4aafa60fa82395b8f080ac95d98f3"
+        },
+        "https://test.perio.do/.well-known/genid/1f4a591645caa371a0bd67b96bdd21f1": {
+          "stop": {
+            "label": "400 AD",
+            "in": {
+              "year": "0400"
+            }
+          },
+          "start": {
+            "label": "0",
+            "in": {
+              "year": "0000"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "romertid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "romertid"
+            ],
+            "en": [
+              "Roman Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/1f4a591645caa371a0bd67b96bdd21f1"
+        },
+        "https://test.perio.do/.well-known/genid/a0ffce60e4a689fcb240beea9b0349f5": {
+          "stop": {
+            "label": "2050",
+            "in": {
+              "year": "2050"
+            }
+          },
+          "start": {
+            "label": "1500",
+            "in": {
+              "year": "1500"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "nyere tid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project. A numeric end year of 2050 has been entered as the data supplied had an end year of \"present\"",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "nyere tid"
+            ],
+            "en": [
+              "Modern Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/a0ffce60e4a689fcb240beea9b0349f5"
+        },
+        "https://test.perio.do/.well-known/genid/009a45a6f307bf133ed2e597269f906a": {
+          "stop": {
+            "label": "1700 BC",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "start": {
+            "label": "2400 BC",
+            "in": {
+              "year": "-2399"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "senneolitikum",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "senneolitikum"
+            ],
+            "en": [
+              "Late Neolithic"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/009a45a6f307bf133ed2e597269f906a"
+        },
+        "https://test.perio.do/.well-known/genid/dd65adff1aad3c5eacd5f9e4c064b6a1": {
+          "stop": {
+            "label": "1050 AD",
+            "in": {
+              "year": "1050"
+            }
+          },
+          "start": {
+            "label": "500 BC",
+            "in": {
+              "year": "-0499"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "jernalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "jernalder"
+            ],
+            "en": [
+              "Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/dd65adff1aad3c5eacd5f9e4c064b6a1"
+        },
+        "https://test.perio.do/.well-known/genid/debab748670bf30901128cdc697b2f9d": {
+          "stop": {
+            "label": "1100 BC",
+            "in": {
+              "year": "-1099"
+            }
+          },
+          "start": {
+            "label": "1700 BC",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "eldre bronsealder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "eldre bronsealder"
+            ],
+            "en": [
+              "Early Bronze Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/debab748670bf30901128cdc697b2f9d"
+        },
+        "https://test.perio.do/.well-known/genid/ce719104e1fd59aca675309c41501d1a": {
+          "stop": {
+            "label": "750 AD",
+            "in": {
+              "year": "0750"
+            }
+          },
+          "start": {
+            "label": "550 AD",
+            "in": {
+              "year": "0550"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "merovingertid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "merovingertid"
+            ],
+            "en": [
+              "Merovingian Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/ce719104e1fd59aca675309c41501d1a"
+        },
+        "https://test.perio.do/.well-known/genid/fcb9e7312a7b30beeef95e1c6fe89afe": {
+          "stop": {
+            "label": "1050 AD",
+            "in": {
+              "year": "1050"
+            }
+          },
+          "start": {
+            "label": "550 AD",
+            "in": {
+              "year": "0550"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "yngre jernalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "yngre jernalder"
+            ],
+            "en": [
+              "Late Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/fcb9e7312a7b30beeef95e1c6fe89afe"
+        },
+        "https://test.perio.do/.well-known/genid/cd963befec484343a847fbea40aa8c0f": {
+          "stop": {
+            "label": "550 AD",
+            "in": {
+              "year": "0550"
+            }
+          },
+          "start": {
+            "label": "500 BC",
+            "in": {
+              "year": "-0499"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "eldre jernalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "eldre jernalder"
+            ],
+            "en": [
+              "Early Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/cd963befec484343a847fbea40aa8c0f"
+        },
+        "https://test.perio.do/.well-known/genid/38fa20570aab03cbdd9a229cb62faae4": {
+          "stop": {
+            "label": "0",
+            "in": {
+              "year": "0000"
+            }
+          },
+          "start": {
+            "label": "500 BC",
+            "in": {
+              "year": "-0499"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "førromersk jernalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "førromersk jernalder"
+            ],
+            "en": [
+              "Pre-Roman Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/38fa20570aab03cbdd9a229cb62faae4"
+        },
+        "https://test.perio.do/.well-known/genid/d574c7f0f989d3cacf3e600c580abc61": {
+          "stop": {
+            "label": "1500 AD",
+            "in": {
+              "year": "1500"
+            }
+          },
+          "start": {
+            "label": "1350 AD",
+            "in": {
+              "year": "1350"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "senmiddelalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "senmiddelalder"
+            ],
+            "en": [
+              "Late Medieval Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/d574c7f0f989d3cacf3e600c580abc61"
+        },
+        "https://test.perio.do/.well-known/genid/6bbcd57613a48a3c27a0cded9ae58cda": {
+          "stop": {
+            "label": "500 BC",
+            "in": {
+              "year": "-0499"
+            }
+          },
+          "start": {
+            "label": "1700 BC",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "bronsealder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "bronsealder"
+            ],
+            "en": [
+              "Bronze Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/6bbcd57613a48a3c27a0cded9ae58cda"
+        },
+        "https://test.perio.do/.well-known/genid/606f08cf17334a686f8513acf13a545f": {
+          "stop": {
+            "label": "200 AD",
+            "in": {
+              "year": "0200"
+            }
+          },
+          "start": {
+            "label": "0",
+            "in": {
+              "year": "0000"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "eldre romertid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "eldre romertid"
+            ],
+            "en": [
+              "Early Roman Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/606f08cf17334a686f8513acf13a545f"
+        },
+        "https://test.perio.do/.well-known/genid/84f0487dcb242ecc85d1c60abb446f86": {
+          "stop": {
+            "label": "1050 AD",
+            "in": {
+              "year": "1050"
+            }
+          },
+          "start": {
+            "label": "750 AD",
+            "in": {
+              "year": "0750"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "vikingtid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "vikingtid"
+            ],
+            "en": [
+              "Viking Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/84f0487dcb242ecc85d1c60abb446f86"
+        },
+        "https://test.perio.do/.well-known/genid/21b3529aa6e3a5342bcc830a48820bd2": {
+          "stop": {
+            "label": "2800 BC",
+            "in": {
+              "year": "-2799"
+            }
+          },
+          "start": {
+            "label": "4000 BC",
+            "in": {
+              "year": "-3999"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "tidligneolitikum",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "tidligneolitikum"
+            ],
+            "en": [
+              "Early Neolithic"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/21b3529aa6e3a5342bcc830a48820bd2"
+        },
+        "https://test.perio.do/.well-known/genid/a2dbb25bdc98d279e10170d05ae68844": {
+          "stop": {
+            "label": "8000 BC",
+            "in": {
+              "year": "-7999"
+            }
+          },
+          "start": {
+            "label": "9500 BC",
+            "in": {
+              "year": "-9499"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "tidligmesolitikum",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "tidligmesolitikum"
+            ],
+            "en": [
+              "Early Mesolithic Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/a2dbb25bdc98d279e10170d05ae68844"
+        },
+        "https://test.perio.do/.well-known/genid/2f5b7cdd59cf7d2871e5e46281a0a1c9": {
+          "stop": {
+            "label": "500 BC",
+            "in": {
+              "year": "-0499"
+            }
+          },
+          "start": {
+            "label": "1100 BC",
+            "in": {
+              "year": "-1099"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "yngre bronsealder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "yngre bronsealder"
+            ],
+            "en": [
+              "Late Bronze Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/2f5b7cdd59cf7d2871e5e46281a0a1c9"
+        },
+        "https://test.perio.do/.well-known/genid/59a0d366f49c1390c98b75e12ef3f744": {
+          "stop": {
+            "label": "1700 BC",
+            "in": {
+              "year": "-1699"
+            }
+          },
+          "start": {
+            "label": "9500 BC",
+            "in": {
+              "year": "-9499"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "steinalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "steinalder"
+            ],
+            "en": [
+              "Stone Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/59a0d366f49c1390c98b75e12ef3f744"
+        },
+        "https://test.perio.do/.well-known/genid/efaea6eb4e51a7393bb0a2fc6b59b237": {
+          "stop": {
+            "label": "1130 AD",
+            "in": {
+              "year": "1130"
+            }
+          },
+          "start": {
+            "label": "1050 AD",
+            "in": {
+              "year": "1050"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "tidligmiddelalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "tidligmiddelalder"
+            ],
+            "en": [
+              "Early Medieval Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/efaea6eb4e51a7393bb0a2fc6b59b237"
+        },
+        "https://test.perio.do/.well-known/genid/909a0129f912d3a9bd95d6f54e6b2e42": {
+          "stop": {
+            "label": "400 AD",
+            "in": {
+              "year": "0400"
+            }
+          },
+          "start": {
+            "label": "200 AD",
+            "in": {
+              "year": "0200"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "yngre romertid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "yngre romertid"
+            ],
+            "en": [
+              "Late Roman Iron Age"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/909a0129f912d3a9bd95d6f54e6b2e42"
+        },
+        "https://test.perio.do/.well-known/genid/ec3ed1283fc4f7de0c9f2c925a90cd9b": {
+          "stop": {
+            "label": "550 AD",
+            "in": {
+              "year": "0550"
+            }
+          },
+          "start": {
+            "label": "400 AD",
+            "in": {
+              "year": "0400"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "folkevandringstid",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "folkevandringstid"
+            ],
+            "en": [
+              "Migration Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/ec3ed1283fc4f7de0c9f2c925a90cd9b"
+        },
+        "https://test.perio.do/.well-known/genid/5b198c3fa2c7a4a4b29ad7f3a1506f87": {
+          "stop": {
+            "label": "1500 AD",
+            "in": {
+              "year": "1500"
+            }
+          },
+          "start": {
+            "label": "1050 AD",
+            "in": {
+              "year": "1050"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "middelalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "middelalder"
+            ],
+            "en": [
+              "Medieval Period"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/5b198c3fa2c7a4a4b29ad7f3a1506f87"
+        },
+        "https://test.perio.do/.well-known/genid/5bfbb048db3527f5fa1bc8ef365577ca": {
+          "stop": {
+            "label": "4000 BC",
+            "in": {
+              "year": "-3999"
+            }
+          },
+          "start": {
+            "label": "6000 BC",
+            "in": {
+              "year": "-5999"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "senmesolitikum",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "senmesolitikum"
+            ],
+            "en": [
+              "Late Mesolithic"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/5bfbb048db3527f5fa1bc8ef365577ca"
+        },
+        "https://test.perio.do/.well-known/genid/d2a30b50cfb170bf5de6cec6e462c625": {
+          "stop": {
+            "label": "1350 AD",
+            "in": {
+              "year": "1350"
+            }
+          },
+          "start": {
+            "label": "1050 AD",
+            "in": {
+              "year": "1050"
+            }
+          },
+          "spatialCoverageDescription": "Norway",
+          "label": "høymiddelalder",
+          "language": "http://lexvo.org/id/iso639-1/no",
+          "languageTag": "no",
+          "editorialNote": "Norwegian archaeological periods provided by University of Oslo for ARIADNEplus project",
+          "type": "Period",
+          "localizedLabels": {
+            "no": [
+              "høymiddelalder"
+            ],
+            "en": [
+              "High Middle Ages"
+            ]
+          },
+          "id": "https://test.perio.do/.well-known/genid/d2a30b50cfb170bf5de6cec6e462c625"
+        }
+      },
+      "id": "https://test.perio.do/.well-known/genid/b082f4df6fd33b6c3810298be9b4d41f"
+    }
+  }
+]

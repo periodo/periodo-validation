@@ -1,0 +1,821 @@
+[
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m85g3f/localizedLabels",
+    "value": {
+      "en": [
+        "Archaic Stage"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8qwhn/localizedLabels",
+    "value": {
+      "en": [
+        "Neoarchaic Stage"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8c3c9/localizedLabels",
+    "value": {
+      "en": [
+        "Circleville Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m83vdh/localizedLabels",
+    "value": {
+      "en": [
+        "San Geronimo Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8gcgw/localizedLabels",
+    "value": {
+      "en": [
+        "Jarrell Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8p6nf/localizedLabels",
+    "value": {
+      "en": [
+        "Oakalla Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8pzcr/localizedLabels",
+    "value": {
+      "en": [
+        "Clear Fork Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8df3q/localizedLabels",
+    "value": {
+      "en": [
+        "Marshall Ford Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8t4k7/localizedLabels",
+    "value": {
+      "en": [
+        "Round Rock Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m86qh2/localizedLabels",
+    "value": {
+      "en": [
+        "San Marcos Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m853bn/localizedLabels",
+    "value": {
+      "en": [
+        "Uvalde Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m88mx8/localizedLabels",
+    "value": {
+      "en": [
+        "Twin Sisters Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8bttc/localizedLabels",
+    "value": {
+      "en": [
+        "Driftwood Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8trxt/localizedLabels",
+    "value": {
+      "en": [
+        "Austin Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0bw9m8/periods/p0bw9m8rf48/localizedLabels",
+    "value": {
+      "en": [
+        "Toyah Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbrq6c/localizedLabels",
+    "value": {
+      "en": [
+        "Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbpd2d/localizedLabels",
+    "value": {
+      "en": [
+        "Early Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhb7dxw/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbj9mg/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhb4hmc/localizedLabels",
+    "value": {
+      "en": [
+        "Neoarchaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhb8cps/localizedLabels",
+    "value": {
+      "en": [
+        "Historic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbm5n6/localizedLabels",
+    "value": {
+      "en": [
+        "Circleville"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbnpmz/localizedLabels",
+    "value": {
+      "en": [
+        "San Geronimo"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbrv6d/localizedLabels",
+    "value": {
+      "en": [
+        "Jarrell"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbf8k8/localizedLabels",
+    "value": {
+      "en": [
+        "Oakalla"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbp99p/localizedLabels",
+    "value": {
+      "en": [
+        "Clear Fork"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhb4s9r/localizedLabels",
+    "value": {
+      "en": [
+        "Marshall Ford"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbfg9f/localizedLabels",
+    "value": {
+      "en": [
+        "Round Rock"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbjmhw/localizedLabels",
+    "value": {
+      "en": [
+        "San Marcos"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbpg5s/localizedLabels",
+    "value": {
+      "en": [
+        "Uvalde"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbzth5/localizedLabels",
+    "value": {
+      "en": [
+        "Twin Sisters"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbt454/localizedLabels",
+    "value": {
+      "en": [
+        "Driftwood"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhbnbq9/localizedLabels",
+    "value": {
+      "en": [
+        "Austin"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0qkjhb/periods/p0qkjhb529j/localizedLabels",
+    "value": {
+      "en": [
+        "Toyah"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448vx5q4/localizedLabels",
+    "value": {
+      "en": [
+        "Paleoindian"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v3gsp/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448vtqnz/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448vvmv7/localizedLabels",
+    "value": {
+      "en": [
+        "Late Prehistoric"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v7jdt/localizedLabels",
+    "value": {
+      "en": [
+        "Bonfire Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448vmgzh/localizedLabels",
+    "value": {
+      "en": [
+        "Eagle Nest Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448vhfzk/localizedLabels",
+    "value": {
+      "en": [
+        "San Felipe Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v5btd/localizedLabels",
+    "value": {
+      "en": [
+        "Cibola Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v3d2x/localizedLabels",
+    "value": {
+      "en": [
+        "Flanders Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v9dm2/localizedLabels",
+    "value": {
+      "en": [
+        "Blue Hills Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v869k/localizedLabels",
+    "value": {
+      "en": [
+        "Flecha Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0m448v/periods/p0m448v3k4t/localizedLabels",
+    "value": {
+      "en": [
+        "Infierno Phase"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p05ggg5/periods/p05ggg53kp5/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Kingdom"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p05ggg5/periods/p05ggg5vx4v/localizedLabels",
+    "value": {
+      "en": [
+        "Second Intermediate Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p05ggg5/periods/p05ggg5fnwn/localizedLabels",
+    "value": {
+      "en": [
+        "New Kingdom"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p05ggg5/periods/p05ggg5cd83/localizedLabels",
+    "value": {
+      "en": [
+        "Third Intermediate Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0jhchf/periods/p0jhchfhtn4/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Wisconsin Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0jhchf/periods/p0jhchf6sqf/localizedLabels",
+    "value": {
+      "en": [
+        "Wisconsin Full-Glacial Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0jhchf/periods/p0jhchfhz69/localizedLabels",
+    "value": {
+      "en": [
+        "Late Glacial Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0jhchf/periods/p0jhchfwwmr/localizedLabels",
+    "value": {
+      "en": [
+        "Post-Glacial Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdqd8t/localizedLabels",
+    "value": {
+      "en": [
+        "Paleoindian period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthd7n9t/localizedLabels",
+    "value": {
+      "en": [
+        "Early Paleoindian"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdrsfd/localizedLabels",
+    "value": {
+      "en": [
+        "Late Paleoindian"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdxxsh/localizedLabels",
+    "value": {
+      "en": [
+        "Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdvbjk/localizedLabels",
+    "value": {
+      "en": [
+        "Historic Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdjbz5/localizedLabels",
+    "value": {
+      "en": [
+        "Early Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdjd2x/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdnmw9/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdjjrw/localizedLabels",
+    "value": {
+      "en": [
+        "Early Historic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdrw64/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Historic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p07fthd/periods/p07fthdfh68/localizedLabels",
+    "value": {
+      "en": [
+        "Late Historic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t3585v34n/localizedLabels",
+    "value": {
+      "en": [
+        "Dry Edwards Interval"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t3585b2rd/localizedLabels",
+    "value": {
+      "en": [
+        "Paleoindian Era"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t3585kxnj/localizedLabels",
+    "value": {
+      "en": [
+        "Archaic Era"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t35856b5j/localizedLabels",
+    "value": {
+      "en": [
+        "Early Archaic Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t3585nqbr/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Archaic Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t3585c8d7/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic Period"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t3585t8hz/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic I"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0t3585/periods/p0t35858nxt/localizedLabels",
+    "value": {
+      "en": [
+        "Late Archaic II"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p08vvjk/periods/p08vvjkjsgg/localizedLabels",
+    "value": {
+      "en": [
+        "Early Byzantine"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p08vvjk/periods/p08vvjkcfqt/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Byzantine"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p08vvjk/periods/p08vvjksgbh/localizedLabels",
+    "value": {
+      "en": [
+        "Latin Occupation"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p08vvjk/periods/p08vvjkdcnx/localizedLabels",
+    "value": {
+      "en": [
+        "Late Byzantium"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mmfbc/localizedLabels",
+    "value": {
+      "en": [
+        "Byzantine"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mmx9p/localizedLabels",
+    "value": {
+      "en": [
+        "11th-12th century"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5m3t44/localizedLabels",
+    "value": {
+      "en": [
+        "13th century"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mchgh/localizedLabels",
+    "value": {
+      "en": [
+        "14th century"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mtpfd/localizedLabels",
+    "value": {
+      "en": [
+        "Early Byzantine (5th-7th century)"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mq3ms/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Byzantine (9th-11th century)"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mzmnj/localizedLabels",
+    "value": {
+      "en": [
+        "Late Byzantine (13th-14th century)"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mgvqt/localizedLabels",
+    "value": {
+      "en": [
+        "Hellenistic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mh84m/localizedLabels",
+    "value": {
+      "en": [
+        "Roman"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5m46gm/localizedLabels",
+    "value": {
+      "en": [
+        "Modern"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5m239w/localizedLabels",
+    "value": {
+      "en": [
+        "Late Antique"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mq68m/localizedLabels",
+    "value": {
+      "en": [
+        "Early Hellenistic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5mv5hb/localizedLabels",
+    "value": {
+      "en": [
+        "Middle Hellenistic"
+      ]
+    }
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0b6j5m/periods/p0b6j5md9jr/localizedLabels",
+    "value": {
+      "en": [
+        "Late Hellenistic"
+      ]
+    }
+  }
+]
