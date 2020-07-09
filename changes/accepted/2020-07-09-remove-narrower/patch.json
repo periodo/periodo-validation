@@ -1,0 +1,34 @@
+[
+  {
+    "op": "remove",
+    "path": "/authorities/p04h98q/periods/p04h98q6kcp/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/p0wctqt/periods/p0wctqtvzk7/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/p0339m9/periods/p0339m94psw/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/p0339m9/periods/p0339m9jq2m/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/p0s2rwk/periods/p0s2rwkwcmr/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/p0s2rwk/periods/p0s2rwktj4g/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/authorities/p0gtzvd/periods/p0gtzvd4r5r/narrower"
+  },
+  {
+    "op": "remove",
+    "path": "/@context/narrower"
+  }
+]
