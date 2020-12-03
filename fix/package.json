@@ -10,7 +10,7 @@
   "license": "CC0-1.0",
   "dependencies": {
     "fast-json-patch": "^2.2.1",
-    "jsonpath": "^1.0.1",
+    "jsonpath": "^1.0.2",
     "langs": "^2.0.0",
     "language-tags": "^1.0.5",
     "minimist": "^1.2.0",
