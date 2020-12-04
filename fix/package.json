@@ -15,7 +15,7 @@
     "language-tags": "^1.0.5",
     "minimist": "^1.2.3",
     "ramda": "^0.27.1",
-    "request": "^2.88.0",
+    "request": "^2.88.2",
     "request-promise-native": "^1.0.7"
   }
 }
