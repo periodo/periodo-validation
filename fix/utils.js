@@ -6,9 +6,11 @@ const R = require('ramda')
 // String => Object => Array<JsonPathNode>
 const find = query => doc => jsonpath.nodes(doc, query)
 
+const escape = element => element.replace(/~/g, '~0').replace(/\//g, '~1')
+
 // Array<JSONPathElement> => JSONPointer
 const JSONPointer = R.pipe(
-  R.map(element => element === '$' ? '' : element),
+  R.map(element => element === '$' ? '' : escape(element)),
   R.join('/')
 )
 
