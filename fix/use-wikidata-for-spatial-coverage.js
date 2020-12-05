@@ -1,14 +1,14 @@
 const R = require('ramda')
     , { find, operation } = require('./utils')
-    , request = require('request-promise-native')
+    , http = require('axios')
 
 const userAgent = (
   'PeriodO/1.0 (http://perio.do/; ryanshaw@unc.edu) request/2.88'
 )
 
-const queryDBpedia = legacyID => request({
-  uri: 'http://dbpedia.org/sparql',
-  qs: {query: `
+const queryDBpedia = legacyID => http.request({
+  url: 'http://dbpedia.org/sparql',
+  params: {query: `
 PREFIX owl: <http://www.w3.org/2002/07/owl#>
 
 SELECT DISTINCT ?id
@@ -18,12 +18,11 @@ WHERE {
 }
 `},
   headers: {accept: 'application/json', 'user-agent': userAgent},
-  json: true
 })
 
-const queryGeonames = legacyID => request({
-  uri: 'https://query.wikidata.org/sparql',
-  qs: {query: `
+const queryGeonames = legacyID => http.request({
+  url: 'https://query.wikidata.org/sparql',
+  params: {query: `
 PREFIX wdt: <http://www.wikidata.org/prop/direct/>
 
 SELECT DISTINCT ?id
@@ -32,7 +31,6 @@ WHERE {
 }
 `},
   headers: {accept: 'application/json', 'user-agent': userAgent},
-  json: true
 })
 
 const idMap = {

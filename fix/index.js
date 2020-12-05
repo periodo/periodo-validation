@@ -4,7 +4,7 @@ const R = require('ramda')
     , fs = require('fs')
     , jsonpatch = require('fast-json-patch')
     , parseArgs = require('minimist')
-    , request = require('request-promise-native')
+    , http = require('axios')
 
 // JSONPatch => JSONPatch
 const validatePatch = patch => {
@@ -48,10 +48,10 @@ Outputs a patch implementing the proposed change.
 
 const createPatch = require(`./${argv._[0]}`)
 
-request(argv.dataset + '?inline-context')
+http.get(argv.dataset + '?inline-context')
   .then(
-    data => {
-      const doc = JSON.parse(data)
+    response => {
+      const doc = response.data
       createPatch(doc)
         .then(
           R.pipe(
