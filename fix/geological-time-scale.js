@@ -222,9 +222,11 @@ const createAuthority = async (response) => {
     const authority = await extractAuthority(g)
         , periodIDs = await extractPeriodIDs(g)
 
-    authority.periods = await Promise.all(
+    const periods = await Promise.all(
       periodIDs.map(id => extractPeriod(g, id))
     )
+
+    authority.periods = R.fromPairs(periods.map(period => [period.id, period]))
 
     return authority
   }
