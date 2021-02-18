@@ -14,18 +14,20 @@ usage () {
 }
 
 new () {
-    mkdir "changes/proposed/$1"
+    mkdir -p "changes/proposed/$1"
     local add="changes/proposed/$1/constraints-added.ttl"
     local rem="changes/proposed/$1/constraints-removed.ttl"
     touch "$add"
     touch "$rem"
-    (cat <<EOF
+    if [ ! -f "fix/$1.js" ]; then
+        (cat <<EOF
 // Object => Promise { Array<Operation> }
 module.exports = async function createPatch(o) {
   throw 'implement me'
 }
 EOF
-    ) > "fix/$1.js"
+        ) > "fix/$1.js"
+    fi
     printf "Put new SHACL constraints in:\\n  %s\\n\\n" "$add"
     printf "Put SHACL constraints to be removed in:\\n  %s\\n\\n" "$rem"
     printf "Implement your fix in:\\n  %s\\n" "fix/$1.js"
