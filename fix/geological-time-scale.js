@@ -3,7 +3,7 @@ const R= require('ramda')
     , http = require('axios')
     , { operation } = require('./utils')
 
-const GENID = 'https://perio.do/.well-known/genid/'
+const GENID = 'https://client.perio.do/.well-known/genid/'
 
 const YEAR = 2020
 const API = 'https://vocabs.ardc.edu.au/registry/api/'
