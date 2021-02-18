@@ -1,0 +1,642 @@
+[
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw855rq/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q35581",
+        "label": "Hokkaidō"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8sc3n/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q35581",
+        "label": "Hokkaidō"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8v2rd/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8xgn3/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8vphz/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw827b2/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8t45n/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8b63g/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8rzz8/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8g8wp/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw84dwh/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8qmvj/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw88rdt/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw86kbh/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8kcmr/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8r6zj/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw87dbf/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8dt9c/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8cr6q/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8n7v8/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8bxdk/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8xg3b/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8crnk/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8tfkj/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8v5jd/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8gbhx/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw84j5b/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw88k2k/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8tp4h/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q13989",
+        "label": "Honshu"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13991",
+        "label": "Shikoku"
+      },
+      {
+        "id": "http://www.wikidata.org/entity/Q13987",
+        "label": "Kyushu"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw868x7/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q35581",
+        "label": "Hokkaidō"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw85rgr/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q35581",
+        "label": "Hokkaidō"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8qbpz/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q35581",
+        "label": "Hokkaidō"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8vbpv/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q35581",
+        "label": "Hokkaidō"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8586r/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw86szd/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8w5bt/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw89mgm/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8r4v5/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw84h8x/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  },
+  {
+    "op": "add",
+    "path": "/authorities/p0g8mw8/periods/p0g8mw8hmgx/spatialCoverage",
+    "value": [
+      {
+        "id": "http://www.wikidata.org/entity/Q697589",
+        "label": "Okinawa Islands"
+      }
+    ]
+  }
+]
