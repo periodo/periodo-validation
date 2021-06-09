@@ -198,11 +198,13 @@ public class Validate {
     }
 
     private static String readString(InputStream input) {
-        Scanner scan = new Scanner(
+        try(Scanner scan = new Scanner(
                 input,
                 StandardCharsets.UTF_8.name()
-        ).useDelimiter("\\z");
-        return scan.hasNext() ? scan.next() : "";
+        )) {
+            scan.useDelimiter("\\z");
+            return scan.hasNext() ? scan.next() : "";
+        }
     }
 
     private static InputStream getResourceStream(String name) {
