@@ -1,5 +1,9 @@
-build
-shapes
 .DS_Store
+.classpath
 .gradle
 .nb-gradle
+.project
+.settings/
+bin/
+build
+shapes
