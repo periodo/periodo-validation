@@ -15,7 +15,7 @@ dependencies {
     compile 'org.apache.jena:jena-arq:4.1.0'
     compile 'net.sf.jopt-simple:jopt-simple:5.0.4'
     compile 'org.apache.logging.log4j:log4j-core:2.14.1'
-    compile 'org.slf4j:slf4j-nop:1.7.30'
+    compile 'org.slf4j:slf4j-nop:1.7.33'
 
     testCompile 'org.junit.jupiter:junit-jupiter-api:5.7.2'
 }
