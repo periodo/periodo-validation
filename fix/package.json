@@ -16,6 +16,6 @@
     "language-tags": "^1.0.5",
     "minimist": "^1.2.5",
     "ramda": "^0.27.1",
-    "rdflib": "^2.2.5"
+    "rdflib": "^2.2.17"
   }
 }
