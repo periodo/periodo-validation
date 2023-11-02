@@ -1,4 +1,4 @@
-const R= require('ramda')
+const R = require('ramda')
     , rdf = require('rdflib')
     , http = require('axios')
     , { operation } = require('./utils')
@@ -49,7 +49,7 @@ WHERE {
     editorialNote: `${description} Imported from ${GTS}`,
     source: {
       title,
-      yearPublished: 2020,
+      yearPublished: YEAR,
       creators: [
         {name: 'International Commission on Stratigraphy'},
         {name: 'Commonwealth Scientific and Industrial Research Organisation'},
