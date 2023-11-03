@@ -18,8 +18,6 @@ dependencies {
     implementation 'org.apache.jena:jena-shacl:4.10.0'
     implementation 'net.sf.jopt-simple:jopt-simple:5.0.4'
     implementation 'org.slf4j:slf4j-simple:2.0.9'
-
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
 }
 
 application {
