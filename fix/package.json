@@ -16,7 +16,7 @@
     "language-tags": "^1.0.9",
     "minimist": "^1.2.8",
     "ramda": "^0.29.1",
-    "rdflib": "^2.2.32"
+    "rdflib": "^2.2.33"
   },
   "prettier": {
     "semi": false
